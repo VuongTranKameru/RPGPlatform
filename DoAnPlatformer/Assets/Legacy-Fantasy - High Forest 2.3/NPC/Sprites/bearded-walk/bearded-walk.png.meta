@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a18dab8766e263443b27d16a51226a7f
+guid: 67d85f075c6bfec4bb2b8fd4014763e9
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 31
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -123,34 +123,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Backgroundtree_0
+      name: bearded-walk_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 7
         y: 0
-        width: 480
-        height: 1200
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c56c7afb9a96e894fb35ef80ab22f31d
-      internalID: 1502990556
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Backgroundtree_1
-      rect:
-        serializedVersion: 2
-        x: 559
-        y: 0
-        width: 480
-        height: 1280
+        width: 27
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,20 +137,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 11cd49b418207104390d208e6dd4f595
-      internalID: -1879138075
+      spriteID: 874e09a2326698c4daa2a65e598130b0
+      internalID: 2061394495
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Backgroundtree_2
+      name: bearded-walk_1
       rect:
         serializedVersion: 2
-        x: 1120
+        x: 53
         y: 0
-        width: 635
-        height: 1280
+        width: 18
+        height: 41
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -179,20 +158,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 91b22dd62dbd08840a341e5f18b2078b
-      internalID: 384747662
+      spriteID: 9dc5179be9ca00a40bd5f7842c191230
+      internalID: 1186419169
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Backgroundtree_3
+      name: bearded-walk_2
       rect:
         serializedVersion: 2
-        x: 1760
+        x: 93
         y: 0
-        width: 480
-        height: 1200
+        width: 15
+        height: 43
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +179,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 436ac2095ad31c540aa1384507104858
-      internalID: -2083139911
+      spriteID: 0184a0af0640ace498e108830ebc1482
+      internalID: -304560571
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Backgroundtree_4
+      name: bearded-walk_3
       rect:
         serializedVersion: 2
-        x: 2320
+        x: 128
         y: 0
-        width: 480
-        height: 1280
+        width: 27
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -221,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bae17bfa467d0074f8479d33ac330019
-      internalID: -470560246
+      spriteID: 2b880df2ad790c54babe43beed98a948
+      internalID: 729736353
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Backgroundtree_5
+      name: bearded-walk_4
       rect:
         serializedVersion: 2
-        x: 2880
-        y: 0
-        width: 635
-        height: 1280
+        x: 171
+        y: 1
+        width: 20
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -242,20 +221,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e5aa7c8fcdf1a4e49b9cde19125700ae
-      internalID: -1410219954
+      spriteID: ff7e1b2a0c2afa04d9f1b2764ad55ab8
+      internalID: 1471582246
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Backgroundmountain_0
+      name: bearded-walk_5
       rect:
         serializedVersion: 2
-        x: 3520
-        y: 0
-        width: 480
-        height: 1200
+        x: 211
+        y: 1
+        width: 19
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -263,29 +242,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 45c1f5e2e41bc5c4eb9f9bf0902443b2
-      internalID: 1801518597
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Backgroundmountain_1
-      rect:
-        serializedVersion: 2
-        x: 4000
-        y: 0
-        width: 480
-        height: 1200
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e3bc38d5d2dfddf40ac9a3f3882aedb7
-      internalID: 1363749099
+      spriteID: 8dd895d224dea2f458fd71e0d7984c4e
+      internalID: 345850230
       vertices: []
       indices: 
       edges: []
@@ -301,14 +259,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Backgroundmountain_0: 1801518597
-      Backgroundmountain_1: 1363749099
-      Backgroundtree_0: 1502990556
-      Backgroundtree_1: -1879138075
-      Backgroundtree_2: 384747662
-      Backgroundtree_3: 1363749099
-      Backgroundtree_4: -2083139911
-      Backgroundtree_5: -1410219954
+      bearded-walk_0: 2061394495
+      bearded-walk_1: 1186419169
+      bearded-walk_2: -304560571
+      bearded-walk_3: 729736353
+      bearded-walk_4: 1471582246
+      bearded-walk_5: 345850230
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
