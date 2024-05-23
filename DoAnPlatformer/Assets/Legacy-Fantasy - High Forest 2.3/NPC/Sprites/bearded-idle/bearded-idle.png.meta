@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a18dab8766e263443b27d16a51226a7f
+guid: 46aa3640ca3cd704989ef3e89c8e107d
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 31
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -123,34 +123,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Backgroundtree_0
+      name: bearded-idle_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 7
         y: 0
-        width: 480
-        height: 1200
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c56c7afb9a96e894fb35ef80ab22f31d
-      internalID: 1502990556
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Backgroundtree_1
-      rect:
-        serializedVersion: 2
-        x: 559
-        y: 0
-        width: 480
-        height: 1280
+        width: 23
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,20 +137,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 11cd49b418207104390d208e6dd4f595
-      internalID: -1879138075
+      spriteID: 6c292d5549cee9f47b60c96431068bdc
+      internalID: 2147288498
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Backgroundtree_2
+      name: bearded-idle_1
       rect:
         serializedVersion: 2
-        x: 1120
+        x: 46
         y: 0
-        width: 635
-        height: 1280
+        width: 28
+        height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -179,20 +158,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 91b22dd62dbd08840a341e5f18b2078b
-      internalID: 384747662
+      spriteID: 844615685a7fe554d9b7e1b055d9bb03
+      internalID: 1954849649
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Backgroundtree_3
+      name: bearded-idle_2
       rect:
         serializedVersion: 2
-        x: 1760
+        x: 86
         y: 0
-        width: 480
-        height: 1200
+        width: 25
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +179,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 436ac2095ad31c540aa1384507104858
-      internalID: -2083139911
+      spriteID: c06211d959b71aa4294eb6e58c8e78e4
+      internalID: -1587458189
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Backgroundtree_4
+      name: bearded-idle_3
       rect:
         serializedVersion: 2
-        x: 2320
+        x: 126
         y: 0
-        width: 480
-        height: 1280
+        width: 25
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -221,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bae17bfa467d0074f8479d33ac330019
-      internalID: -470560246
+      spriteID: 93213fbe2ebda5f4690be810dbceed69
+      internalID: -2022357164
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Backgroundtree_5
+      name: bearded-idle_4
       rect:
         serializedVersion: 2
-        x: 2880
+        x: 166
         y: 0
-        width: 635
-        height: 1280
+        width: 25
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -242,50 +221,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e5aa7c8fcdf1a4e49b9cde19125700ae
-      internalID: -1410219954
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Backgroundmountain_0
-      rect:
-        serializedVersion: 2
-        x: 3520
-        y: 0
-        width: 480
-        height: 1200
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 45c1f5e2e41bc5c4eb9f9bf0902443b2
-      internalID: 1801518597
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Backgroundmountain_1
-      rect:
-        serializedVersion: 2
-        x: 4000
-        y: 0
-        width: 480
-        height: 1200
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e3bc38d5d2dfddf40ac9a3f3882aedb7
-      internalID: 1363749099
+      spriteID: 25ad421991b4d214ea884d3ba6938bc4
+      internalID: 1554205327
       vertices: []
       indices: 
       edges: []
@@ -301,14 +238,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Backgroundmountain_0: 1801518597
-      Backgroundmountain_1: 1363749099
-      Backgroundtree_0: 1502990556
-      Backgroundtree_1: -1879138075
-      Backgroundtree_2: 384747662
-      Backgroundtree_3: 1363749099
-      Backgroundtree_4: -2083139911
-      Backgroundtree_5: -1410219954
+      bearded-idle_0: 2147288498
+      bearded-idle_1: 1954849649
+      bearded-idle_2: -1587458189
+      bearded-idle_3: -2022357164
+      bearded-idle_4: 1554205327
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
