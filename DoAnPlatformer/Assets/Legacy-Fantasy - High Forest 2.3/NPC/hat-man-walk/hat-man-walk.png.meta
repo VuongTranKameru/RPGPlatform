@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 50593d961f86508419da28bbe6883b39
+guid: 46b8d64570aaa1546930fe1d8a7ebfe8
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 15
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -123,13 +123,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Idle-Sheet_0
+      name: hat-man-walk_0
       rect:
         serializedVersion: 2
-        x: 105
-        y: 80
-        width: 175
-        height: 240
+        x: 7
+        y: 0
+        width: 26
+        height: 45
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,20 +137,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 19b46630740c1c24f92abfb3fdc8e50c
-      internalID: -1414331722
+      spriteID: e89d06e220eb41348875dfbaefc93292
+      internalID: 39957698
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Sheet_1
+      name: hat-man-walk_1
       rect:
         serializedVersion: 2
-        x: 425
-        y: 80
-        width: 175
-        height: 240
+        x: 51
+        y: 0
+        width: 16
+        height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,20 +158,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5e7e8bdfab1b1a24d9344040a378291b
-      internalID: -348259360
+      spriteID: 74df4c540aca39740bc6424306498e41
+      internalID: 801002211
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Sheet_2
+      name: hat-man-walk_2
       rect:
         serializedVersion: 2
-        x: 745
-        y: 80
-        width: 175
-        height: 245
+        x: 90
+        y: 0
+        width: 16
+        height: 43
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -179,20 +179,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 18c4eec64684e4f409cf73fec7189518
-      internalID: -1580014467
+      spriteID: 2234b93aa9a27e5408ddb582ff19085e
+      internalID: 834967903
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle-Sheet_3
+      name: hat-man-walk_3
       rect:
         serializedVersion: 2
-        x: 1065
-        y: 80
-        width: 175
-        height: 240
+        x: 125
+        y: 0
+        width: 25
+        height: 45
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,8 +200,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2d68f4765f07ab141959b0f7757ec630
-      internalID: 1253116045
+      spriteID: 611b4b0fccca3bc4aa860722c9180a70
+      internalID: -90364516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hat-man-walk_4
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 0
+        width: 17
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a598a84e1e446048878721bfdb7f2bd
+      internalID: 89708993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hat-man-walk_5
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 1
+        width: 16
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 476c9651d8171cc45b57f4873d048ebe
+      internalID: 1563660083
       vertices: []
       indices: 
       edges: []
@@ -217,10 +259,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Idle-Sheet_0: -1414331722
-      Idle-Sheet_1: -348259360
-      Idle-Sheet_2: -1580014467
-      Idle-Sheet_3: 1253116045
+      hat-man-walk_0: 39957698
+      hat-man-walk_1: 801002211
+      hat-man-walk_2: 834967903
+      hat-man-walk_3: -90364516
+      hat-man-walk_4: 89708993
+      hat-man-walk_5: 1563660083
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
