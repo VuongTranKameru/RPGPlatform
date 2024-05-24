@@ -1740,7 +1740,175 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Building_77
+      name: Stair_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1465
+        width: 80
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5548f5269a0a23947a8265858e3373a8
+      internalID: -403823909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stair_1
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 1465
+        width: 80
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c40e8ec733b962a42971f6c97c998f19
+      internalID: 804366138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stair_2
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 1465
+        width: 80
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cad54b06185c7244ab40b7dd357bedcc
+      internalID: -1395291884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stair_3
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 1440
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42ea8ea24a8cfe74b8ef33ffa5213dad
+      internalID: -1035601627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stair_4
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 1360
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c81a3fd804efdaa43994860da5b15e25
+      internalID: 1676419049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stair_5
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 1280
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 729e2d4a668682f4abb480790f6ed9c1
+      internalID: 1350590231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stair_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1225
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18b8de8e3e194f64ca6c4da1d8231cea
+      internalID: -1958987777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Woodbuilding_0
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 1120
+        width: 230
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e56befd1e530fb468c80b33ef14b9c9
+      internalID: -339914896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bookshelf_0
       rect:
         serializedVersion: 2
         x: 1045
@@ -1748,14 +1916,182 @@ TextureImporter:
         width: 150
         height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 076ecf03503224942a418bd64faec194
-      internalID: 163912579
+      spriteID: 5481ce439612e4149b555c5b448b321e
+      internalID: -40389639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bookshelf_1
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 1120
+        width: 320
+        height: 395
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bffca258d37fc804ea530b3dcf2d3b77
+      internalID: -1115116328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Box_0
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 1680
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d8f330779dae774f88776f94b2a7f30
+      internalID: 2100990728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Box_1
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 1600
+        width: 80
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8efa79a946406c1459c48c2ed73c85b9
+      internalID: -763275032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Box_2
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 1520
+        width: 160
+        height: 240
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66dc45c429f2d5f46915e6b1d66f3495
+      internalID: 1099050047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Miningcave_0
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 160
+        width: 640
+        height: 800
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0711ae4f60513ca4bb9adee48e0bd107
+      internalID: -1021168983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Miningcave_1
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 800
+        width: 400
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44110d02116b6d7408d11b9ecc9b7b3c
+      internalID: -545560095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Miningcave_2
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 800
+        width: 400
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f73555b590a0218468b4c747eadeefa4
+      internalID: 218968586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Miningcave_3
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 800
+        width: 400
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f16b3c8d3be3014e816a15c628d7a5b
+      internalID: -506942374
       vertices: []
       indices: 
       edges: []
@@ -1771,6 +2107,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      Bookshelf_0: -40389639
+      Bookshelf_1: -1115116328
+      Box_0: 2100990728
+      Box_1: -763275032
+      Box_2: 1099050047
       Building_0: 590688882
       Building_1: -864640400
       Building_10: -311513580
@@ -1846,9 +2187,20 @@ TextureImporter:
       Building_74: 1599740472
       Building_75: 226007615
       Building_76: -646924175
-      Building_77: 163912579
       Building_8: 751596308
       Building_9: 452758804
+      Miningcave_0: -1021168983
+      Miningcave_1: -545560095
+      Miningcave_2: 218968586
+      Miningcave_3: -506942374
+      Stair_0: -403823909
+      Stair_1: 804366138
+      Stair_2: -1395291884
+      Stair_3: -1035601627
+      Stair_4: 1676419049
+      Stair_5: 1350590231
+      Stair_6: -1958987777
+      Woodbuilding_0: -339914896
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
