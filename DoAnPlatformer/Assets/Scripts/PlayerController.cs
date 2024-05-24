@@ -65,6 +65,7 @@ public class PlayerController : MonoBehaviour
     public void Jump(){
         if(Input.GetButtonDown("Jump")){
             anim.SetBool("isJump", true);
+           
             myRB.velocity = new Vector2(myRB.velocity.x, JumpSpeed);
         }
           
