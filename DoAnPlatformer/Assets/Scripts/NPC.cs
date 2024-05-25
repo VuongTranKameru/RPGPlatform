@@ -2,15 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class NPC : MonoBehaviour
 {
     public GameObject dialoguePanel;
-    public Text dialogueText;
+    public TextMeshProUGUI dialogueText;
     public string[] dialogue;
-    private int index;
+    private int index = 0;
 
-    public GameObject contButton;
     public float wordSpeed;
     public bool playerIsClose;
 
@@ -20,32 +20,29 @@ public class NPC : MonoBehaviour
         dialogueText.text = "";
     }
 
-
-
+    // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F) && playerIsClose)
+        if (Input.GetKeyDown(KeyCode.E) && playerIsClose)
         {
-            if (dialoguePanel.activeInHierarchy)
+            if (!dialoguePanel.activeInHierarchy)
             {
-                zeroText();
+                dialoguePanel.SetActive(true);
+                StartCoroutine(Typing());
             }
-        }
-        else
-        {
-            dialoguePanel.SetActive(true);
-            StopAllCoroutines();
-            StartCoroutine(Typing());
-        }
+            else if (dialogueText.text == dialogue[index])
+            {
+                NextLine();
+            }
 
-        if (dialogueText.text == dialogue[index])
+        }
+        if (Input.GetKeyDown(KeyCode.Q) && dialoguePanel.activeInHierarchy)
         {
-            contButton.SetActive(true);
+            RemoveText();
         }
     }
 
-
-    public void zeroText()
+    public void RemoveText()
     {
         dialogueText.text = "";
         index = 0;
@@ -63,22 +60,17 @@ public class NPC : MonoBehaviour
 
     public void NextLine()
     {
-        contButton.SetActive(false);
-
         if (index < dialogue.Length - 1)
         {
             index++;
             dialogueText.text = "";
-            StopAllCoroutines();
             StartCoroutine(Typing());
         }
         else
         {
-            zeroText();
+            RemoveText();
         }
     }
-
-
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -93,7 +85,8 @@ public class NPC : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerIsClose = false;
-            zeroText();
+            RemoveText();
         }
     }
 }
+
