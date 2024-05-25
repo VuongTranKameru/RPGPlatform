@@ -48,11 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-<<<<<<< Updated upstream:DoAnPlatformer/Assets/Legacy-Fantasy - High Forest 2.3/Character/Jump-All/Jump-All.png.meta
   spritePixelsToUnits: 100
-=======
-  spritePixelsToUnits: 38
->>>>>>> Stashed changes:DoAnPlatformer/Assets/Legacy-Fantasy - High Forest 2.3/Character/Jump-All/Jump-All-Sheet.png.meta
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -141,8 +137,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bb4cf442783c52141b6187f50563ea57
-      internalID: 1825835589
+      spriteID: f7e917a39d1fc724c85faf9ecf0beadd
+      internalID: -1540583894
       vertices: []
       indices: 
       edges: []
@@ -162,8 +158,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 50144cb9c5e64624d8b14565cbd94d04
-      internalID: 1505590744
+      spriteID: f1e4de2796612cb48bb1ba6f6e5dfe91
+      internalID: -862240284
       vertices: []
       indices: 
       edges: []
@@ -183,8 +179,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3680a89f45527c44a89d600a5564ab39
-      internalID: -967657140
+      spriteID: 9bd698737003ba94bbcb579745757fdc
+      internalID: -1563260135
       vertices: []
       indices: 
       edges: []
@@ -204,8 +200,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 42002570ba4860d4f80ef0bf956001cc
-      internalID: 1816901909
+      spriteID: 2c540a20b0aec6c4db9fb959565b7cfe
+      internalID: 255218501
       vertices: []
       indices: 
       edges: []
@@ -225,8 +221,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3782d4414c514884787df72c20e353aa
-      internalID: -253971278
+      spriteID: 6b8a4a18355f1f24e869b62232a8c61b
+      internalID: -1854185096
       vertices: []
       indices: 
       edges: []
@@ -246,8 +242,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9d94e28d64b6f984dbba73f3f00f5599
-      internalID: 2021655837
+      spriteID: 69a5c762b84a14244bf4afc2c860af7f
+      internalID: 1510000877
       vertices: []
       indices: 
       edges: []
@@ -267,8 +263,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eb20ababe0fe97940a698c73201c942c
-      internalID: -1281541622
+      spriteID: 0a77114123a7ee944a685075ce0aab07
+      internalID: -1929632230
       vertices: []
       indices: 
       edges: []
@@ -288,8 +284,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 68eda9b0ca64ac442b70997da101dbbb
-      internalID: -1245596494
+      spriteID: a2f46637924e3684db8190d0ed70eb1a
+      internalID: -1304285484
       vertices: []
       indices: 
       edges: []
@@ -309,8 +305,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8296d14337a53a243b989714d2a33679
-      internalID: 1603632817
+      spriteID: 8c0273a4bcdb57f4d864354fb56a7e90
+      internalID: -1034064551
       vertices: []
       indices: 
       edges: []
@@ -330,8 +326,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: db91871dc4f79ab43b0a8719205087f7
-      internalID: -2083373320
+      spriteID: 1e7c4ff81a3dbe24c8acb97bcad34a4d
+      internalID: 1689558716
       vertices: []
       indices: 
       edges: []
@@ -351,8 +347,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 313a58a1532956d439df0ae026d0ce08
-      internalID: 1834840535
+      spriteID: e4c9070ba2c8f4049b3b26ffc713b903
+      internalID: 633703533
       vertices: []
       indices: 
       edges: []
@@ -372,8 +368,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2c20d0c821feac0478f404443a533a49
-      internalID: 780302016
+      spriteID: 2fe72efee2424da43a9692cae2b2de27
+      internalID: -1566762011
       vertices: []
       indices: 
       edges: []
@@ -393,8 +389,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 258b41d3a1e1c1c47afb9133d7eef44f
-      internalID: 1263952662
+      spriteID: cc27faa319db90445b3e1f841a799623
+      internalID: 1017771533
       vertices: []
       indices: 
       edges: []
@@ -414,8 +410,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c9d10f94d018e414898b28e1e4634932
-      internalID: -1460553153
+      spriteID: 3a21372209383df40a4a3bf225272b28
+      internalID: 1681123613
       vertices: []
       indices: 
       edges: []
@@ -435,8 +431,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7c914701f89beec48bf19d206965fb98
-      internalID: -1943915238
+      spriteID: 725f3c1ef8119d54486ca18ebc29d3c5
+      internalID: 1645939115
       vertices: []
       indices: 
       edges: []
@@ -444,7 +440,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: e719e491850938a439bfc9b04e9e287c
     internalID: 0
     vertices: []
     indices: 
@@ -452,21 +448,21 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Jump-All_0: 1825835589
-      Jump-All_1: 1505590744
-      Jump-All_10: 1834840535
-      Jump-All_11: 780302016
-      Jump-All_12: 1263952662
-      Jump-All_13: -1460553153
-      Jump-All_14: -1943915238
-      Jump-All_2: -967657140
-      Jump-All_3: 1816901909
-      Jump-All_4: -253971278
-      Jump-All_5: 2021655837
-      Jump-All_6: -1281541622
-      Jump-All_7: -1245596494
-      Jump-All_8: 1603632817
-      Jump-All_9: -2083373320
+      Jump-All_0: -1540583894
+      Jump-All_1: -862240284
+      Jump-All_10: 633703533
+      Jump-All_11: -1566762011
+      Jump-All_12: 1017771533
+      Jump-All_13: 1681123613
+      Jump-All_14: 1645939115
+      Jump-All_2: -1563260135
+      Jump-All_3: 255218501
+      Jump-All_4: -1854185096
+      Jump-All_5: 1510000877
+      Jump-All_6: -1929632230
+      Jump-All_7: -1304285484
+      Jump-All_8: -1034064551
+      Jump-All_9: 1689558716
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
