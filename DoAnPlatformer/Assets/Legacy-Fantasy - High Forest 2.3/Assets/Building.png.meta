@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 85
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -123,13 +123,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Building_0
+      name: Building_1
       rect:
         serializedVersion: 2
         x: 1200
-        y: 1855
-        width: 240
-        height: 95
+        y: 1870
+        width: 80
+        height: 80
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -144,13 +144,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Building_1
+      name: Building_2
       rect:
         serializedVersion: 2
         x: 1200
         y: 1760
-        width: 240
-        height: 95
+        width: 80
+        height: 80
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -165,7 +165,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Building_2
+      name: Building_0
       rect:
         serializedVersion: 2
         x: 1440
@@ -273,9 +273,9 @@ TextureImporter:
       name: Building_7
       rect:
         serializedVersion: 2
-        x: 1680
+        x: 1600
         y: 1920
-        width: 240
+        width: 80
         height: 80
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -294,9 +294,9 @@ TextureImporter:
       name: Building_8
       rect:
         serializedVersion: 2
-        x: 1680
+        x: 1760
         y: 1840
-        width: 240
+        width: 80
         height: 80
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -315,9 +315,9 @@ TextureImporter:
       name: Building_9
       rect:
         serializedVersion: 2
-        x: 1680
-        y: 1760
-        width: 240
+        x: 1920
+        y: 1920
+        width: 80
         height: 80
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1383,7 +1383,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Building_60
+      name: z6
       rect:
         serializedVersion: 2
         x: 480
@@ -1404,12 +1404,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Building_61
+      name: z3
       rect:
         serializedVersion: 2
-        x: 560
-        y: 1040
-        width: 80
+        x: 551
+        y: 1038
+        width: 240
         height: 80
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1425,12 +1425,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Building_62
+      name: z4
       rect:
         serializedVersion: 2
-        x: 640
-        y: 1040
-        width: 80
+        x: 565
+        y: 982
+        width: 228
         height: 80
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1446,11 +1446,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Building_63
+      name: z5
       rect:
         serializedVersion: 2
-        x: 720
-        y: 1040
+        x: 316
+        y: 1601
         width: 80
         height: 80
       alignment: 0
@@ -1467,11 +1467,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Building_64
+      name: z0
       rect:
         serializedVersion: 2
-        x: 560
-        y: 960
+        x: 482
+        y: 1772
         width: 80
         height: 80
       alignment: 0
@@ -1488,11 +1488,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Building_65
+      name: z2
       rect:
         serializedVersion: 2
-        x: 640
-        y: 960
+        x: 731
+        y: 1838
         width: 80
         height: 80
       alignment: 0
@@ -1509,11 +1509,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Building_66
+      name: z1
       rect:
         serializedVersion: 2
-        x: 720
-        y: 960
+        x: 478
+        y: 1600
         width: 80
         height: 80
       alignment: 0
@@ -2096,6 +2096,216 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Building_7.1
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 1920
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bfff361a8baa014d9c5e067e91c6ec3
+      internalID: -2039782447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Building_7.2
+      rect:
+        serializedVersion: 2
+        x: 1760
+        y: 1920
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 930a8ba5942ab8046a160378949a8d02
+      internalID: -226783077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Building_7.3
+      rect:
+        serializedVersion: 2
+        x: 1840
+        y: 1920
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 469ad5349e9182b44b4a36b009ee4c74
+      internalID: -206423527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Building_8.1
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 1760
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7f87e9bc9e05f14baac3e793e63a448
+      internalID: -732240602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Building_8.2
+      rect:
+        serializedVersion: 2
+        x: 1760
+        y: 1760
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cf4984a2b961ef48bb8d6cdd3daf4c8
+      internalID: 916551354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Building_8.3
+      rect:
+        serializedVersion: 2
+        x: 1840
+        y: 1760
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8f1ae6460e23c74a9837f83eefef3d5
+      internalID: 98061645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Building_1.1
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1870
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f39852bfff2b68a498fff72426abcbfd
+      internalID: 1151089587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Building_1.2
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 1870
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a09b096e385ce3644a7dcd07edf4af23
+      internalID: -1486841013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Building_2.1
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1760
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 319a65e353ad38d4abb9a8e0b7dc5104
+      internalID: -1833254629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Building_2.2
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 1760
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 870b15558eb6f8e4986f1c1a97830237
+      internalID: -1087483492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -2112,8 +2322,10 @@ TextureImporter:
       Box_0: 2100990728
       Box_1: -763275032
       Box_2: 1099050047
-      Building_0: 590688882
-      Building_1: -864640400
+      Building_0: 2128388912
+      Building_1: 590688882
+      Building_1.1: 1151089587
+      Building_1.2: -1486841013
       Building_10: -311513580
       Building_11: 682989253
       Building_12: 789699790
@@ -2124,7 +2336,9 @@ TextureImporter:
       Building_17: 709883595
       Building_18: 1292686635
       Building_19: -776207221
-      Building_2: -839328584
+      Building_2: -843865132
+      Building_2.1: -1833254629
+      Building_2.2: -1087483492
       Building_20: -223506642
       Building_21: -1218778830
       Building_22: 719601750
@@ -2169,17 +2383,13 @@ TextureImporter:
       Building_58: 1158007333
       Building_59: 418763744
       Building_6: -1821454248
-      Building_60: -11590951
-      Building_61: -1638479521
-      Building_62: -869625302
-      Building_63: -1170270329
-      Building_64: -1062934646
-      Building_65: -156453121
-      Building_66: 657158316
       Building_67: -94485742
       Building_68: -322498544
       Building_69: 1088171528
       Building_7: -1200083952
+      Building_7.1: -2039782447
+      Building_7.2: -226783077
+      Building_7.3: -206423527
       Building_70: -1746842924
       Building_71: -1411255468
       Building_72: 996292735
@@ -2188,6 +2398,9 @@ TextureImporter:
       Building_75: 226007615
       Building_76: -646924175
       Building_8: 751596308
+      Building_8.1: -732240602
+      Building_8.2: 916551354
+      Building_8.3: 98061645
       Building_9: 452758804
       Miningcave_0: -1021168983
       Miningcave_1: -545560095
@@ -2201,6 +2414,13 @@ TextureImporter:
       Stair_5: 1350590231
       Stair_6: -1958987777
       Woodbuilding_0: -339914896
+      z0: -156453121
+      z1: -94485742
+      z2: 657158316
+      z3: -869625302
+      z4: -1170270329
+      z5: -1062934646
+      z6: -1638479521
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
