@@ -74,7 +74,7 @@ public class PlayerController : MonoBehaviour
 
     private bool IsGrounded()
     {
-        return Physics2D.Raycast(groundCheck.position, Vector2.down, 0f ,groundLayer);
+        return Physics2D.Raycast(groundCheck.position, Vector2.down, 0 ,groundLayer);
     }
 
     private void ResetJump()

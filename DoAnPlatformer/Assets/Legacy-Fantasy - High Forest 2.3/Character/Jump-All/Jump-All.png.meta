@@ -48,7 +48,11 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
+<<<<<<< Updated upstream:DoAnPlatformer/Assets/Legacy-Fantasy - High Forest 2.3/Character/Jump-All/Jump-All.png.meta
   spritePixelsToUnits: 100
+=======
+  spritePixelsToUnits: 38
+>>>>>>> Stashed changes:DoAnPlatformer/Assets/Legacy-Fantasy - High Forest 2.3/Character/Jump-All/Jump-All-Sheet.png.meta
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1

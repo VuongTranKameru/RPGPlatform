@@ -48,7 +48,11 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
+<<<<<<< Updated upstream
   spritePixelsToUnits: 100
+=======
+  spritePixelsToUnits: 180
+>>>>>>> Stashed changes
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -126,10 +130,17 @@ TextureImporter:
       name: Run-Sheet_0
       rect:
         serializedVersion: 2
+<<<<<<< Updated upstream
         x: 139
         y: 64
         width: 163
         height: 247
+=======
+        x: 138
+        y: 63
+        width: 164
+        height: 249
+>>>>>>> Stashed changes
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -147,10 +158,17 @@ TextureImporter:
       name: Run-Sheet_1
       rect:
         serializedVersion: 2
+<<<<<<< Updated upstream
         x: 530
         y: 69
         width: 172
         height: 247
+=======
+        x: 529
+        y: 68
+        width: 173
+        height: 248
+>>>>>>> Stashed changes
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,7 +189,11 @@ TextureImporter:
         x: 948
         y: 59
         width: 154
+<<<<<<< Updated upstream
         height: 247
+=======
+        height: 248
+>>>>>>> Stashed changes
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -190,9 +212,15 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1359
+<<<<<<< Updated upstream
         y: 64
         width: 143
         height: 247
+=======
+        y: 63
+        width: 143
+        height: 249
+>>>>>>> Stashed changes
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -210,10 +238,17 @@ TextureImporter:
       name: Run-Sheet_4
       rect:
         serializedVersion: 2
+<<<<<<< Updated upstream
         x: 1739
         y: 69
         width: 163
         height: 247
+=======
+        x: 1738
+        y: 68
+        width: 164
+        height: 248
+>>>>>>> Stashed changes
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -231,10 +266,17 @@ TextureImporter:
       name: Run-Sheet_5
       rect:
         serializedVersion: 2
+<<<<<<< Updated upstream
         x: 2139
         y: 73
         width: 163
         height: 247
+=======
+        x: 2138
+        y: 73
+        width: 164
+        height: 248
+>>>>>>> Stashed changes
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -254,8 +296,13 @@ TextureImporter:
         serializedVersion: 2
         x: 2559
         y: 59
+<<<<<<< Updated upstream
         width: 147
         height: 247
+=======
+        width: 148
+        height: 248
+>>>>>>> Stashed changes
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -273,10 +320,17 @@ TextureImporter:
       name: Run-Sheet_7
       rect:
         serializedVersion: 2
+<<<<<<< Updated upstream
         x: 2955
         y: 64
         width: 147
         height: 247
+=======
+        x: 2954
+        y: 63
+        width: 148
+        height: 249
+>>>>>>> Stashed changes
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
