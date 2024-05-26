@@ -1446,13 +1446,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: z5
+      name: Woodbuilding_1
       rect:
         serializedVersion: 2
-        x: 316
-        y: 1601
-        width: 80
-        height: 80
+        x: 880
+        y: 1760
+        width: 320
+        height: 240
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1488,13 +1488,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: z2
+      name: House_0
       rect:
         serializedVersion: 2
-        x: 731
-        y: 1838
-        width: 80
-        height: 80
+        x: 1440
+        y: 1520
+        width: 240
+        height: 240
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1746,7 +1746,7 @@ TextureImporter:
         x: 0
         y: 1465
         width: 80
-        height: 70
+        height: 80
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1767,7 +1767,7 @@ TextureImporter:
         x: 80
         y: 1465
         width: 80
-        height: 70
+        height: 80
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1788,7 +1788,7 @@ TextureImporter:
         x: 160
         y: 1465
         width: 80
-        height: 70
+        height: 80
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2402,6 +2402,7 @@ TextureImporter:
       Building_8.2: 916551354
       Building_8.3: 98061645
       Building_9: 452758804
+      House_0: 657158316
       Miningcave_0: -1021168983
       Miningcave_1: -545560095
       Miningcave_2: 218968586
@@ -2414,12 +2415,11 @@ TextureImporter:
       Stair_5: 1350590231
       Stair_6: -1958987777
       Woodbuilding_0: -339914896
+      Woodbuilding_1: -1062934646
       z0: -156453121
       z1: -94485742
-      z2: 657158316
       z3: -869625302
       z4: -1170270329
-      z5: -1062934646
       z6: -1638479521
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
