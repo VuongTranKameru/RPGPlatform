@@ -1572,13 +1572,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tile_69
+      name: Bigtree_9
       rect:
         serializedVersion: 2
         x: 800
-        y: 1920
-        width: 75
-        height: 80
+        y: 1840
+        width: 160
+        height: 160
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1677,13 +1677,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tile_74
+      name: Bigtree_10
       rect:
         serializedVersion: 2
         x: 800
         y: 1200
-        width: 75
-        height: 80
+        width: 160
+        height: 160
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1698,7 +1698,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tile_75
+      name: Smalltree_0
       rect:
         serializedVersion: 2
         x: 720
@@ -1719,7 +1719,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tile_76
+      name: Smalltree_1
       rect:
         serializedVersion: 2
         x: 720
@@ -1740,7 +1740,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tile_77
+      name: Smalltree_2
       rect:
         serializedVersion: 2
         x: 720
@@ -1761,7 +1761,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tile_78
+      name: Smalltree_3
       rect:
         serializedVersion: 2
         x: 720
@@ -1908,7 +1908,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tile_85
+      name: Smalltree_6
       rect:
         serializedVersion: 2
         x: 960
@@ -1929,7 +1929,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tile_86
+      name: Smalltree_7
       rect:
         serializedVersion: 2
         x: 960
@@ -1950,7 +1950,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tile_87
+      name: Smalltree_4
       rect:
         serializedVersion: 2
         x: 960
@@ -1971,7 +1971,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tile_88
+      name: Smalltree_5
       rect:
         serializedVersion: 2
         x: 960
@@ -1992,7 +1992,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tile_89
+      name: Beehive_2
       rect:
         serializedVersion: 2
         x: 960
@@ -2013,7 +2013,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tile_90
+      name: Beehive_3
       rect:
         serializedVersion: 2
         x: 960
@@ -2034,13 +2034,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tile_91
+      name: Bigtree_11
       rect:
         serializedVersion: 2
         x: 1040
-        y: 1920
-        width: 80
-        height: 80
+        y: 1840
+        width: 160
+        height: 160
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2055,11 +2055,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tile_92
+      name: Beehive_1.0
       rect:
         serializedVersion: 2
         x: 1040
-        y: 1840
+        y: 1440
         width: 80
         height: 80
       alignment: 0
@@ -2076,13 +2076,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tile_93
+      name: Bigtree_12
       rect:
         serializedVersion: 2
         x: 1040
-        y: 1760
-        width: 80
-        height: 80
+        y: 1680
+        width: 160
+        height: 160
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2202,12 +2202,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tile_99
+      name: Beehive_1
       rect:
         serializedVersion: 2
         x: 960
-        y: 1399
-        width: 160
+        y: 1440
+        width: 80
         height: 80
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -2223,13 +2223,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tile_100
+      name: Beehive_0
       rect:
         serializedVersion: 2
         x: 960
-        y: 1284
+        y: 1280
         width: 160
-        height: 115
+        height: 160
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2370,7 +2370,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tile_107
+      name: Bigtree_13
       rect:
         serializedVersion: 2
         x: 640
@@ -4459,14 +4459,24 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      Beehive_0: -1522073015
+      Beehive_1: 2006299613
+      Beehive_1.0: 2047048961
+      Beehive_2: -1471603066
+      Beehive_3: 408583712
       Bigtree_0: -2086781563
       Bigtree_1: 1020508854
+      Bigtree_10: -2027674070
+      Bigtree_11: -1343256922
+      Bigtree_12: -1646353976
+      Bigtree_13: 1028769046
       Bigtree_3: -1845186859
       Bigtree_4: 565633844
       Bigtree_5: 1765233002
       Bigtree_6: 2023615743
       Bigtree_7: 2041753989
       Bigtree_8: 931132084
+      Bigtree_9: -184896255
       Black: 122146298
       Brick_0: 551058005
       Brick_1: -205791591
@@ -4544,9 +4554,15 @@ TextureImporter:
       RockBg_7: 1881027666
       RockBg_8: 1502274056
       RockBg_9: 1649119334
+      Smalltree_0: -433202178
+      Smalltree_1: 1749195081
+      Smalltree_2: -503401580
+      Smalltree_3: 226901757
+      Smalltree_4: -1559127935
+      Smalltree_5: -1646467498
+      Smalltree_6: 153653664
+      Smalltree_7: 1688791504
       Tile_10: 310282305
-      Tile_100: 2006299613
-      Tile_107: 565633844
       Tile_128: 939696191
       Tile_139: -465659392
       Tile_140: 1735543684
@@ -4607,37 +4623,21 @@ TextureImporter:
       Tile_41: -404262888
       Tile_42: -709197400
       Tile_43: -309583552
-      Tile_69: -184896255
       Tile_70: 2044414740
       Tile_71: 853620111
       Tile_72: 1523159423
       Tile_73: 1671602546
-      Tile_74: -2027674070
-      Tile_75: -433202178
-      Tile_76: 1749195081
-      Tile_77: -503401580
-      Tile_78: 226901757
       Tile_79: -866610611
       Tile_80: 1305452231
       Tile_81: 405872832
       Tile_82: -1582198589
       Tile_83: 2061285113
       Tile_84: -1200519105
-      Tile_85: 153653664
-      Tile_86: 1688791504
-      Tile_87: -1559127935
-      Tile_88: -1646467498
-      Tile_89: -1471603066
-      Tile_90: 408583712
-      Tile_91: -1343256922
-      Tile_92: -1933074313
-      Tile_93: 2047048961
       Tile_94: -1646353976
       Tile_95: -202277983
       Tile_96: -679489802
       Tile_97: 741035386
       Tile_98: 797156429
-      Tile_99: 1670359413
       Water_0: -1715240780
       Water_1: -1338298445
       Water_10: 619207722
