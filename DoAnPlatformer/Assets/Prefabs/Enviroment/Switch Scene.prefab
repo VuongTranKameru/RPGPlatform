@@ -143,4 +143,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84fcaf2158976c949bfc1ff36a6c4195, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: 
+  sceneName: Scene1-Forest
+  teleportPosTown: {fileID: 0}
