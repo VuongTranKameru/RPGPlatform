@@ -55,4 +55,11 @@ public class enemyPatrol : MonoBehaviour
         Gizmos.DrawWireSphere(pointB.transform.position, 0.5f);
         Gizmos.DrawLine(pointA.transform.position, pointB.transform.position);
     }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Player")
+        {
+            HealthSystem.Instance.TakeDamage(1); // Take damage x points
+        }
+    }
 }
