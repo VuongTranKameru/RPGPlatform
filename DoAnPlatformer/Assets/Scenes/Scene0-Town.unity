@@ -1607,11 +1607,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 251385300}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.2, y: -6.19, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -1.1078589, y: -0.61661273, z: 0}
+  m_LocalScale: {x: 0.3292496, y: 0.3292496, z: 0.3292496}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 921453952}
+  m_Father: {fileID: 496708684}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &251385302
@@ -4624,6 +4624,7 @@ Transform:
   m_LocalScale: {x: 3.0372097, y: 3.0372097, z: 3.0372097}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 251385301}
   - {fileID: 2591654177570948353}
   m_Father: {fileID: 260765523}
   m_RootOrder: -1
@@ -26439,7 +26440,6 @@ Transform:
   - {fileID: 33055667}
   - {fileID: 2127055355}
   - {fileID: 1199677403}
-  - {fileID: 251385301}
   - {fileID: 1878892656}
   - {fileID: 1445788581}
   - {fileID: 201843428}
@@ -27382,9 +27382,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 4305335517423160571, guid: c16cfda90519229448926a34bf424e2e, type: 3}
-      propertyPath: m_TagString
-      value: Player
+    - target: {fileID: 8292511152227985268, guid: c16cfda90519229448926a34bf424e2e, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -40394,9 +40394,9 @@ PrefabInstance:
       value: 0.013254672
       objectReference: {fileID: 0}
     - target: {fileID: 6493481273669793926, guid: fc80bb439d56d3744bafae33fab50786, type: 3}
-      propertyPath: sceneName
-      value: Scene1-Forest
-      objectReference: {fileID: 0}
+      propertyPath: teleportPosTown
+      value: 
+      objectReference: {fileID: 251385301}
     - target: {fileID: 8225041228116616329, guid: fc80bb439d56d3744bafae33fab50786, type: 3}
       propertyPath: m_Name
       value: Switch Scene
