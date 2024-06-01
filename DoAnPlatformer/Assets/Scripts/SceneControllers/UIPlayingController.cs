@@ -4,23 +4,59 @@ using UnityEngine;
 
 public class UIPlayingController : MonoBehaviour
 {
-    // Start is called before the first frame update
+    [SerializeField] GameObject PauseMenu;
+
+    bool checkPause = false;
+
     void Start()
     {
         
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        OptionMenuKeyButton();
+
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            if (!checkPause)
+                checkPause = true;
+            else checkPause = false;
+        }
     }
 
-    void OptionButton()
+    void PauseGame()
     {
-        if (Input.GetKey("P"))
+        Time.timeScale = 0f;
+    }
+
+    void PlayGame()
+    {
+        Time.timeScale = 1f;
+    }
+
+    void OptionMenuKeyButton()
+    {
+        if (Input.GetKeyDown(KeyCode.P) && !PauseMenu.activeInHierarchy)
         {
-            
+            OptionButton();
         }
+
+        if (Input.GetKeyDown(KeyCode.P) && checkPause)
+        {
+            ContinueButton();
+        }
+    }
+
+    public void OptionButton()
+    {
+        PauseMenu.SetActive(true);
+        PauseGame();
+    }
+
+    public void ContinueButton()
+    {
+        PauseMenu.SetActive(false);
+        PlayGame();
     }
 }
