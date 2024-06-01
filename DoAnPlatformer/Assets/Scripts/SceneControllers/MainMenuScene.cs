@@ -10,14 +10,15 @@ public class MainMenuScene : MonoBehaviour
         PlayerPrefs.DeleteKey("LastScene");
     }
 
-    void Update()
-    {
-        
-    }
-
     public void StartGameButton()
     {
         SceneManager.LoadScene("Scene0-Town");
+        Time.timeScale = 1;
+    }
+
+    public void MainMenuButton()
+    {
+        SceneManager.LoadScene("MainMenu");
     }
 
     public void ExitGameButton()
