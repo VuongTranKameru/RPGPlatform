@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 public class PlayerSpawn : MonoBehaviour
 {
     [SerializeField] Transform playerPosition, player;
-    string previousScene;
 
     void Awake()
     {
