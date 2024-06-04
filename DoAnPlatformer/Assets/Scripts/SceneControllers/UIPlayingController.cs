@@ -10,7 +10,7 @@ public class UIPlayingController : MonoBehaviour
 
     void Start()
     {
-        
+
     }
 
     void Update()
