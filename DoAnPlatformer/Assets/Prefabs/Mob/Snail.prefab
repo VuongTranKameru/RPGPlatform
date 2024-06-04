@@ -32,7 +32,7 @@ Transform:
   - {fileID: 6735921269511379290}
   - {fileID: 1403672661149172631}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &89364409404415470
 GameObject:
@@ -235,7 +235,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: da58c23fa02a1f548bfe1d3070e61fcb, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
