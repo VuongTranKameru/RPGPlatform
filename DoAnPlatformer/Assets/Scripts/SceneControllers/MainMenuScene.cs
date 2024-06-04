@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class MainMenuScene : MonoBehaviour
 {
+    [SerializeField] GameObject HowToPlayBoard;
+
     void Start()
     {
         PlayerPrefs.DeleteKey("LastScene");
@@ -19,6 +21,16 @@ public class MainMenuScene : MonoBehaviour
     public void MainMenuButton()
     {
         SceneManager.LoadScene("MainMenu");
+    }
+
+    public void HowToPlayButton()
+    {
+        HowToPlayBoard.SetActive(true);
+    }
+
+    public void HowToPlayBoardOff()
+    {
+        HowToPlayBoard.SetActive(false);
     }
 
     public void ExitGameButton()

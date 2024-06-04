@@ -7,16 +7,17 @@ TagManager:
   - NPC
   - Ground
   - DownPlat
+  - Enemy
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Enemy
   - Water
   - UI
   - Ground
-  - Background
   - 
+  - Player
   - 
   - 
   - 
@@ -41,6 +42,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 2636664969
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
