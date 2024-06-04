@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7560646023109957936}
   - component: {fileID: 3954119987934416727}
   - component: {fileID: 7927447071010266677}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HitBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -106,7 +106,7 @@ GameObject:
   - component: {fileID: 4101704786308304460}
   - component: {fileID: 1399467642462870754}
   - component: {fileID: 31485561873757728}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -129,7 +129,7 @@ Transform:
   - {fileID: 2029643164436224740}
   - {fileID: 7560646023109957936}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &7660384846448802728
 MonoBehaviour:
@@ -261,7 +261,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.3717718, y: -0.3627832}
+  m_Offset: {x: -0.3717718, y: -0.32811856}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -272,7 +272,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.8507333, y: 1.6259255}
+  m_Size: {x: 0.8507333, y: 1.5565963}
   m_EdgeRadius: 0
 --- !u!50 &1399467642462870754
 Rigidbody2D:
@@ -332,7 +332,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7996959566227325487}
   - component: {fileID: 652573517031415223}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: DetectPosition
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -377,7 +377,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2029643164436224740}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GroundCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
