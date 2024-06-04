@@ -7,6 +7,9 @@ TagManager:
   - NPC
   - Ground
   - DownPlat
+  - ManaSprite
+  - HealthSprite
+  - Enemy
   layers:
   - Default
   - TransparentFX

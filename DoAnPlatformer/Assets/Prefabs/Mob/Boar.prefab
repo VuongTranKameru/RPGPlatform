@@ -32,7 +32,7 @@ Transform:
   - {fileID: 1583082045661638969}
   - {fileID: 9004673051294854466}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2957329703549887405
 GameObject:
@@ -50,7 +50,7 @@ GameObject:
   - component: {fileID: 9126918743227619061}
   m_Layer: 0
   m_Name: Boar
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
