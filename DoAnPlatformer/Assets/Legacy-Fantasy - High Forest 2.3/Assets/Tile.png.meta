@@ -4306,7 +4306,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 640
-        y: 1040
+        y: 1039
         width: 80
         height: 80
       alignment: 0
@@ -4323,7 +4323,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tile_10
+      name: RockBg_10
       rect:
         serializedVersion: 2
         x: 480
@@ -4558,6 +4558,7 @@ TextureImporter:
       Mushroom_4: -1933402136
       RockBg_0: -12689097
       RockBg_1: 215608858
+      RockBg_10: 310282305
       RockBg_11: 1636485798
       RockBg_12: 1293828253
       RockBg_13: 1056647385
@@ -4579,7 +4580,6 @@ TextureImporter:
       Smalltree_5: -1646467498
       Smalltree_6: 153653664
       Smalltree_7: 1688791504
-      Tile_10: 310282305
       Tile_128: 939696191
       Tile_139: -465659392
       Tile_140: 1735543684
