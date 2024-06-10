@@ -16,6 +16,9 @@ MonoBehaviour:
   description: "This item h\u1ED3i m\xE1u"
   type: 2
   icon: {fileID: 21300000, guid: a7e1765d670b8be479444e44f5dccc75, type: 3}
-  dropPrefab: {fileID: 0}
+  dropPrefab: {fileID: 1957278248252307241, guid: 650588546ee4bcc4ea8fa940da4dfe48, type: 3}
   canStack: 1
   maxStackAmount: 3
+  consumables:
+  - type: 0
+    value: 30

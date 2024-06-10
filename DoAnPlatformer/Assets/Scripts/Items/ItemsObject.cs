@@ -10,7 +10,7 @@ public class ItemsObject : MonoBehaviour
     if(other.tag == "Player"){
         // add the item in inventory
 
-        HealthManager.instance.Heal(30);
+        Inventory.instance.AddItem(item);
         Destroy(gameObject);
     }
   } 
