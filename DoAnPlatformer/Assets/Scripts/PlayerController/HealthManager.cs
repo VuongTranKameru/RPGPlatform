@@ -6,20 +6,17 @@ using UnityEngine.UI;
 
 public class HealthManager : MonoBehaviour
 {
-    public static HealthManager instance;
-    public Image healthBar;
-    public float currentHealth, maxHealth, healthRegen;
-    public TextMeshProUGUI perhealthBar;
-
-    [Header("iFrames")]
-    [SerializeField] private float iFramesDuration;
-    [SerializeField] private int numberOfFlashes;
-    private SpriteRenderer spriteRend;
+    internal static HealthManager instance;
+    [SerializeField] Image healthBar;
+    [SerializeField] float currentHealth, maxHealth, healthRegen;
+    [SerializeField] TextMeshProUGUI perhealthBar;
 
     private void Awake()
     {
-        instance = this;
-        spriteRend = GetComponent<SpriteRenderer>();
+        if (instance == null)
+            instance = this;
+        else if (instance != this)
+            Destroy(gameObject);
     }
 
     // Start is called before the first frame update
@@ -52,10 +49,6 @@ public class HealthManager : MonoBehaviour
     {
         //pick the biggest value between two or more number and set as value of current health
         currentHealth = Mathf.Max(currentHealth - amount, 0.0f);
-        if(currentHealth > 0)
-        {
-            StartCoroutine(Invunerability());
-        }
         // if health reach to zero we call the die function
         if (currentHealth == 0)
         {
@@ -69,7 +62,6 @@ public class HealthManager : MonoBehaviour
         perhealthBar.text = Mathf.Round(currentHealth / maxHealth * 100) + "%";
     }
 
-
     public float GetPercentage()
     {
 
@@ -80,21 +72,7 @@ public class HealthManager : MonoBehaviour
     {
         Debug.Log("Player is Dead");
     }
-    private IEnumerator Invunerability()
-    {
-        Physics2D.IgnoreLayerCollision(8,9,true);
-        for(int i = 0;i<numberOfFlashes;i++)
-        {
-            spriteRend.color = new Color(1, 0, 0, 0.5f);
-            yield return new WaitForSeconds(iFramesDuration / (numberOfFlashes * 2));
-            spriteRend.color = Color.white;
-            yield return new WaitForSeconds(iFramesDuration / (numberOfFlashes * 2));
-        }
-        Physics2D.IgnoreLayerCollision(8, 9, false);
-    }
 }
-
-
 
 public interface IDamageable
 {
