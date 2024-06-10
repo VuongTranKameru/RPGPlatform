@@ -10,7 +10,6 @@ public class enemyPatrol : MonoBehaviour
     private Animator anim;
     private Transform currentPoint;
     public float speed;
-    public float health = 2;
 
     // Start is called before the first frame update
     void Start()
@@ -50,16 +49,7 @@ public class enemyPatrol : MonoBehaviour
         localScale.x *= -1;
         transform.localScale = localScale;
     }
-    public void TakeDamage(float damage)
-    {
-        health -= damage;
-        if (health < 0)
-        {
-            Destroy(gameObject);
-            Debug.Log("Enemy destroy!");
-        }
-        Debug.Log("Enemy health left:" + health);
-    }
+
 
     private void OnDrawGizmos()
     {

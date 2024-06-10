@@ -5,46 +5,51 @@ using UnityEngine;
 public class Projectile : MonoBehaviour
 {
     [SerializeField] private float speed;
-    private float direction;
-    private bool hit;
-
-    private BoxCollider2D boxCollider;
+    [SerializeField] private float resetTime;
+    private float lifetime;
     private Animator anim;
+    private BoxCollider2D coll;
+
+    private bool hit;
 
     private void Awake()
     {
-        boxCollider = GetComponent<BoxCollider2D>();
         anim = GetComponent<Animator>();
+        coll = GetComponent<BoxCollider2D>();
     }
-    // Update is called once per frame
-    void Update()
+
+    public void ActivateProjectile()
+    {
+        hit = false;
+        lifetime = 0;
+        gameObject.SetActive(true);
+        coll.enabled = true;
+    }
+    private void Update()
     {
         if (hit) return;
-        float movementSpeed = speed * Time.deltaTime * direction;
+        float movementSpeed = speed * Time.deltaTime;
         transform.Translate(movementSpeed, 0, 0);
+
+        lifetime += Time.deltaTime;
+        if (lifetime > resetTime)
+            gameObject.SetActive(false);
     }
-    private void OnTriggerEnter2D(Collider2D collider)
+
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         hit = true;
-        boxCollider.enabled = false;
-        anim.SetTrigger("explode");
-    }
-    public void SetDirection(float _direction)
-    {
-        direction = _direction;
-        gameObject.SetActive(true);
-        hit=false;
-        boxCollider.enabled=true;
+        //base.OnTriggerEnter2D(collision); //Execute logic from parent script first
+        coll.enabled = false;
 
-        float localScaleX = transform.localScale.x;
-        if(Mathf.Sign(localScaleX) != _direction) 
-        {
-            localScaleX = -localScaleX;
-        }
-        transform.localScale = new Vector3(localScaleX,transform.localScale.y,transform.localScale.z);
+        if (anim != null)
+            anim.SetTrigger("explode"); //When the object is a fireball explode it
+        else
+            gameObject.SetActive(false); //When this hits any object deactivate arrow
     }
     private void Deactivate()
     {
         gameObject.SetActive(false);
     }
 }
+

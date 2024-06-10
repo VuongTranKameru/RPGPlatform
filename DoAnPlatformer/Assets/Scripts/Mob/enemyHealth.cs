@@ -35,7 +35,8 @@ public class enemyHealth : MonoBehaviour
     }
     public void Die()
     {
-        Debug.Log("Player is Dead");
+        Debug.Log("Enemy is Dead");
+        anim.SetTrigger("die");
         Destroy(gameObject);
     }
     private IEnumerator Invunerability()
