@@ -7067,6 +7067,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 140614973074526520, guid: f9f65c18b765e874e88fa6d74950ff18, type: 3}
+      propertyPath: m_Type
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 140614973074526520, guid: f9f65c18b765e874e88fa6d74950ff18, type: 3}
+      propertyPath: m_FillAmount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 140614973074526520, guid: f9f65c18b765e874e88fa6d74950ff18, type: 3}
+      propertyPath: m_FillMethod
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 588515389282578569, guid: f9f65c18b765e874e88fa6d74950ff18, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -837
@@ -26873,6 +26885,10 @@ PrefabInstance:
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 1023745785}
+    - target: {fileID: 7660384846448802728, guid: c16cfda90519229448926a34bf424e2e, type: 3}
+      propertyPath: maxHealth
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 7660384846448802728, guid: c16cfda90519229448926a34bf424e2e, type: 3}
       propertyPath: perhealthBar
       value: 
