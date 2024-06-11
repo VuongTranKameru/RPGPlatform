@@ -723,6 +723,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!4 &93004512 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7560646023109957936, guid: c16cfda90519229448926a34bf424e2e, type: 3}
+  m_PrefabInstance: {fileID: 831805220}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &109836716
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5183,6 +5188,18 @@ PrefabInstance:
     - target: {fileID: 135080031942448608, guid: f9f65c18b765e874e88fa6d74950ff18, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 140614973074526520, guid: f9f65c18b765e874e88fa6d74950ff18, type: 3}
+      propertyPath: m_Type
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 140614973074526520, guid: f9f65c18b765e874e88fa6d74950ff18, type: 3}
+      propertyPath: m_FillMethod
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 140614973074526520, guid: f9f65c18b765e874e88fa6d74950ff18, type: 3}
+      propertyPath: m_PreserveAspect
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 728162425393727647, guid: f9f65c18b765e874e88fa6d74950ff18, type: 3}
       propertyPath: m_AnchorMax.y
@@ -24337,6 +24354,10 @@ PrefabInstance:
       propertyPath: selectedItemDescription
       value: 
       objectReference: {fileID: 299208032}
+    - target: {fileID: 2903307939434037958, guid: c16cfda90519229448926a34bf424e2e, type: 3}
+      propertyPath: weapondHolder
+      value: 
+      objectReference: {fileID: 93004512}
     - target: {fileID: 3367023815717862297, guid: c16cfda90519229448926a34bf424e2e, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -24380,6 +24401,10 @@ PrefabInstance:
     - target: {fileID: 3367023815717862297, guid: c16cfda90519229448926a34bf424e2e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3954119987934416727, guid: c16cfda90519229448926a34bf424e2e, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4305335517423160571, guid: c16cfda90519229448926a34bf424e2e, type: 3}
       propertyPath: m_Name
