@@ -6,15 +6,17 @@ using UnityEngine.UI;
 
 public class HealthManager : MonoBehaviour
 {
-    public static HealthManager instance;
-    public Image healthBar;
-    public float currentHealth, maxHealth, healthRegen;
-    public TextMeshProUGUI perhealthBar;
-
+    internal static HealthManager instance;
+    [SerializeField] Image healthBar;
+    [SerializeField] float currentHealth, maxHealth, healthRegen;
+    [SerializeField] TextMeshProUGUI perhealthBar;
 
     private void Awake()
     {
-        instance = this;
+        if (instance == null)
+            instance = this;
+        else if (instance != this)
+            Destroy(gameObject);
     }
 
     // Start is called before the first frame update
@@ -60,7 +62,6 @@ public class HealthManager : MonoBehaviour
         perhealthBar.text = Mathf.Round(currentHealth / maxHealth * 100) + "%";
     }
 
-
     public float GetPercentage()
     {
 
@@ -72,8 +73,6 @@ public class HealthManager : MonoBehaviour
         Debug.Log("Player is Dead");
     }
 }
-
-
 
 public interface IDamageable
 {
