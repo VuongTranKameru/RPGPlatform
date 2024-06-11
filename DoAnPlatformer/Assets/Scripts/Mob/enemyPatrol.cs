@@ -49,10 +49,19 @@ public class enemyPatrol : MonoBehaviour
         localScale.x *= -1;
         transform.localScale = localScale;
     }
+
+
     private void OnDrawGizmos()
     {
         Gizmos.DrawWireSphere(pointA.transform.position, 0.5f);
         Gizmos.DrawWireSphere(pointB.transform.position, 0.5f);
         Gizmos.DrawLine(pointA.transform.position, pointB.transform.position);
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Player")
+        {
+            HealthSystem.Instance.TakeDamage(1); // Take damage x points
+        }
     }
 }
