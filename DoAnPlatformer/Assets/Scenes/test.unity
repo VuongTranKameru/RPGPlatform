@@ -152,7 +152,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3870146473882553853, guid: 4beae2450de7cc14993f1aca8b36400c, type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 3870146473882553853, guid: 4beae2450de7cc14993f1aca8b36400c, type: 3}
       propertyPath: m_AnchorMax.x
@@ -229,10 +229,6 @@ PrefabInstance:
     - target: {fileID: 4526888483121630576, guid: 4beae2450de7cc14993f1aca8b36400c, type: 3}
       propertyPath: m_Name
       value: Shop
-      objectReference: {fileID: 0}
-    - target: {fileID: 4526888483121630576, guid: 4beae2450de7cc14993f1aca8b36400c, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2317,7 +2313,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 283904562402253882, guid: e6a83cb3505c44143bb51745dcd75a59, type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 283904562402253882, guid: e6a83cb3505c44143bb51745dcd75a59, type: 3}
       propertyPath: m_LocalPosition.x
@@ -27182,7 +27178,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 626553099340610585, guid: 11d621c5de128e342baa0209d7efca92, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 626553099340610585, guid: 11d621c5de128e342baa0209d7efca92, type: 3}
       propertyPath: m_LocalPosition.x
@@ -27227,7 +27223,7 @@ PrefabInstance:
     - target: {fileID: 1518025182293089561, guid: 11d621c5de128e342baa0209d7efca92, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 9100000, guid: a68971cf14dd442a7b5cad1dd1dd7544, type: 2}
     - target: {fileID: 3249256104462977340, guid: 11d621c5de128e342baa0209d7efca92, type: 3}
       propertyPath: dialogueText
       value: 
@@ -29022,7 +29018,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 283904562402253882, guid: e6a83cb3505c44143bb51745dcd75a59, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 283904562402253882, guid: e6a83cb3505c44143bb51745dcd75a59, type: 3}
       propertyPath: m_LocalPosition.x
