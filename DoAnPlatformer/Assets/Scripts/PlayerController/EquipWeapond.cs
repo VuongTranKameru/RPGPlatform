@@ -5,7 +5,7 @@ using UnityEngine;
 public class EquipWeapond : Equip
 {
     public EquipWeapond weapond;
-    public float dameToEnemy;
+    public int dameToEnemy;
     void Start()
     {
         

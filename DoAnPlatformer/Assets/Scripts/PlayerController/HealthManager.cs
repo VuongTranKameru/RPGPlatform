@@ -4,7 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class HealthManager : MonoBehaviour
+public class HealthManager : MonoBehaviour,IDamageable
 {
     internal static HealthManager instance;
     [SerializeField] Image healthBar;

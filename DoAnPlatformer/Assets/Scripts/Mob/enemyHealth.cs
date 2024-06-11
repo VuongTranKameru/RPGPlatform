@@ -2,12 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class enemyHealth : MonoBehaviour
+public class enemyHealth : MonoBehaviour,IDamageable
 {
-    public enemyHealth instance;
+    
     [Header("Health")]
     [SerializeField] private float startingHealth;
-    public float currentHealth { get; private set; }
+    public float currentHealth ;
     private Animator anim;
     private bool dead;
 
@@ -15,20 +15,18 @@ public class enemyHealth : MonoBehaviour
     [SerializeField] private float iFramesDuration;
     [SerializeField] private int numberOfFlashes;
     private SpriteRenderer spriteRend;
-    private void Awake()
+    
+    void Start()
     {
-        instance = this;
         currentHealth = startingHealth;
         anim = GetComponent<Animator>();
-        spriteRend = GetComponent<SpriteRenderer>();
+        spriteRend = GetComponent<SpriteRenderer>();  
     }
+
     public void TakeDamage(float amount)
     {
-        currentHealth = Mathf.Max(currentHealth - amount, 0, startingHealth);
-        if (currentHealth > 0)
-        {
-            StartCoroutine(Invunerability());
-        }
+        currentHealth = Mathf.Max(currentHealth - amount, 0.0f);
+       
         // if health reach to zero we call the die function
         if (currentHealth == 0)
         {

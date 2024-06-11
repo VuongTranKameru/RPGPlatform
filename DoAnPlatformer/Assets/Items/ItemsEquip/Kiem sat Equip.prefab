@@ -45,4 +45,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weapond: {fileID: 0}
-  dameToEnemy: 100
+  dameToEnemy: 10

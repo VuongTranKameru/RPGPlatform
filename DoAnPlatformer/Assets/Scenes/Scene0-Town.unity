@@ -26561,6 +26561,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Boar
       objectReference: {fileID: 0}
+    - target: {fileID: 5890406330506611872, guid: d57a66ce47a12da41a815036da517454, type: 3}
+      propertyPath: startingHealth
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 6550398049520402956, guid: d57a66ce47a12da41a815036da517454, type: 3}
       propertyPath: m_RootOrder
       value: 9
