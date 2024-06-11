@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class enemyHealth : MonoBehaviour
 {
+    public enemyHealth instance;
     [Header("Health")]
     [SerializeField] private float startingHealth;
     public float currentHealth { get; private set; }
@@ -16,6 +17,7 @@ public class enemyHealth : MonoBehaviour
     private SpriteRenderer spriteRend;
     private void Awake()
     {
+        instance = this;
         currentHealth = startingHealth;
         anim = GetComponent<Animator>();
         spriteRend = GetComponent<SpriteRenderer>();

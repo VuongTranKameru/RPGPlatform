@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class EquipWeapond : Equip
 {
-    // Start is called before the first frame update
+    public EquipWeapond weapond;
+    public float dameToEnemy;
     void Start()
     {
         
