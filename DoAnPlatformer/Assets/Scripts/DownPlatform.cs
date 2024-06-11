@@ -16,13 +16,13 @@ public class DownPlatform : MonoBehaviour
         if (collision.CompareTag("DownPlat"))
         { 
             boxStair.isTrigger = false;
-            Debug.Log("uncheck");
+            //Debug.Log("uncheck");
         }
     }
 
     private void OnCollisionExit2D(Collision2D collision)
     {
-        Debug.Log("e");
+        //Debug.Log("touch");
         boxStair.isTrigger = true;
     }
 }
