@@ -12,6 +12,12 @@ public class ItemSlotUI : MonoBehaviour
     private ItemSlot currentSlot;
     public int index;
     public bool equipped;
+    public GameObject checkIcon;
+
+    public void OnEneable()
+    {
+        checkIcon.gameObject.SetActive(equipped);
+    }
     
     public void Set(ItemSlot slot)
     {
@@ -24,6 +30,11 @@ public class ItemSlotUI : MonoBehaviour
 
         //if we have more than 1 item quantity then set the number of quantitytext if not empty the text
         quantityText.text = slot.quantity > 1 ? slot.quantity.ToString() : string.Empty;
+
+        if(checkIcon != null)
+        {
+            checkIcon.SetActive(equipped);
+        }
     }
 
     public void Clear()

@@ -137,7 +137,7 @@ public class Inventory : MonoBehaviour
         }
 
         selectedItem = slots[index];
-        selectedItemIndex -= index;
+        selectedItemIndex = index;
 
         selectedItemName.text = selectedItem.item.displayName;
         selectedItemDescription.text = selectedItem.item.description;
@@ -189,7 +189,16 @@ public class Inventory : MonoBehaviour
 
     public void OnEquipButton()
     {
-        
+        if(uiSlots[currentequipIndex].equipped)
+        {
+            UnEquip(currentequipIndex);
+        }
+
+        uiSlots[selectedItemIndex].equipped = true;
+        currentequipIndex = selectedItemIndex;
+        EquipManager.instance.EquipNew(selectedItem.item);
+        UpdateUI();
+        SelectItem(selectedItemIndex);
     }
 
     void UnEquip(int index)
