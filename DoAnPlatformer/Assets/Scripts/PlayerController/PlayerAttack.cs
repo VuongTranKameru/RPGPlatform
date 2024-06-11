@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerAttack : MonoBehaviour
 {
+    public enemyHealth enemyHealth;
     private Animator animator;
     private BoxCollider2D hitbox;
 

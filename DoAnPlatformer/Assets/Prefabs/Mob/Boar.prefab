@@ -25,14 +25,14 @@ Transform:
   m_GameObject: {fileID: 2619500483417569596}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 12.66, y: -3.43, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.1768, y: 1.1768, z: 1.1768}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5692719791299833141}
   - {fileID: 1583082045661638969}
   - {fileID: 9004673051294854466}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2957329703549887405
 GameObject:
@@ -48,6 +48,9 @@ GameObject:
   - component: {fileID: 7994272650527511147}
   - component: {fileID: 4336491623667765220}
   - component: {fileID: 9126918743227619061}
+  - component: {fileID: 2666382333389941421}
+  - component: {fileID: 7458341819033384366}
+  - component: {fileID: 3147569678340235356}
   m_Layer: 3
   m_Name: Boar
   m_TagString: Enemy
@@ -230,6 +233,76 @@ MonoBehaviour:
   pointA: {fileID: 4887995929017854671}
   pointB: {fileID: 3410180287816579140}
   speed: 2
+--- !u!70 &2666382333389941421
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2957329703549887405}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.44253826, y: -0.018698692}
+  m_Size: {x: 0.39390373, y: 0.96733475}
+  m_Direction: 0
+--- !u!114 &7458341819033384366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2957329703549887405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61266b7d33e0c274a9a6cc6401c4b925, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackCooldown: 0.5
+  range: 2.3
+  damage: 2
+  colliderDistance: 0.33
+  boxCollider: {fileID: 4707126040956982034}
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 256
+--- !u!114 &3147569678340235356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2957329703549887405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77323567da0740245a9243bdbeaec843, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingHealth: 1
+  iFramesDuration: 1
+  numberOfFlashes: 3
 --- !u!1 &3410180287816579140
 GameObject:
   m_ObjectHideFlags: 0
