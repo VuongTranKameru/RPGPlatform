@@ -23,11 +23,11 @@ public class RpeatBG : MonoBehaviour
     {
         meshRenderer.material.mainTextureOffset += new Vector2(scrollSpeed * Time.deltaTime, 0);
 
-        /*transform.Translate(translation:Vector3.left * scrollSpeed * Time.deltaTime);
+        transform.Translate(translation:Vector3.left * scrollSpeed * Time.deltaTime);
         if (transform.position.x < -3.247562)
         {
             transform.position = StartPosition;
-        }*/
+        }
     }
 
 }

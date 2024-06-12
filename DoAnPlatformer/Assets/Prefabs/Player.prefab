@@ -192,21 +192,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09c8652c9ace61a4b943e717cd75b71b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inventoryPanel: {fileID: 0}
+  inventoryPanel: {fileID: 5757693430766385320, guid: 44759fff54e6121428127cb9eca3b4c6, type: 3}
   dropPosition: {fileID: 7290692017290979580}
   uiSlots:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
