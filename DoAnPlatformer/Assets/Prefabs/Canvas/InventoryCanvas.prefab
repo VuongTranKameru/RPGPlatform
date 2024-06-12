@@ -260,12 +260,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2628713950571920344}
+  m_Father: {fileID: 7024642210423875214}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.1705, y: -0}
+  m_AnchoredPosition: {x: -4.0628805, y: 104.71999}
   m_SizeDelta: {x: 358.457, y: 186.6008}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3340021966345005524
@@ -296,7 +296,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'This item will regent '
+  m_text: This item will regent
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6dbae069fc029974e9e8e17bbf1d6d7f, type: 2}
   m_sharedMaterial: {fileID: -1430904947507484845, guid: 6dbae069fc029974e9e8e17bbf1d6d7f, type: 2}
@@ -323,10 +323,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 46
+  m_fontSize: 32
   m_fontSizeBase: 32
   m_fontWeight: 400
-  m_enableAutoSizing: 1
+  m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 46
   m_fontStyle: 1
@@ -567,8 +567,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Small Potion
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 5fa9c53d11347d14ab5fe5a7ed524cc5, type: 2}
-  m_sharedMaterial: {fileID: 8617869204772272234, guid: 5fa9c53d11347d14ab5fe5a7ed524cc5, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 19ef91b800c35b74fba3a2e2bd189825, type: 2}
+  m_sharedMaterial: {fileID: 6896264207051185265, guid: 19ef91b800c35b74fba3a2e2bd189825, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -592,7 +592,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 60
+  m_fontSize: 59.1
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1203,8 +1203,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 2695922892649300764}
+  m_Children: []
   m_Father: {fileID: 7024642210423875214}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1775,6 +1774,7 @@ RectTransform:
   m_Children:
   - {fileID: 8557404425312964224}
   - {fileID: 2628713950571920344}
+  - {fileID: 2695922892649300764}
   - {fileID: 3502024197251409039}
   - {fileID: 3956332968251450094}
   - {fileID: 4046542137015398347}
@@ -1807,7 +1807,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1661600666867341452
 RectTransform:
   m_ObjectHideFlags: 0

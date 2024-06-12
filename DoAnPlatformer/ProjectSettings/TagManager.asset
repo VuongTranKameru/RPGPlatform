@@ -9,6 +9,7 @@ TagManager:
   - DownPlat
   - Enemy
   - Event
+  - StopElevate
   layers:
   - Default
   - TransparentFX
