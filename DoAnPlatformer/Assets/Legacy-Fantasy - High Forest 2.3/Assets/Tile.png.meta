@@ -4448,6 +4448,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Tile_0
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 1363
+        width: 160
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b37f465177f2f24d96e6e5d0bbbe142
+      internalID: 1065078901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -4580,6 +4601,7 @@ TextureImporter:
       Smalltree_5: -1646467498
       Smalltree_6: 153653664
       Smalltree_7: 1688791504
+      Tile_0: 1065078901
       Tile_128: 939696191
       Tile_139: -465659392
       Tile_140: 1735543684
