@@ -319,6 +319,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 1
+  currentHealth: 0
   iFramesDuration: 1
   numberOfFlashes: 3
 --- !u!1 &3410180287816579140
@@ -395,7 +396,7 @@ GameObject:
   - component: {fileID: 6424086922519963158}
   - component: {fileID: 1597424656915887248}
   m_Layer: 3
-  m_Name: GameObject
+  m_Name: Enemy Damage and hit box
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
