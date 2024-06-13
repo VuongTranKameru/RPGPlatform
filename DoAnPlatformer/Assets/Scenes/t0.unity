@@ -27040,10 +27040,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameLoader
       objectReference: {fileID: 0}
-    - target: {fileID: 1925676468560257132, guid: 7a864038514ccfd4aa281ced07f523b9, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4840334496975191454, guid: 7a864038514ccfd4aa281ced07f523b9, type: 3}
       propertyPath: m_RootOrder
       value: 7

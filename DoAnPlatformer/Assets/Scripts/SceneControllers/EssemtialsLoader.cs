@@ -6,7 +6,7 @@ using TMPro;
 
 public class EssemtialsLoader : MonoBehaviour
 {
-    [SerializeField] GameObject UiBoard;
+    [SerializeField] GameObject UiBoard, Player;
 
     private void Awake()
     {
@@ -14,6 +14,12 @@ public class EssemtialsLoader : MonoBehaviour
         if (UISystemManager.instance == null)
         {
             Instantiate(UiBoard);
+        }
+
+        //load player
+        if (PlayerManager.instance == null)
+        {
+            Instantiate(Player);
         }
     }
 }
