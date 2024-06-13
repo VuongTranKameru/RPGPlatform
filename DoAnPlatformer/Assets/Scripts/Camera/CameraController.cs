@@ -8,8 +8,7 @@ public class CameraController : MonoBehaviour
     private Camera cam;
     private float halfWidth,halfHeight;
 
-    // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         target = FindObjectOfType<PlayerController>().transform;
         cam = GetComponent<Camera>();

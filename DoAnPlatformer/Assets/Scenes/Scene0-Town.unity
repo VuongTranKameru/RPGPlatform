@@ -4959,17 +4959,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!114 &429596717 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1137260727272142426, guid: c16cfda90519229448926a34bf424e2e, type: 3}
-  m_PrefabInstance: {fileID: 831805220}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 09c8652c9ace61a4b943e717cd75b71b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &451952830
 GameObject:
   m_ObjectHideFlags: 0
@@ -5217,7 +5206,7 @@ PrefabInstance:
     - target: {fileID: 3216864681970235319, guid: f9f65c18b765e874e88fa6d74950ff18, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 429596717}
+      objectReference: {fileID: 0}
     - target: {fileID: 3400952165302602303, guid: f9f65c18b765e874e88fa6d74950ff18, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -23144,6 +23133,10 @@ PrefabInstance:
       propertyPath: selectedItemName
       value: 
       objectReference: {fileID: 35203006}
+    - target: {fileID: 1137260727272142426, guid: c16cfda90519229448926a34bf424e2e, type: 3}
+      propertyPath: uiSlots.Array.size
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 1137260727272142426, guid: c16cfda90519229448926a34bf424e2e, type: 3}
       propertyPath: selectedItemstatName
       value: 

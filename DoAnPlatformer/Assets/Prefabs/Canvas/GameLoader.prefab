@@ -30,7 +30,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2326513176259514872
 MonoBehaviour:
@@ -45,5 +45,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   UiBoard: {fileID: 7082503291806984623, guid: f9f65c18b765e874e88fa6d74950ff18, type: 3}
-  HpBar: {fileID: 7866933656681300812, guid: 1ef97a2ea60dfb243bda83259b513fc0, type: 3}
-  PercentBar: {fileID: 877677443049787972, guid: 24153e655f9f69845b3d92943afd03f6, type: 3}
+  Player: {fileID: 4305335517423160571, guid: c16cfda90519229448926a34bf424e2e, type: 3}

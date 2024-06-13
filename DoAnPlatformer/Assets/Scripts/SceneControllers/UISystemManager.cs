@@ -6,20 +6,14 @@ public class UISystemManager : MonoBehaviour
 {
     internal static UISystemManager instance;
 
-    // Start is called before the first frame update
     void Start()
     {
+        //check if ui system manager exist
         if (instance == null)
             instance = this;
         else if (instance != this)
             Destroy(gameObject);
 
         DontDestroyOnLoad(gameObject);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
