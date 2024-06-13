@@ -11,7 +11,7 @@ public class StatsInfo : MonoBehaviour
     public TextMeshProUGUI hp;
     public TextMeshProUGUI damge;
     
-    public int checkDamge;
+    
    
     
     // Start is called before the first frame update
