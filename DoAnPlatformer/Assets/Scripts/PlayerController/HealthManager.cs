@@ -8,7 +8,7 @@ public class HealthManager : MonoBehaviour,IDamageable
 {
     internal static HealthManager instance;
     [SerializeField] Image healthBar;
-    [SerializeField] float currentHealth, maxHealth, healthRegen;
+    [SerializeField] public float currentHealth, maxHealth, healthRegen;
     [SerializeField] TextMeshProUGUI perhealthBar;
 
     private void Awake()
