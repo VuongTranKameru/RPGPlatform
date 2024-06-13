@@ -10,6 +10,7 @@ public class EssemtialsLoader : MonoBehaviour
 
     private void Awake()
     {
+        //load ui system manager (health, inventory, option..)
         if (UISystemManager.instance == null)
         {
             Instantiate(UiBoard);
