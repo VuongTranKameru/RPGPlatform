@@ -16,7 +16,7 @@ public class PlayerAttack : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetButtonDown("Fire1")) // Attack on Space key press.
+        if (Input.GetButtonDown("Fire1") && EquipManager.instance.currentEquip != null) // Attack on Space key press.
         {
             animator.SetTrigger("Attack");
             Invoke("ActivateHitbox", 0.2f); // Activate hitbox after 0.2 seconds.
