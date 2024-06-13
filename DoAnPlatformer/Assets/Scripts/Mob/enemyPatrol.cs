@@ -10,7 +10,8 @@ public class enemyPatrol : MonoBehaviour
     private Animator anim;
     private Transform currentPoint;
     public float speed;
-
+    
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +19,7 @@ public class enemyPatrol : MonoBehaviour
         anim = GetComponent<Animator>();
         currentPoint = pointB.transform;
         anim.SetBool("isRunning", true);
+        
     }
 
     // Update is called once per frame
@@ -57,11 +59,5 @@ public class enemyPatrol : MonoBehaviour
         Gizmos.DrawWireSphere(pointB.transform.position, 0.5f);
         Gizmos.DrawLine(pointA.transform.position, pointB.transform.position);
     }
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.tag == "Player")
-        {
-            HealthSystem.Instance.TakeDamage(1); // Take damage x points
-        }
-    }
+    
 }

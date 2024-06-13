@@ -4,19 +4,16 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class HealthManager : MonoBehaviour
+public class HealthManager : MonoBehaviour,IDamageable
 {
     internal static HealthManager instance;
     [SerializeField] Image healthBar;
-    [SerializeField] float currentHealth, maxHealth, healthRegen;
+    [SerializeField] public float currentHealth, maxHealth, healthRegen;
     [SerializeField] TextMeshProUGUI perhealthBar;
 
     private void Awake()
     {
-        if (instance == null)
-            instance = this;
-        else if (instance != this)
-            Destroy(gameObject);
+        instance = this;
     }
 
     // Start is called before the first frame update
