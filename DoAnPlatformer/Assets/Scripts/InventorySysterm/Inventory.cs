@@ -13,7 +13,7 @@ public class Inventory : MonoBehaviour
     [Header("Selecting Items")]
     private ItemSlot selectedItem;
     private int selectedItemIndex;
-    public TextMeshProUGUI selectedItemName, selectedItemDescription,selectedItemstatName,selectedItemsStatValue;
+    public TextMeshProUGUI selectedItemName, selectedItemDescription,selectedItemStatName,selectedItemStatValue;
     public GameObject useButton, equipButton, UnEquipButton, dropButton;
 
     private int currentequipIndex;
@@ -142,13 +142,13 @@ public class Inventory : MonoBehaviour
         selectedItemName.text = selectedItem.item.displayName;
         selectedItemDescription.text = selectedItem.item.description;
 
-        selectedItemstatName.text = string.Empty;
-        selectedItemsStatValue.text = string.Empty;
+        selectedItemStatName.text = string.Empty;
+        selectedItemStatValue.text = string.Empty;
 
         for(int x = 0; x < selectedItem.item.consumables.Length; x++)
         {
-            selectedItemstatName.text += selectedItem.item.consumables[x].type.ToString() + "\n";
-            selectedItemsStatValue.text += selectedItem.item.consumables[x].value.ToString() + "\n";
+            selectedItemStatName.text += selectedItem.item.consumables[x].type.ToString() + "\n";
+            selectedItemStatValue.text += selectedItem.item.consumables[x].value.ToString() + "\n";
         }
 
         useButton.SetActive(selectedItem.item.type == ItemType.Consumable);
@@ -163,8 +163,8 @@ public class Inventory : MonoBehaviour
         selectedItem = null;
         selectedItemName.text = string.Empty;
         selectedItemDescription.text = string.Empty;
-        selectedItemstatName.text = string.Empty;
-        selectedItemsStatValue.text = string.Empty;
+        selectedItemStatName.text = string.Empty;
+        selectedItemStatValue.text = string.Empty;
         useButton.SetActive(false);
         equipButton.SetActive(false);
         UnEquipButton.SetActive(false);
