@@ -6,10 +6,13 @@ using UnityEngine.UI;
 
 public class Inventory : MonoBehaviour
 {
-    public GameObject inventoryPanel;
+    internal static Inventory instance;
+    UIInventory uInven;
+
     public Transform dropPosition;
     public ItemSlotUI[] uiSlots;
     public ItemSlot[] slots;
+
     [Header("Selecting Items")]
     private ItemSlot selectedItem;
     private int selectedItemIndex;
@@ -18,18 +21,14 @@ public class Inventory : MonoBehaviour
 
     private int currentequipIndex;
     
-    public static Inventory instance;
-    
     private void Awake()
     {
         instance = this;
+        uInven = FindAnyObjectByType<UIInventory>();
     }
 
     void Start()
     {
-        // close inventory panel at the begining of the game
-        inventoryPanel.SetActive(false);
-
         // get access to itemSlots list because we dont attached any script to them
         slots = new ItemSlot[uiSlots.Length];
 
@@ -43,15 +42,6 @@ public class Inventory : MonoBehaviour
         }
 
         ClearSelectedItemWindow();
-    }
-
-    
-    void Update()
-    {
-        if(Input.GetKeyDown(KeyCode.I))
-        {
-            OpenInventory();
-        }
     }
 
     public void AddItem(ItemData item)
@@ -250,17 +240,6 @@ public class Inventory : MonoBehaviour
     public bool HasItem(ItemData item, int quantity)
     {
         return false;
-    }
-
-    public void OpenInventory()
-    {
-        inventoryPanel.SetActive(true);
-        ClearSelectedItemWindow();
-    }
-
-    public void CloseInventory()
-    {
-        inventoryPanel.SetActive(false);
     }
 }
 
