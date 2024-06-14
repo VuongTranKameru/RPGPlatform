@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class ShopManagerScript : MonoBehaviour
 {
-
+    
     public int[,] shopItems = new int[5,5];
     public float coins;
     public Text CoinsTxt;
@@ -51,6 +51,7 @@ public class ShopManagerScript : MonoBehaviour
             shopItems[3, ButtonRef.GetComponent<ButtonInfo>().ItemID]++;
             CoinsTxt.text = "Coins:" + coins.ToString();
             ButtonRef.GetComponent<ButtonInfo>().QuantityTxt.text = shopItems[3, ButtonRef.GetComponent<ButtonInfo>().ItemID].ToString();
+            
         }
     }
 }
