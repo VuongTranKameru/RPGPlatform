@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Scene2-MineCave.unity
     guid: 8836a429d562e2d448f50491ac3bceab
+  - enabled: 1
+    path: Assets/Scenes/t1.unity
+    guid: 48c3348df43b39a489c6f28fa7ff67ab
   m_configObjects: {}
