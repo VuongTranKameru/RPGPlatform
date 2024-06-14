@@ -8,6 +8,7 @@ public class EssemtialsLoader : MonoBehaviour
 {
     [SerializeField] GameObject UiBoard, Player;
 
+    //only using to spawn out the character for the first time
     private void Awake()
     {
         //load ui system manager (health, inventory, option..)

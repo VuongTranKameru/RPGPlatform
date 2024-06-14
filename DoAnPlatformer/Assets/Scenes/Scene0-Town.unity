@@ -5321,7 +5321,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2218407746006123742, guid: f9f65c18b765e874e88fa6d74950ff18, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2218407746006123742, guid: f9f65c18b765e874e88fa6d74950ff18, type: 3}
       propertyPath: m_LocalPosition.x
@@ -20700,17 +20700,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f658d943616d45408f1ec2396c4167d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &571574469 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 203107988538435499, guid: f9f65c18b765e874e88fa6d74950ff18, type: 3}
-  m_PrefabInstance: {fileID: 470374286}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &577466886
 GameObject:
   m_ObjectHideFlags: 0
@@ -21274,6 +21263,10 @@ PrefabInstance:
     - target: {fileID: 8280614442814543628, guid: 5d1d330bc73e26b49b7ae3b52359e7e7, type: 3}
       propertyPath: m_Name
       value: "Ki\u1EBFm S\u1EAFt"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8280614442814543628, guid: 5d1d330bc73e26b49b7ae3b52359e7e7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -24044,7 +24037,7 @@ PrefabInstance:
     - target: {fileID: 7660384846448802728, guid: c16cfda90519229448926a34bf424e2e, type: 3}
       propertyPath: perhealthBar
       value: 
-      objectReference: {fileID: 571574469}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -28328,6 +28321,10 @@ PrefabInstance:
     - target: {fileID: 1957278248252307241, guid: 650588546ee4bcc4ea8fa940da4dfe48, type: 3}
       propertyPath: m_Name
       value: Small Red Potion (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1957278248252307241, guid: 650588546ee4bcc4ea8fa940da4dfe48, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3459072527488560486, guid: 650588546ee4bcc4ea8fa940da4dfe48, type: 3}
       propertyPath: m_RootOrder
@@ -33757,6 +33754,10 @@ PrefabInstance:
     - target: {fileID: 1957278248252307241, guid: 650588546ee4bcc4ea8fa940da4dfe48, type: 3}
       propertyPath: m_Name
       value: Small Red Potion (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1957278248252307241, guid: 650588546ee4bcc4ea8fa940da4dfe48, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3459072527488560486, guid: 650588546ee4bcc4ea8fa940da4dfe48, type: 3}
       propertyPath: m_RootOrder
@@ -41038,9 +41039,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Small Red Potion
       objectReference: {fileID: 0}
+    - target: {fileID: 1957278248252307241, guid: 650588546ee4bcc4ea8fa940da4dfe48, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3459072527488560486, guid: 650588546ee4bcc4ea8fa940da4dfe48, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 3459072527488560486, guid: 650588546ee4bcc4ea8fa940da4dfe48, type: 3}
       propertyPath: m_LocalPosition.x
