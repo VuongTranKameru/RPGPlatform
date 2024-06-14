@@ -71,7 +71,7 @@ public class UIPlayingController : MonoBehaviour
     {
         InventoryCanvas.SetActive(true);
         PauseGame();
-        //ClearSelectedItemWindow();
+        Inventory.instance.ClearSelectedItemWindow();
     }
 
     public void CloseInventoryButton()
