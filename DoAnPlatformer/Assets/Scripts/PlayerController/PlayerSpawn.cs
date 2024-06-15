@@ -16,10 +16,11 @@ public class PlayerSpawn : MonoBehaviour
         CheckScenario();
 
         player.position = playerPosition.transform.position;
-        player.GetComponent<PlayerController>().enabled = true;
 
         PlayerPrefs.SetString("LastScene", SceneManager.GetActiveScene().name);
         PlayerPrefs.Save();
+
+        player.GetComponent<PlayerController>().enabled = true;
     }
 
     void CheckScenario()
