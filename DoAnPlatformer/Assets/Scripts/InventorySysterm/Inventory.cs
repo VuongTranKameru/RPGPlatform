@@ -6,52 +6,42 @@ using UnityEngine.UI;
 
 public class Inventory : MonoBehaviour
 {
-    public GameObject inventoryPanel;
+    internal static Inventory instance;
+    UIInventory uInven;
+
     public Transform dropPosition;
-    public ItemSlotUI[] uiSlots;
-    public ItemSlot[] slots;
+    //public ItemSlotUI[] uiSlots;
+    internal ItemSlot[] slots;
+
     [Header("Selecting Items")]
     private ItemSlot selectedItem;
     private int selectedItemIndex;
-    public TextMeshProUGUI selectedItemName, selectedItemDescription,selectedItemstatName,selectedItemsStatValue;
-    public GameObject useButton, equipButton, UnEquipButton, dropButton;
+    //public TMP_Text selectedItemName, selectedItemDescription, selectedItemStatName, selectedItemStatValue;
+    //public GameObject useButton, equipButton, UnEquipButton, dropButton;
 
     private int currentequipIndex;
-    
-    public static Inventory instance;
     
     private void Awake()
     {
         instance = this;
+        uInven = FindAnyObjectByType<UIInventory>();
     }
 
     void Start()
     {
-        // close inventory panel at the begining of the game
-        inventoryPanel.SetActive(false);
-
         // get access to itemSlots list because we dont attached any script to them
-        slots = new ItemSlot[uiSlots.Length];
+        slots = new ItemSlot[uInven.uitemSlots.Length];
 
         // initialize the slots (loop through all slots and set them up)
         for(int x = 0; x < slots.Length; x++)
         {
             slots[x] = new ItemSlot();//Set our Slots
-            uiSlots[x].index = x;//index of our slots is x
+            uInven.uitemSlots[x].index = x;//index of our slots is x
             // Clear the slot mean holding no item
-            uiSlots[x].Clear();
+            uInven.uitemSlots[x].Clear();
         }
 
         ClearSelectedItemWindow();
-    }
-
-    
-    void Update()
-    {
-        if(Input.GetKeyDown(KeyCode.I))
-        {
-            OpenInventory();
-        }
     }
 
     public void AddItem(ItemData item)
@@ -94,12 +84,12 @@ public class Inventory : MonoBehaviour
             if(slots[x].item != null)
             {
                 //set that item
-                uiSlots[x].Set(slots[x]);
+                uInven.uitemSlots[x].Set(slots[x]);
             }
             else
             {
                 //if there is not item inside of that slot clear that slot
-                uiSlots[x].Clear();
+                uInven.uitemSlots[x].Clear();
             }
         }
     }
@@ -139,36 +129,35 @@ public class Inventory : MonoBehaviour
         selectedItem = slots[index];
         selectedItemIndex = index;
 
-        selectedItemName.text = selectedItem.item.displayName;
-        selectedItemDescription.text = selectedItem.item.description;
+        uInven.itemName.text = selectedItem.item.displayName;
+        uInven.itemDes.text = selectedItem.item.description;
 
-        selectedItemstatName.text = string.Empty;
-        selectedItemsStatValue.text = string.Empty;
+        uInven.itemStatName.text = string.Empty;
+        uInven.itemStatValue.text = string.Empty;
 
         for(int x = 0; x < selectedItem.item.consumables.Length; x++)
         {
-            selectedItemstatName.text += selectedItem.item.consumables[x].type.ToString() + "\n";
-            selectedItemsStatValue.text += selectedItem.item.consumables[x].value.ToString() + "\n";
+            uInven.itemStatName.text += selectedItem.item.consumables[x].type.ToString() + "\n";
+            uInven.itemStatValue.text += selectedItem.item.consumables[x].value.ToString() + "\n";
         }
 
-        useButton.SetActive(selectedItem.item.type == ItemType.Consumable);
-        equipButton.SetActive(selectedItem.item.type == ItemType.Equipable && !uiSlots[index].equipped);
-        UnEquipButton.SetActive(selectedItem.item.type == ItemType.Equipable && uiSlots[index].equipped);
-        dropButton.SetActive(true);
-
+        uInven.useBtn.SetActive(selectedItem.item.type == ItemType.Consumable);
+        uInven.equipBtn.SetActive(selectedItem.item.type == ItemType.Equipable && !uInven.uitemSlots[index].equipped);
+        uInven.unequipBtn.SetActive(selectedItem.item.type == ItemType.Equipable && uInven.uitemSlots[index].equipped);
+        uInven.dropBtn.SetActive(true);
     }
 
-    void ClearSelectedItemWindow()
+    public void ClearSelectedItemWindow()
     {
         selectedItem = null;
-        selectedItemName.text = string.Empty;
-        selectedItemDescription.text = string.Empty;
-        selectedItemstatName.text = string.Empty;
-        selectedItemsStatValue.text = string.Empty;
-        useButton.SetActive(false);
-        equipButton.SetActive(false);
-        UnEquipButton.SetActive(false);
-        dropButton.SetActive(false);
+        uInven.itemName.text = string.Empty;
+        uInven.itemDes.text = string.Empty;
+        uInven.itemStatName.text = string.Empty;
+        uInven.itemStatValue.text = string.Empty;
+        uInven.useBtn.SetActive(false);
+        uInven.equipBtn.SetActive(false);
+        uInven.unequipBtn.SetActive(false);
+        uInven.dropBtn.SetActive(false);
     }
 
     public void OnUseButton()
@@ -189,12 +178,12 @@ public class Inventory : MonoBehaviour
 
     public void OnEquipButton()
     {
-        if(uiSlots[currentequipIndex].equipped)
+        if(uInven.uitemSlots[currentequipIndex].equipped)
         {
             UnEquip(currentequipIndex);
         }
 
-        uiSlots[selectedItemIndex].equipped = true;
+        uInven.uitemSlots[selectedItemIndex].equipped = true;
         currentequipIndex = selectedItemIndex;
         EquipManager.instance.EquipNew(selectedItem.item);
         UpdateUI();
@@ -203,7 +192,7 @@ public class Inventory : MonoBehaviour
 
     void UnEquip(int index)
     {
-        uiSlots[index].equipped = false;
+        uInven.uitemSlots[index].equipped = false;
         EquipManager.instance.Unequip();
         UpdateUI();
 
@@ -230,7 +219,7 @@ public class Inventory : MonoBehaviour
 
         if(selectedItem.quantity == 0)
         {
-            if(uiSlots[selectedItemIndex].equipped == true)
+            if(uInven.uitemSlots[selectedItemIndex].equipped == true)
             {
                 UnEquip(selectedItemIndex);
             }
@@ -251,45 +240,6 @@ public class Inventory : MonoBehaviour
     {
         return false;
     }
-
-    public void OpenInventory()
-    {
-        inventoryPanel.SetActive(true);
-        ClearSelectedItemWindow();
-    }
-
-    public void CloseInventory()
-    {
-        inventoryPanel.SetActive(false);
-    }
-    public void DropAllItems()
-    {
-        // Loop through all the slots in the inventory
-        for (int i = 0; i < slots.Length; i++)
-        {
-            // Check if the slot has an item
-            if (slots[i].item != null)
-            {
-                // Get the item and its quantity
-                ItemData item = slots[i].item;
-                int quantity = slots[i].quantity;
-
-                // Drop the item quantity times at the drop position
-                for (int j = 0; j < quantity; j++)
-                {
-                    ThrowItem(item);
-                }
-
-                // Clear the slot
-                slots[i].item = null;
-                slots[i].quantity = 0;
-            }
-        }
-
-        // Update the UI to reflect the changes
-        UpdateUI();
-    }
-
 }
 
 public class ItemSlot

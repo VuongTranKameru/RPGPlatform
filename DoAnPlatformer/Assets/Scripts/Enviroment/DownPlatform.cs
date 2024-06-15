@@ -13,6 +13,7 @@ public class DownPlatform : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        //check if player step on stair
         if (collision.CompareTag("DownPlat"))
         { 
             boxStair.isTrigger = false;

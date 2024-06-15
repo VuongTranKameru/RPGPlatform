@@ -2,24 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class UISystemManager : MonoBehaviour
+public class PlayerManager : MonoBehaviour
 {
-    internal static UISystemManager instance;
+    internal static PlayerManager instance;
 
-    // Start is called before the first frame update
     void Start()
     {
+        //check if player exist
         if (instance == null)
             instance = this;
         else if (instance != this)
             Destroy(gameObject);
 
         DontDestroyOnLoad(gameObject);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

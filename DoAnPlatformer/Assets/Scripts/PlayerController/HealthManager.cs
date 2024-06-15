@@ -4,23 +4,21 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class HealthManager : MonoBehaviour
+public class HealthManager : MonoBehaviour,IDamageable
 {
     internal static HealthManager instance;
-    Inventory inventory;
-    [SerializeField] Image healthBar;
-    [SerializeField] float currentHealth, maxHealth, healthRegen;
-    [SerializeField] TextMeshProUGUI perhealthBar;
+    UIHpManager uiHP;
 
-    private void Awake()
+    //[SerializeField] Image healthBar;
+    [SerializeField] internal float currentHealth, maxHealth, healthRegen;
+    //[SerializeField] TMP_Text perhealthBar;
+
+    void Awake()
     {
-        if (instance == null)
-            instance = this;
-        else if (instance != this)
-            Destroy(gameObject);
+        instance = this;
+        uiHP = FindAnyObjectByType<UIHpManager>();
     }
 
-    // Start is called before the first frame update
     void Start()
     {
         currentHealth = maxHealth;
@@ -31,9 +29,6 @@ public class HealthManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // getting the percentage of division between current hp and set it in ui health bar
-        healthBar.fillAmount = GetPercentage();
-
         //heal the player depend on our health regeneration rate
         Heal(healthRegen * Time.deltaTime);
 
@@ -50,24 +45,23 @@ public class HealthManager : MonoBehaviour
     {
         //pick the biggest value between two or more number and set as value of current health
         currentHealth = Mathf.Max(currentHealth - amount, 0.0f);
+
         // if health reach to zero we call the die function
         if (currentHealth == 0)
         {
             Die();
-            inventory.DropAllItems();
         }
-
     }
 
     public void PercentHealthUI()
     {
-        perhealthBar.text = Mathf.Round(currentHealth / maxHealth * 100) + "%";
-    }
+        //perhealthBar.text = Mathf.Round(currentHealth / maxHealth * 100) + "%";
+        uiHP.hpPercent.text = currentHealth.ToString("0") + "%";
 
-    public float GetPercentage()
-    {
+        //Debug.Log(currentHealth);
 
-        return currentHealth / maxHealth;
+        // getting the percentage of division between current hp and set it in ui health bar
+        uiHP.hpBar.fillAmount = currentHealth / maxHealth;
     }
 
     public void Die()

@@ -5,12 +5,14 @@ using UnityEngine;
 public class UIPlayingController : MonoBehaviour
 {
     [SerializeField] GameObject PauseMenu;
-
+    [SerializeField] GameObject InventoryCanvas;
     bool checkPause = false;
 
     void Start()
     {
-
+        // close inventory panel at the begining of the game
+        PauseMenu.SetActive(false);
+        InventoryCanvas.SetActive(false);
     }
 
     void Update()
@@ -22,6 +24,11 @@ public class UIPlayingController : MonoBehaviour
             if (!checkPause)
                 checkPause = true;
             else checkPause = false;
+        }
+
+        if (Input.GetKeyDown(KeyCode.I))
+        {
+            OpenInventoryButton();
         }
     }
 
@@ -57,6 +64,19 @@ public class UIPlayingController : MonoBehaviour
     public void ContinueButton()
     {
         PauseMenu.SetActive(false);
+        PlayGame();
+    }
+
+    public void OpenInventoryButton()
+    {
+        InventoryCanvas.SetActive(true);
+        PauseGame();
+        Inventory.instance.ClearSelectedItemWindow();
+    }
+
+    public void CloseInventoryButton()
+    {
+        InventoryCanvas.SetActive(false);
         PlayGame();
     }
 }

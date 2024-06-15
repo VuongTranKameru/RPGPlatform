@@ -8,6 +8,8 @@ TagManager:
   - Ground
   - DownPlat
   - Enemy
+  - Event
+  - StopElevate
   layers:
   - Default
   - TransparentFX
