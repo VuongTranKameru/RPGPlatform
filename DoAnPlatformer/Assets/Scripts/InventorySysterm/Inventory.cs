@@ -11,7 +11,7 @@ public class Inventory : MonoBehaviour
 
     public Transform dropPosition;
     //public ItemSlotUI[] uiSlots;
-    internal ItemSlot[] slots;
+    public ItemSlot[] slots;
 
     [Header("Selecting Items")]
     private ItemSlot selectedItem;
