@@ -18,6 +18,8 @@ public class Inventory : MonoBehaviour
     private int selectedItemIndex;
     //public TMP_Text selectedItemName, selectedItemDescription, selectedItemStatName, selectedItemStatValue;
     //public GameObject useButton, equipButton, UnEquipButton, dropButton;
+    [SerializeField] AudioSource auSrc;
+    [SerializeField] AudioClip auUseButton, auEquipButton, auUnequipButton, auDropButton;
 
     private int currentequipIndex;
     
@@ -25,6 +27,7 @@ public class Inventory : MonoBehaviour
     {
         instance = this;
         uInven = FindAnyObjectByType<UIInventory>();
+        
     }
 
     void Start()
@@ -172,6 +175,7 @@ public class Inventory : MonoBehaviour
                 }
             }
         }
+        auSrc.PlayOneShot(auUseButton);
 
         RemoveSelectedItem();
     }
@@ -186,6 +190,8 @@ public class Inventory : MonoBehaviour
         uInven.uitemSlots[selectedItemIndex].equipped = true;
         currentequipIndex = selectedItemIndex;
         EquipManager.instance.EquipNew(selectedItem.item);
+        auSrc.PlayOneShot(auEquipButton);
+
         UpdateUI();
         SelectItem(selectedItemIndex);
     }
@@ -195,6 +201,7 @@ public class Inventory : MonoBehaviour
         uInven.uitemSlots[index].equipped = false;
         EquipManager.instance.Unequip();
         UpdateUI();
+        auSrc.PlayOneShot(auUnequipButton);
 
         if(selectedItemIndex == index)
         {
@@ -209,6 +216,7 @@ public class Inventory : MonoBehaviour
 
     public void OnDropButton()
     {
+        auSrc.PlayOneShot(auDropButton);
         ThrowItem(selectedItem.item);
         RemoveSelectedItem();
     }

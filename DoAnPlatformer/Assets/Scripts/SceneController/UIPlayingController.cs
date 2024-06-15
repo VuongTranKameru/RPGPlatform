@@ -8,6 +8,9 @@ public class UIPlayingController : MonoBehaviour
     [SerializeField] GameObject InventoryCanvas;
     bool checkPause = false;
 
+    [SerializeField] AudioSource auSrc;
+    [SerializeField] AudioClip auOpenUI;
+
     void Start()
     {
         // close inventory panel at the begining of the game
@@ -29,6 +32,7 @@ public class UIPlayingController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.I))
         {
             OpenInventoryButton();
+            
         }
     }
 
@@ -70,6 +74,7 @@ public class UIPlayingController : MonoBehaviour
     public void OpenInventoryButton()
     {
         InventoryCanvas.SetActive(true);
+        auSrc.PlayOneShot(auOpenUI);
         PauseGame();
         Inventory.instance.ClearSelectedItemWindow();
     }
@@ -77,6 +82,7 @@ public class UIPlayingController : MonoBehaviour
     public void CloseInventoryButton()
     {
         InventoryCanvas.SetActive(false);
+        auSrc.PlayOneShot(auOpenUI);
         PlayGame();
     }
 }
