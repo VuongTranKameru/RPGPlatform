@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class HealthManager : MonoBehaviour
 {
     internal static HealthManager instance;
+    Inventory inventory;
     [SerializeField] Image healthBar;
     [SerializeField] float currentHealth, maxHealth, healthRegen;
     [SerializeField] TextMeshProUGUI perhealthBar;
@@ -53,6 +54,7 @@ public class HealthManager : MonoBehaviour
         if (currentHealth == 0)
         {
             Die();
+            inventory.DropAllItems();
         }
 
     }

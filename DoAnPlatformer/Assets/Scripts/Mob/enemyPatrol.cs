@@ -61,7 +61,7 @@ public class enemyPatrol : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
-            HealthSystem.Instance.TakeDamage(1); // Take damage x points
+            HealthSystem.Instance.TakeDamage(10); // Take damage x points
         }
     }
 }

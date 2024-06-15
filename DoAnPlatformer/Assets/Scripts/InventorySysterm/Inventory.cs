@@ -262,6 +262,34 @@ public class Inventory : MonoBehaviour
     {
         inventoryPanel.SetActive(false);
     }
+    public void DropAllItems()
+    {
+        // Loop through all the slots in the inventory
+        for (int i = 0; i < slots.Length; i++)
+        {
+            // Check if the slot has an item
+            if (slots[i].item != null)
+            {
+                // Get the item and its quantity
+                ItemData item = slots[i].item;
+                int quantity = slots[i].quantity;
+
+                // Drop the item quantity times at the drop position
+                for (int j = 0; j < quantity; j++)
+                {
+                    ThrowItem(item);
+                }
+
+                // Clear the slot
+                slots[i].item = null;
+                slots[i].quantity = 0;
+            }
+        }
+
+        // Update the UI to reflect the changes
+        UpdateUI();
+    }
+
 }
 
 public class ItemSlot
