@@ -6,6 +6,8 @@ public class UIPlayingController : MonoBehaviour
 {
     [SerializeField] GameObject PauseMenu;
     [SerializeField] GameObject InventoryCanvas;
+    [SerializeField] AudioSource auSrc;
+    [SerializeField] AudioClip auOpenInvenButton,auPause,auUnpause;
 
     void Start()
     {
@@ -23,12 +25,14 @@ public class UIPlayingController : MonoBehaviour
     void PauseGame()
     {
         Time.timeScale = 0f;
+        auSrc.PlayOneShot(auPause);
     }
 
     void PlayGame()
     {
         if(!PauseMenu.activeInHierarchy && !InventoryCanvas.activeInHierarchy)
             Time.timeScale = 1f;
+            auSrc.PlayOneShot(auUnpause);
     }
 
     void OptionMenuKeyButton()
@@ -70,13 +74,15 @@ public class UIPlayingController : MonoBehaviour
     public void OpenInventoryButton()
     {
         InventoryCanvas.SetActive(true);
-        PauseGame();
+        auSrc.PlayOneShot(auOpenInvenButton);
+        Time.timeScale = 0f;
         Inventory.instance.ClearSelectedItemWindow();
     }
 
     public void CloseInventoryButton()
     {
+        auSrc.PlayOneShot(auOpenInvenButton);
         InventoryCanvas.SetActive(false);
-        PlayGame();
+        Time.timeScale = 1f;
     }
 }

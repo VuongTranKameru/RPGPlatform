@@ -167,7 +167,7 @@ Transform:
   - {fileID: 7290692017290979580}
   - {fileID: 5241125075788307658}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2903307939434037958
 MonoBehaviour:
@@ -196,6 +196,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dropPosition: {fileID: 7290692017290979580}
+  auSrc: {fileID: 1595968383454282710}
+  auUseButton: {fileID: 8300000, guid: ba39bf8baf6d13046889b2d64822381a, type: 3}
+  auEquipButton: {fileID: 8300000, guid: 78ad99fd0a0a5144280b07bbdba84815, type: 3}
+  auUnequipButton: {fileID: 8300000, guid: 78ad99fd0a0a5144280b07bbdba84815, type: 3}
+  auDropButton: {fileID: 8300000, guid: 7cc057bed53baf34799f52aab3c84800, type: 3}
 --- !u!114 &7660384846448802728
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -211,6 +216,8 @@ MonoBehaviour:
   currentHealth: 0
   maxHealth: 100
   healthRegen: 0
+  iFramesDuration: 0
+  numberOfFlashes: 0
 --- !u!114 &1345171656029311186
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -223,7 +230,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 038ef861dac4e2f4a987cf309ff578cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyHealth: {fileID: 0}
+  auSrc: {fileID: 1595968383454282710}
+  auAttack: {fileID: 8300000, guid: 323e15cfe809e114ab92c9f4b25e8bc2, type: 3}
 --- !u!114 &8292511152227985268
 MonoBehaviour:
   m_ObjectHideFlags: 0
