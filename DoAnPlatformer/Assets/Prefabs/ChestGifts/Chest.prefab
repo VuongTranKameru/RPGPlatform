@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6811290196136462829}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.363, y: 0.261, z: 0}
+  m_LocalPosition: {x: 2.363, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -65,7 +65,7 @@ Transform:
   m_Children:
   - {fileID: 7570004483691956142}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2270642583778236941
 SpriteRenderer:
@@ -105,10 +105,10 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1658302327
+  m_SortingLayer: -1
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1215741783, guid: 8fe360daf05aa8d4cb4140f23e126ed3, type: 3}
+  m_Sprite: {fileID: 1719700660, guid: 33b8f93eceffd1144a4b89c60f37b2b7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -132,7 +132,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dropGift:
-  - {fileID: 11400000, guid: 0f9f69130b724cb49b29f8582b1d9f35, type: 2}
+  - {fileID: 11400000, guid: e79ab6efc673b86408b2cfcf9d10d0ec, type: 2}
   dropCount: 1
   dropPosition: {fileID: 7570004483691956142}
 --- !u!61 &5423632423217230735
@@ -167,18 +167,18 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.013174534, y: -0.0032937527}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.1, y: 1.05}
+    oldSize: {x: 1.7647059, y: 1.5882353}
     newSize: {x: 1.1, y: 1.05}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.1790476, y: 1.0895233}
+  m_Size: {x: 1.7739722, y: 1.6000268}
   m_EdgeRadius: 0
 --- !u!95 &7468077225327649931
 Animator:
