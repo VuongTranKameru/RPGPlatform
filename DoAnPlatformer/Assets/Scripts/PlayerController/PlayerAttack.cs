@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class PlayerAttack : MonoBehaviour
 {
-    public enemyHealth enemyHealth;
+    
     private Animator animator;
     private BoxCollider2D hitbox;
+    [SerializeField] public AudioSource auSrc;
+    [SerializeField] public AudioClip auAttack;
 
     private void Start()
     {
@@ -19,6 +21,7 @@ public class PlayerAttack : MonoBehaviour
         if (Input.GetButtonDown("Fire1") && EquipManager.instance.currentEquip != null) // Attack on Space key press.
         {
             animator.SetTrigger("Attack");
+            auSrc.PlayOneShot(auAttack);
             Invoke("ActivateHitbox", 0.2f); // Activate hitbox after 0.2 seconds.
             Invoke("DeactivateHitbox", 0.4f); // Deactivate hitbox after 0.4 seconds.
         }
