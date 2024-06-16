@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Microsoft.Unity.VisualStudio.Editor;
 using UnityEngine;
 
 public enum ItemType {
@@ -23,6 +24,7 @@ public class ItemData : ScriptableObject
     public string description;
     public ItemType type;
     public Sprite icon;
+    
     public GameObject dropPrefab;
 
     [Header("Stacking")]
