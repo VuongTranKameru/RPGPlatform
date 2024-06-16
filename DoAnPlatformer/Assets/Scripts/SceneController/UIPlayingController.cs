@@ -6,10 +6,6 @@ public class UIPlayingController : MonoBehaviour
 {
     [SerializeField] GameObject PauseMenu;
     [SerializeField] GameObject InventoryCanvas;
-    bool checkPause = false;
-
-    [SerializeField] AudioSource auSrc;
-    [SerializeField] AudioClip auOpenUI;
 
     void Start()
     {
@@ -21,19 +17,7 @@ public class UIPlayingController : MonoBehaviour
     void Update()
     {
         OptionMenuKeyButton();
-
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            if (!checkPause)
-                checkPause = true;
-            else checkPause = false;
-        }
-
-        if (Input.GetKeyDown(KeyCode.I))
-        {
-            OpenInventoryButton();
-            
-        }
+        InventoryMenuKeyButton();
     }
 
     void PauseGame()
@@ -43,20 +27,20 @@ public class UIPlayingController : MonoBehaviour
 
     void PlayGame()
     {
-        Time.timeScale = 1f;
+        if(!PauseMenu.activeInHierarchy && !InventoryCanvas.activeInHierarchy)
+            Time.timeScale = 1f;
     }
 
     void OptionMenuKeyButton()
     {
         if (Input.GetKeyDown(KeyCode.P) && !PauseMenu.activeInHierarchy)
         {
-            OptionButton();
+            OptionButton(); 
+            return;
         }
 
-        if (Input.GetKeyDown(KeyCode.P) && checkPause)
-        {
+        if (Input.GetKeyDown(KeyCode.P))
             ContinueButton();
-        }
     }
 
     public void OptionButton()
@@ -71,10 +55,21 @@ public class UIPlayingController : MonoBehaviour
         PlayGame();
     }
 
+    void InventoryMenuKeyButton()
+    {
+        if (Input.GetKeyDown(KeyCode.I) && !InventoryCanvas.activeInHierarchy)
+        {
+            OpenInventoryButton();
+            return;
+        }
+
+        if (Input.GetKeyDown(KeyCode.I))
+            CloseInventoryButton();
+    }
+
     public void OpenInventoryButton()
     {
         InventoryCanvas.SetActive(true);
-        auSrc.PlayOneShot(auOpenUI);
         PauseGame();
         Inventory.instance.ClearSelectedItemWindow();
     }
@@ -82,7 +77,6 @@ public class UIPlayingController : MonoBehaviour
     public void CloseInventoryButton()
     {
         InventoryCanvas.SetActive(false);
-        auSrc.PlayOneShot(auOpenUI);
         PlayGame();
     }
 }

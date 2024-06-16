@@ -165,7 +165,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Irons_0
+      name: Parts_0
       rect:
         serializedVersion: 2
         x: 148
@@ -186,7 +186,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Irons_1
+      name: Parts_2
       rect:
         serializedVersion: 2
         x: 64
@@ -207,7 +207,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Irons_2
+      name: Part_1
       rect:
         serializedVersion: 2
         x: 64
@@ -215,7 +215,7 @@ TextureImporter:
         width: 48
         height: 15
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -240,9 +240,9 @@ TextureImporter:
     nameFileIdTable:
       Chain_0: 1790814834
       Chain_1: -1907450020
-      Irons_0: 661614251
-      Irons_1: 1081057241
-      Irons_2: -2067112373
+      Part_1: -2067112373
+      Parts_0: 661614251
+      Parts_2: 1081057241
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
