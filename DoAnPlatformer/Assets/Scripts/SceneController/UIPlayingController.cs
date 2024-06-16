@@ -6,7 +6,6 @@ public class UIPlayingController : MonoBehaviour
 {
     [SerializeField] GameObject PauseMenu;
     [SerializeField] GameObject InventoryCanvas;
-    bool checkPause = false;
 
     [SerializeField] AudioSource auSrc;
     [SerializeField] AudioClip auOpenUI;
@@ -43,20 +42,20 @@ public class UIPlayingController : MonoBehaviour
 
     void PlayGame()
     {
-        Time.timeScale = 1f;
+        if(!PauseMenu.activeInHierarchy && !InventoryCanvas.activeInHierarchy)
+            Time.timeScale = 1f;
     }
 
     void OptionMenuKeyButton()
     {
         if (Input.GetKeyDown(KeyCode.P) && !PauseMenu.activeInHierarchy)
         {
-            OptionButton();
+            OptionButton(); 
+            return;
         }
 
-        if (Input.GetKeyDown(KeyCode.P) && checkPause)
-        {
+        if (Input.GetKeyDown(KeyCode.P))
             ContinueButton();
-        }
     }
 
     public void OptionButton()
@@ -69,6 +68,18 @@ public class UIPlayingController : MonoBehaviour
     {
         PauseMenu.SetActive(false);
         PlayGame();
+    }
+
+    void InventoryMenuKeyButton()
+    {
+        if (Input.GetKeyDown(KeyCode.I) && !InventoryCanvas.activeInHierarchy)
+        {
+            OpenInventoryButton();
+            return;
+        }
+
+        if (Input.GetKeyDown(KeyCode.I))
+            CloseInventoryButton();
     }
 
     public void OpenInventoryButton()
