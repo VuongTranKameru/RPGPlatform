@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -13,10 +14,16 @@ public class HealthManager : MonoBehaviour,IDamageable
     [SerializeField] internal float currentHealth, maxHealth, healthRegen;
     //[SerializeField] TMP_Text perhealthBar;
 
+    [Header("iFrames")]
+    [SerializeField] private float iFramesDuration;
+    [SerializeField] private int numberOfFlashes;
+    private SpriteRenderer spriteRend;
+
     void Awake()
     {
         instance = this;
         uiHP = FindAnyObjectByType<UIHpManager>();
+        spriteRend = GetComponent<SpriteRenderer>();
     }
 
     void Start()
@@ -45,7 +52,10 @@ public class HealthManager : MonoBehaviour,IDamageable
     {
         //pick the biggest value between two or more number and set as value of current health
         currentHealth = Mathf.Max(currentHealth - amount, 0.0f);
-
+        if (currentHealth > 0)
+        {
+            StartCoroutine(Invunerability());
+        }
         // if health reach to zero we call the die function
         if (currentHealth == 0)
         {
@@ -67,6 +77,18 @@ public class HealthManager : MonoBehaviour,IDamageable
     public void Die()
     {
         Debug.Log("Player is Dead");
+    }
+    private IEnumerator Invunerability()
+    {
+        Physics2D.IgnoreLayerCollision(3, 8, true);
+        for (int i = 0; i < numberOfFlashes; i++)
+        {
+            spriteRend.color = new Color(1, 0, 0, 0.5f);
+            yield return new WaitForSeconds(iFramesDuration / (numberOfFlashes * 2));
+            spriteRend.color = Color.white;
+            yield return new WaitForSeconds(iFramesDuration / (numberOfFlashes * 2));
+        }
+        Physics2D.IgnoreLayerCollision(3, 8, false);
     }
 }
 
