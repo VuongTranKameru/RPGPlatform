@@ -11,23 +11,16 @@ public class ChestManager : MonoBehaviour
     BoxCollider2D box;
     public Transform dropPosition;
 
-
-
-
-
-    // Start is called before the first frame update
     void Start()
     {
         anim = GetComponent<Animator>();
         box = GetComponent<BoxCollider2D>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         if(isPlayerInRange == true)
         {
-            
             if(Input.GetKeyDown(KeyCode.E) )
             {
                 anim.SetBool("isOpenning", true);
@@ -40,8 +33,6 @@ public class ChestManager : MonoBehaviour
                     }
                    dropCount--;
                 }
-                
-                
             }
         }
         
@@ -52,8 +43,6 @@ public class ChestManager : MonoBehaviour
         if (other.tag == "Player")
         {
             isPlayerInRange = true;
-            
-              
         }
     }
 
@@ -61,7 +50,6 @@ public class ChestManager : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            
             isPlayerInRange = false;
         }
     }

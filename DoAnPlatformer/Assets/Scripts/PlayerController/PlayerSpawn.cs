@@ -7,6 +7,11 @@ public class PlayerSpawn : MonoBehaviour
 {
     [SerializeField] Transform playerPosition, player;
 
+    private void Awake()
+    {
+        player.GetComponent<PlayerController>().enabled = false;
+    }
+
     void FixedUpdate()
     {
         CheckScenario();
@@ -21,6 +26,8 @@ public class PlayerSpawn : MonoBehaviour
 
             player.GetComponent<PlayerController>().enabled = true;
         }
+
+        Debug.Log(PlayerPrefs.GetString("LastScene"));
     }
 
     void CheckScenario()
@@ -28,16 +35,28 @@ public class PlayerSpawn : MonoBehaviour
         string lastScene = PlayerPrefs.GetString("LastScene");
 
         if (SceneManager.GetActiveScene().name == "Scene0-Town" && lastScene == "Scene1-Forest")
-        {
+        {   //from town to forest
             playerPosition.transform.position = Scene1Door();
             player.GetComponent<PlayerController>().enabled = false;
             Debug.Log("town");
         }
         else if (SceneManager.GetActiveScene().name == "Scene1-Forest" && lastScene == "Scene0-Town")
-        {
+        {   //from forest to town
             playerPosition.transform.position = Scene2Entrace();
             player.GetComponent<PlayerController>().enabled = false;
             Debug.Log("forest");
+        }
+        else if (SceneManager.GetActiveScene().name == "Scene2-MineCave" && lastScene == "Scene1-Forest")
+        {   //from forest to cave
+            playerPosition.transform.position = Scene3Entrace();
+            player.GetComponent<PlayerController>().enabled = false;
+            Debug.Log("cave");
+        }
+        else if (SceneManager.GetActiveScene().name == "Scene1-Forest" && lastScene == "Scene2-MineCave")
+        {   //from cave to forest
+            playerPosition.transform.position = Scene2Exit();
+            player.GetComponent<PlayerController>().enabled = false;
+            Debug.Log("cave");
         }
     }
 
@@ -49,5 +68,15 @@ public class PlayerSpawn : MonoBehaviour
     Vector2 Scene2Entrace()
     {
         return new Vector2(-4.5f, -1.5f);
+    }
+
+    Vector2 Scene2Exit()
+    {
+        return new Vector2(-213f, -4.6f);
+    }
+
+    Vector2 Scene3Entrace()
+    {
+        return new Vector2(1f, -2f);
     }
 }

@@ -9,11 +9,11 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 09701731107a33244b5b3b60ace61ad9
   - enabled: 1
-    path: Assets/Scenes/Scene1-Forest.unity
-    guid: 2ad81190a2078cf4397b17b21088b633
-  - enabled: 1
     path: Assets/Scenes/Scene0-Town.unity
-    guid: 6d741d69bca811b4a85717226c844b52
+    guid: 0512f2ca2e2d39a4199dfd65222a3c2c
+  - enabled: 1
+    path: Assets/Scenes/Scene1-Forest.unity
+    guid: cc425ee69406f8345b36b33642d17450
   - enabled: 1
     path: Assets/Scenes/Scene2-MineCave.unity
     guid: 8836a429d562e2d448f50491ac3bceab
