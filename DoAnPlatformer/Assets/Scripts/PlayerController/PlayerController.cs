@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Globalization;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -7,7 +9,9 @@ public class PlayerController : MonoBehaviour
     public float speed = 10f;
     bool isFacingRight;
     float horizontal;
+    [SerializeField] private int jumpCount;
 
+    bool playSound;
     Rigidbody2D myRB;
     SpriteRenderer sRender;
     Animator anim;
@@ -15,6 +19,8 @@ public class PlayerController : MonoBehaviour
     private float JumpSpeed = 15f;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
+    [SerializeField] AudioSource auSrc,runsSound;
+    [SerializeField] AudioClip jumpSound;
 
 
     void Start()
@@ -36,7 +42,7 @@ public class PlayerController : MonoBehaviour
     public void PlayerMovement()
     {
         myRB.velocity = new Vector2(horizontal * speed , myRB.velocity.y);
-        anim.SetBool("isRunning", true);  
+        anim.SetBool("isRunning", true); 
         FlipX();
     }  
 
@@ -44,30 +50,38 @@ public class PlayerController : MonoBehaviour
     {
         Vector3 theScale = transform.localScale;
         transform.localScale = theScale;
-         if (horizontal > 0f && isFacingRight)
+        if (horizontal > 0f && isFacingRight)
         {
             isFacingRight = !isFacingRight;
             theScale.x *= -1f;
-            transform.Rotate(0f, -180f, 0f);  
+            transform.Rotate(0f, -180f, 0f);
+            runsSound.Play();
+            
         }
         else if(horizontal < 0f && !isFacingRight)
         {
             isFacingRight = !isFacingRight;
             theScale.x *= 1f;
             transform.Rotate(0f, 180f, 0f);
+            runsSound.Play();
+            
         }else if (horizontal == 0f){
              
             anim.SetBool("isRunning", false); 
+            runsSound.Stop();
+            
         }
         
     }
 
     public void Jump(){
-        if(Input.GetButtonDown("Jump")){
+        if(Input.GetButtonDown("Jump") && jumpCount > 0){
+            jumpCount -= 1;
             anim.SetBool("isJump", true);
-           
             myRB.velocity = new Vector2(myRB.velocity.x, JumpSpeed);
+            auSrc.PlayOneShot(jumpSound);
         }
+
           
         
     }
@@ -82,6 +96,7 @@ public class PlayerController : MonoBehaviour
         if(IsGrounded())
         {
             anim.SetBool("isJump", false);
+            jumpCount = 2;
         }
     }
         
