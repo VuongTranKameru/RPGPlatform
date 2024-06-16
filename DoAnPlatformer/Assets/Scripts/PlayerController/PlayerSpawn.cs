@@ -7,30 +7,38 @@ public class PlayerSpawn : MonoBehaviour
 {
     [SerializeField] Transform playerPosition, player;
 
-    void Awake()
+    void FixedUpdate()
     {
-        player.GetComponent<PlayerController>().enabled = false;
-
-        //Debug.Log(SceneManager.GetActiveScene().name);
-        //playerPosition.transform.position = new Vector2(10, 10);
         CheckScenario();
 
-        player.position = playerPosition.transform.position;
+        //if not return to where player from, check make active and lead to near the door
+        if (!player.GetComponent<PlayerController>().enabled)
+        {
+            player.position = playerPosition.transform.position;
 
-        PlayerPrefs.SetString("LastScene", SceneManager.GetActiveScene().name);
-        PlayerPrefs.Save();
+            PlayerPrefs.SetString("LastScene", SceneManager.GetActiveScene().name);
+            PlayerPrefs.Save();
 
-        player.GetComponent<PlayerController>().enabled = true;
+            player.GetComponent<PlayerController>().enabled = true;
+        }
     }
 
     void CheckScenario()
     {
-        string lastScene = PlayerPrefs.GetString("LastScene", null);
+        string lastScene = PlayerPrefs.GetString("LastScene");
 
         if (SceneManager.GetActiveScene().name == "Scene0-Town" && lastScene == "Scene1-Forest")
+        {
             playerPosition.transform.position = Scene1Door();
+            player.GetComponent<PlayerController>().enabled = false;
+            Debug.Log("town");
+        }
         else if (SceneManager.GetActiveScene().name == "Scene1-Forest" && lastScene == "Scene0-Town")
+        {
             playerPosition.transform.position = Scene2Entrace();
+            player.GetComponent<PlayerController>().enabled = false;
+            Debug.Log("forest");
+        }
     }
 
     Vector2 Scene1Door()
