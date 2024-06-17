@@ -1156,12 +1156,12 @@ GameObject:
   - component: {fileID: 1308307622531314637}
   - component: {fileID: 2532707346763207714}
   m_Layer: 5
-  m_Name: DialogSys
+  m_Name: Dialogue Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1790841711687562896
 RectTransform:
   m_ObjectHideFlags: 0
