@@ -6,6 +6,8 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    internal static PlayerController instance;
+
     public float speed = 10f;
     bool isFacingRight;
     float horizontal;
@@ -22,6 +24,12 @@ public class PlayerController : MonoBehaviour
     [SerializeField] AudioSource auSrc,runsSound;
     [SerializeField] AudioClip jumpSound;
 
+    public bool standStillWhileTalk = false;
+
+    private void Awake()
+    {
+        instance = this;
+    }
 
     void Start()
     {
@@ -31,12 +39,18 @@ public class PlayerController : MonoBehaviour
  
     void Update()
     {
-        horizontal = Input.GetAxisRaw("Horizontal");
-        Jump();
-        PlayerMovement();
-        
-        ResetJump(); 
-        
+        if (!standStillWhileTalk) //khi noi chuyen voi npc
+        {
+            horizontal = Input.GetAxisRaw("Horizontal");
+            Jump();
+            PlayerMovement();
+
+            ResetJump();
+        }
+        else
+        {
+            myRB.velocity = Vector2.zero;
+        }
     }
     
     public void PlayerMovement()
@@ -65,13 +79,12 @@ public class PlayerController : MonoBehaviour
             transform.Rotate(0f, 180f, 0f);
             runsSound.Play();
             
-        }else if (horizontal == 0f){
-             
+        }
+        else if (horizontal == 0f)
+        {
             anim.SetBool("isRunning", false); 
             runsSound.Stop();
-            
         }
-        
     }
 
     public void Jump(){
@@ -81,9 +94,6 @@ public class PlayerController : MonoBehaviour
             myRB.velocity = new Vector2(myRB.velocity.x, JumpSpeed);
             auSrc.PlayOneShot(jumpSound);
         }
-
-          
-        
     }
 
     private bool IsGrounded()

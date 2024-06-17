@@ -10,10 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 626553099340610585}
   - component: {fileID: 7306884786867657865}
-  - component: {fileID: 3249256104462977340}
+  - component: {fileID: 9158887378807681043}
   - component: {fileID: 6131815923762386343}
   - component: {fileID: 1518025182293089561}
   - component: {fileID: 2786899780283308468}
+  - component: {fileID: 4436969114853242313}
   m_Layer: 0
   m_Name: Bearedman_NPC
   m_TagString: NPC
@@ -32,10 +33,9 @@ Transform:
   m_LocalPosition: {x: 3.04, y: -1.46, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 244863219237916402}
+  m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &7306884786867657865
 SpriteRenderer:
@@ -89,7 +89,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &3249256104462977340
+--- !u!114 &9158887378807681043
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -101,12 +101,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3540d192a6a93b48a8d6adfcbbdc697, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialoguePanel: {fileID: 1109597223714111133}
-  dialogueText: {fileID: 4193811206890274524}
-  dialogue:
-  - Talk 1
-  - Talk 2
-  wordSpeed: 0.06
+  wordSpeed: 0.1
   playerIsClose: 0
 --- !u!61 &6131815923762386343
 BoxCollider2D:
@@ -209,101 +204,30 @@ CapsuleCollider2D:
   m_Offset: {x: 0.02895379, y: 0.03144014}
   m_Size: {x: 1.1677427, y: 2.5556548}
   m_Direction: 0
---- !u!1001 &42023879625233096
-PrefabInstance:
+--- !u!50 &4436969114853242313
+Rigidbody2D:
+  serializedVersion: 4
   m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 626553099340610585}
-    m_Modifications:
-    - target: {fileID: 283904562402253882, guid: e6a83cb3505c44143bb51745dcd75a59, type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 283904562402253882, guid: e6a83cb3505c44143bb51745dcd75a59, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 321.15985
-      objectReference: {fileID: 0}
-    - target: {fileID: 283904562402253882, guid: e6a83cb3505c44143bb51745dcd75a59, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 120.78705
-      objectReference: {fileID: 0}
-    - target: {fileID: 283904562402253882, guid: e6a83cb3505c44143bb51745dcd75a59, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 283904562402253882, guid: e6a83cb3505c44143bb51745dcd75a59, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 283904562402253882, guid: e6a83cb3505c44143bb51745dcd75a59, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 283904562402253882, guid: e6a83cb3505c44143bb51745dcd75a59, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 283904562402253882, guid: e6a83cb3505c44143bb51745dcd75a59, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 283904562402253882, guid: e6a83cb3505c44143bb51745dcd75a59, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 283904562402253882, guid: e6a83cb3505c44143bb51745dcd75a59, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 283904562402253882, guid: e6a83cb3505c44143bb51745dcd75a59, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2822026966479922457, guid: e6a83cb3505c44143bb51745dcd75a59, type: 3}
-      propertyPath: m_Name
-      value: DialogShopSys
-      objectReference: {fileID: 0}
-    - target: {fileID: 2822026966479922457, guid: e6a83cb3505c44143bb51745dcd75a59, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3605655574387885511, guid: e6a83cb3505c44143bb51745dcd75a59, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4438089485768668766, guid: e6a83cb3505c44143bb51745dcd75a59, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8700592302080158753, guid: e6a83cb3505c44143bb51745dcd75a59, type: 3}
-      propertyPath: m_TargetGraphic
-      value: 
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: e6a83cb3505c44143bb51745dcd75a59, type: 3}
---- !u!4 &244863219237916402 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 283904562402253882, guid: e6a83cb3505c44143bb51745dcd75a59, type: 3}
-  m_PrefabInstance: {fileID: 42023879625233096}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1109597223714111133 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1149359865296612437, guid: e6a83cb3505c44143bb51745dcd75a59, type: 3}
-  m_PrefabInstance: {fileID: 42023879625233096}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &4193811206890274524 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4226106447607000084, guid: e6a83cb3505c44143bb51745dcd75a59, type: 3}
-  m_PrefabInstance: {fileID: 42023879625233096}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_GameObject: {fileID: 563964639471321108}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
