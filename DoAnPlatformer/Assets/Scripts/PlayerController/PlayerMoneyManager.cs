@@ -9,13 +9,11 @@ public class PlayerMoneyManager : MonoBehaviour
     public int gold;
     public TextMeshProUGUI goldText;
 
-    // Start is called before the first frame update
     void Start()
     {
         instance = this;
     }
 
-    // Update is called once per frame
     void Update()
     {
         UpdateGold();
