@@ -70,7 +70,16 @@ MonoBehaviour:
 
     D or arrow right: right
 
-    Space: jump'
+    Space: jump
+
+    Left
+    mouse: attack
+
+    I: inventory
+
+    E: interact
+
+    P: pause'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5fa9c53d11347d14ab5fe5a7ed524cc5, type: 2}
   m_sharedMaterial: {fileID: 8617869204772272234, guid: 5fa9c53d11347d14ab5fe5a7ed524cc5, type: 2}
@@ -104,7 +113,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0

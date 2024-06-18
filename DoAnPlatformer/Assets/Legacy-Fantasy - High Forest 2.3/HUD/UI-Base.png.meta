@@ -547,12 +547,12 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 80
-        y: 80
+        y: 82
         width: 320
-        height: 320
+        height: 78
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 2, y: 0, z: 3, w: 2}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -615,7 +615,7 @@ TextureImporter:
         height: 10
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 4, y: 0, z: 0, w: 3}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -636,7 +636,7 @@ TextureImporter:
         height: 20
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 8, y: 0, z: 0, w: 3}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -1424,6 +1424,48 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: UI-Base_100
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 725
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 10, y: 0, z: 10, w: 10}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9140c2134286f7c4aac3eca489026c37
+      internalID: 1512153219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI-Base_101
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 885
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 10, y: 0, z: 10, w: 10}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeedb378a0d82ad41bd0c07340c744c2
+      internalID: 1096718497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -1439,6 +1481,8 @@ TextureImporter:
       Mapmini_1: -791060539
       UI-Base_0: -881430410
       UI-Base_10: 414532452
+      UI-Base_100: 1512153219
+      UI-Base_101: 1096718497
       UI-Base_11: -746237941
       UI-Base_12: 1786003044
       UI-Base_13: 558399207

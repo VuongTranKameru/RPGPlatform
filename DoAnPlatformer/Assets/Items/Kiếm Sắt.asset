@@ -13,11 +13,13 @@ MonoBehaviour:
   m_Name: "Ki\u1EBFm S\u1EAFt"
   m_EditorClassIdentifier: 
   displayName: "Ki\u1EBFm S\u1EAFt"
-  description: "Ki\u1EBFm T\xE2n th\u1EE7"
+  description: "Ki\u1EBFm t\xE2n th\u1EE7"
   type: 1
   icon: {fileID: 21300000, guid: 55b7795ee396eae4481858956163c8f0, type: 3}
   dropPrefab: {fileID: 8280614442814543628, guid: 5d1d330bc73e26b49b7ae3b52359e7e7, type: 3}
   canStack: 0
   maxStackAmount: 0
-  consumables: []
+  consumables:
+  - type: 2
+    value: 10
   equipPrefab: {fileID: 1936101303312775715, guid: 966761da2500ae245b23e526e6554851, type: 3}
