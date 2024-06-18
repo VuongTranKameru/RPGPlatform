@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class enemyHealth : MonoBehaviour,IDamageable
+public class EnemyHealth : MonoBehaviour,IDamageable
 {
     
     [Header("Health")]
