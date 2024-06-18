@@ -106,7 +106,7 @@ public class PlayerController : MonoBehaviour
         if(IsGrounded())
         {
             anim.SetBool("isJump", false);
-            jumpCount = 2;
+            jumpCount = 1;
         }
     }
         
