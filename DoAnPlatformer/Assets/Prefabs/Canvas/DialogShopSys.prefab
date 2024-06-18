@@ -885,6 +885,8 @@ MonoBehaviour:
   dialogueText: {fileID: 4226106447607000084}
   dialogue:
   - mua ko
+  continueBtn: {fileID: 0}
+  exitBtn: {fileID: 0}
 --- !u!1 &2909456005626981012
 GameObject:
   m_ObjectHideFlags: 0
@@ -2365,7 +2367,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7357846330552663279, guid: a587c631c93577f44ab5c98e55971ed3, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
