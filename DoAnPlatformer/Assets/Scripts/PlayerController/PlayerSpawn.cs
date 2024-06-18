@@ -62,12 +62,12 @@ public class PlayerSpawn : MonoBehaviour
 
     Vector2 Scene1Door()
     {
-        return new Vector2(80.7f, -2.7f);
+        return new Vector2(80f, -2.5f);
     }
 
     Vector2 Scene2Entrace()
     {
-        return new Vector2(-4.5f, -1.5f);
+        return new Vector2(81f, -2.5f);
     }
 
     Vector2 Scene2Exit()
