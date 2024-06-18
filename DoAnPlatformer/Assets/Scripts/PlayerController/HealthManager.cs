@@ -95,6 +95,7 @@ public class HealthManager : MonoBehaviour,IDamageable
     public void IncreaseHealth(float amount)
     {
         maxHealth += amount;
+        currentHealth = maxHealth;
     }
 }
 
