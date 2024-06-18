@@ -13,11 +13,12 @@ public enum DialogueType
 public class DiallgueData : ScriptableObject
 {
     [Header("Info")]
-    [SerializeField] internal GameObject dialoguePanel;
-    [SerializeField] internal TMP_Text dialogueText;
+    [SerializeField] internal GameObject nameNPC;
     [SerializeField] internal string[] dialogue;
     [SerializeField] internal DialogueType type;
+    /*[SerializeField] internal GameObject dialoguePanel;
+    [SerializeField] internal TMP_Text dialogueText;*/
 
-    [Header("Optional")]
-    [SerializeField] internal GameObject continueBtn, exitBtn;
+    /*[Header("Optional")]
+    [SerializeField] internal GameObject continueBtn, exitBtn;*/
 }
