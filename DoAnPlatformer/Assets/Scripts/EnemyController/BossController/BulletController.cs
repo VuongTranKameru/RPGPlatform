@@ -25,11 +25,7 @@ public class BulletController : MonoBehaviour
 
         
     }
-    void Update()
-    {
-        
-    }
-
+   
     void OnCollisionEnter2D(Collision2D other)
     {
         if(other.gameObject.CompareTag("Player") || other.gameObject.CompareTag("Ground"))
