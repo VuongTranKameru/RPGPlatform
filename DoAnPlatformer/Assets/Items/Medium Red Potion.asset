@@ -17,7 +17,7 @@ MonoBehaviour:
     ch\u01A1i"
   type: 2
   icon: {fileID: 21300000, guid: a7e1765d670b8be479444e44f5dccc75, type: 3}
-  dropPrefab: {fileID: 1957278248252307241, guid: 7661aa5de66c71c48a60cae599be7e32, type: 3}
+  dropPrefab: {fileID: 1957278248252307241, guid: aa48a6170965d1f4bb024e7e49de7a5b, type: 3}
   canStack: 1
   maxStackAmount: 64
   consumables:

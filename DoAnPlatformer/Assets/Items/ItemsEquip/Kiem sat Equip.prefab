@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2031004756876572466}
   - component: {fileID: 7860013636893562823}
   m_Layer: 8
-  m_Name: KnifeEquip
+  m_Name: Kiem sat Equip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
