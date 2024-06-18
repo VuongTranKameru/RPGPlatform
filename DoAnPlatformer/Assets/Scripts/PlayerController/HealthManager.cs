@@ -78,6 +78,7 @@ public class HealthManager : MonoBehaviour,IDamageable
     {
         Debug.Log("Player is Dead");
     }
+
     private IEnumerator Invunerability()
     {
         Physics2D.IgnoreLayerCollision(3, 8, true);
@@ -89,6 +90,12 @@ public class HealthManager : MonoBehaviour,IDamageable
             yield return new WaitForSeconds(iFramesDuration / (numberOfFlashes * 2));
         }
         Physics2D.IgnoreLayerCollision(3, 8, false);
+    }
+
+    public void IncreaseHealth(float amount)
+    {
+        maxHealth += amount;
+        currentHealth = maxHealth;
     }
 }
 

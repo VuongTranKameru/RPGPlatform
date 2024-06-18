@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 716d34ba2b2d0cb48a1013a4a56a5dbb, type: 3}
+  m_Name: "Ki\u1EBFm \u0110\u1ED3ng"
+  m_EditorClassIdentifier: 
+  displayName: "Ki\u1EBFm \u0110\u1ED3ng"
+  description: "Ki\u1EBFm l\xE0m t\u1EEB \u0111\u1ED3ng, \u0111\xE1nh t\u1EA7m xa
+    h\u01A1n \u0111ao"
+  type: 1
+  icon: {fileID: 21300000, guid: 58c4d8bf4cecba84c922a8da01d50e12, type: 3}
+  dropPrefab: {fileID: 8280614442814543628, guid: 5d1d330bc73e26b49b7ae3b52359e7e7, type: 3}
+  canStack: 0
+  maxStackAmount: 0
+  consumables:
+  - type: 2
+    value: 30
+  equipPrefab: {fileID: 1936101303312775715, guid: 966761da2500ae245b23e526e6554851, type: 3}
