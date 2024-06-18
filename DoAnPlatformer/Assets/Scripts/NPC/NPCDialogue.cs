@@ -42,11 +42,11 @@ public class NPCDialogue : MonoBehaviour
                 narrative.dialoguePanel.SetActive(true);
                 narrative.continueBtn.SetActive(true);
                 // chay line dialog dau tien
-                StartCoroutine(Typing(endLine)); 
+                StartCoroutine(Typing(endLine));
+                anim.SetBool("Talking", false);
             }
             else if (narrative.dialoguePanel.activeInHierarchy && Input.GetKeyDown(KeyCode.E) && doneText)
             {
-                anim.SetBool("Talking", false);
                 NextLine(); //chay dong 2nd tro len
             }
         }
