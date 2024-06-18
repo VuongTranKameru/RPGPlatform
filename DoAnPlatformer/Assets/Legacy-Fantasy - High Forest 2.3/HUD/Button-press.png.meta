@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1ff587c4dfbb6cd4a95e8d37e4f45657
+guid: fbf5208fdb46a8148b2f8c460ff8c608
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 15
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -123,106 +123,85 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: dungeonui.v1_0
+      name: Button-press_0
       rect:
         serializedVersion: 2
-        x: 24
-        y: 300
-        width: 24
-        height: 24
+        x: 0
+        y: 49
+        width: 57
+        height: 3
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 6, y: 6, z: 6, w: 6}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bbfd26ce453d84c4dbac404da6c0ef25
-      internalID: 1916589056
+      spriteID: 552800913e24da64c87b6319af19e353
+      internalID: 755312052
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dungeonui.v1_1
+      name: Button-press_1
       rect:
         serializedVersion: 2
-        x: 61
-        y: 273
-        width: 14
-        height: 14
+        x: 0
+        y: 32
+        width: 58
+        height: 5
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 7, y: 7, z: 7, w: 7}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c50055d7b9651c643a198b0c5f5a389d
-      internalID: 433206845
+      spriteID: e28259b67d9cf8a4293a341df6dcb91e
+      internalID: 51505916
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dungeonui.v1_2
+      name: Button-press_2
       rect:
         serializedVersion: 2
-        x: 64
-        y: 299
-        width: 40
-        height: 25
+        x: 0
+        y: 81
+        width: 58
+        height: 3
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 6, y: 7, z: 6, w: 7}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 12a8e24e54e7483459ef0ce9660dc28d
-      internalID: -1978671905
+      spriteID: 59b0c03656095e640978ee3a626e71ec
+      internalID: -1422850110
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dungeonui.v1_3
+      name: Button-press_3
       rect:
         serializedVersion: 2
-        x: 80
-        y: 268
-        width: 24
-        height: 24
+        x: 0
+        y: 64
+        width: 58
+        height: 5
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 12, y: 12, z: 12, w: 12}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 73a3a6246d8936948acf41d9b150b175
-      internalID: 14365446
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dungeonui.v1_4
-      rect:
-        serializedVersion: 2
-        x: 24
-        y: 267
-        width: 23
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 4, y: 2, z: 4, w: 2}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 463f399fd7ed76e4681aadc2bc9cc247
-      internalID: -1188349316
+      spriteID: 1fa1c7f216b409049ae8a8ec9dd652a2
+      internalID: 787229848
       vertices: []
       indices: 
       edges: []
@@ -238,11 +217,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      dungeonui.v1_0: 1916589056
-      dungeonui.v1_1: 433206845
-      dungeonui.v1_2: -1978671905
-      dungeonui.v1_3: 14365446
-      dungeonui.v1_4: -1188349316
+      Button-press_0: 755312052
+      Button-press_1: 51505916
+      Button-press_2: -1422850110
+      Button-press_3: 787229848
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

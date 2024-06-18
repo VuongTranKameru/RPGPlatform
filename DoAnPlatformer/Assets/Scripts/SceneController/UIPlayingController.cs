@@ -4,8 +4,11 @@ using UnityEngine;
 
 public class UIPlayingController : MonoBehaviour
 {
+    [Header("UI")]
     [SerializeField] GameObject PauseMenu;
     [SerializeField] GameObject InventoryCanvas;
+
+    [Header("Audio")]
     [SerializeField] AudioSource auSrc;
     [SerializeField] AudioClip auOpenInvenButton,auPause,auUnpause;
 
