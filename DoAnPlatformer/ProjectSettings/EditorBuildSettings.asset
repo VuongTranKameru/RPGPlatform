@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Scene-IntroTown.unity
     guid: 0512f2ca2e2d39a4199dfd65222a3c2c
   - enabled: 1
+    path: Assets/Scenes/Scene0-Town.unity
+    guid: d06c352fa5e82e2458e1eb8284034bd3
+  - enabled: 1
     path: Assets/Scenes/Scene1-Forest.unity
     guid: cc425ee69406f8345b36b33642d17450
   - enabled: 1
