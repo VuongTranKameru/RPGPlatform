@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
     bool isFacingRight;
     float horizontal;
     [SerializeField] private int jumpCount;
+    int jumpBuff = 0;
 
     bool playSound;
     Rigidbody2D myRB;
@@ -96,18 +97,24 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private bool IsGrounded()
+    bool IsGrounded()
     {
         return Physics2D.Raycast(groundCheck.position, Vector2.down, 1 ,groundLayer);
     }
 
-    private void ResetJump()
+    void ResetJump()
     {
         if(IsGrounded())
         {
             anim.SetBool("isJump", false);
-            jumpCount = 1;
+            jumpCount = 1 + jumpBuff;
         }
     }
-        
+    
+    //for item
+    public int JumpMore(float buffIn)
+    {
+        jumpBuff = ((int)buffIn);
+        return jumpBuff;
+    }
 }

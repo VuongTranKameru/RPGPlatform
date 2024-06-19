@@ -7920,9 +7920,9 @@ MonoBehaviour:
   m_fontSize: 53.15
   m_fontSizeBase: 53.15
   m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 35
+  m_fontSizeMax: 53
   m_fontStyle: 17
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
