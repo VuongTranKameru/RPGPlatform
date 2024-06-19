@@ -7,18 +7,11 @@ public class BossShooting : MonoBehaviour
     public Transform bulletPos;
     public GameObject bulletPrefab;
     public float timer;
-    bool playerInRange;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
     void Update()
     {
-        timer = Time.time;
+        timer += Time.deltaTime;
 
         if(timer > 2)
         {
@@ -29,15 +22,7 @@ public class BossShooting : MonoBehaviour
 
     public void Shoot()
     {
-        Instantiate(bulletPrefab,bulletPos.position,Quaternion.identity);
+         Instantiate(bulletPrefab, bulletPos.position, Quaternion.identity);   
     }
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        playerInRange = true;
-    }
-
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        playerInRange = false;
-    }
+   
 }
