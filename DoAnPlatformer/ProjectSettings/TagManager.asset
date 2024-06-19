@@ -10,6 +10,7 @@ TagManager:
   - Enemy
   - Event
   - StopElevate
+  - Coin
   layers:
   - Default
   - TransparentFX

@@ -3525,7 +3525,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tile_162
+      name: Coin_0
       rect:
         serializedVersion: 2
         x: 1225
@@ -4517,6 +4517,7 @@ TextureImporter:
       Bridge_4: -34138761
       Bridge_5: 376063363
       Bridge_6: -447507236
+      Coin_0: 1448511668
       Decorate_0: 102144768
       Grass_0: 1884389860
       Grass_1: -1448094514
@@ -4626,7 +4627,6 @@ TextureImporter:
       Tile_159: 413308435
       Tile_160: 1719700660
       Tile_161: 660261545
-      Tile_162: -1760314361
       Tile_163: 1448511668
       Tile_164: -1844145751
       Tile_165: -1987898325
