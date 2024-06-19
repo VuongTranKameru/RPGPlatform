@@ -9,7 +9,7 @@ public class EnemyHealth : MonoBehaviour,IDamageable
     [SerializeField] private float startingHealth;
     public float currentHealth ;
     private Animator anim;
-    private bool dead;
+    
 
     
     void Start()
