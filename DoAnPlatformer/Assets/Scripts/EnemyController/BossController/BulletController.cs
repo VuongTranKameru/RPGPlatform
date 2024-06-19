@@ -30,16 +30,17 @@ public class BulletController : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Player") || other.gameObject.CompareTag("Ground"))
         {
-           SetAnim();
-           Destroy(gameObject, 0.5f);
+           
+            anim.SetBool("isCo", true);
+            
 
         }
     }
 
     public void SetAnim()
     {
-        anim.SetBool("isCo", true);
-       
+        Destroy(gameObject);
+
     }
 
    
