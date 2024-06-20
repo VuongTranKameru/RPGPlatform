@@ -4,16 +4,18 @@ using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour,IDamageable
 {
-    
+    public static EnemyHealth instance;
     [Header("Health")]
-    [SerializeField] private float startingHealth;
+    [SerializeField] public float startingHealth;
     public float currentHealth ;
     private Animator anim;
+    
     
 
     
     void Start()
     {
+        instance = this;
         currentHealth = startingHealth;
         anim = GetComponent<Animator>();
     }

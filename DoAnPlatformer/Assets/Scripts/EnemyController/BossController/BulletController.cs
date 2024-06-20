@@ -5,7 +5,7 @@ using UnityEngine;
 public class BulletController : MonoBehaviour
 {
     private GameObject player;
-    public float speed = 20f;
+    public float speed;
     [SerializeField] Rigidbody2D rb;
     [SerializeField] Animator anim;
     
@@ -29,10 +29,8 @@ public class BulletController : MonoBehaviour
     void OnCollisionEnter2D(Collision2D other)
     {
         if(other.gameObject.CompareTag("Player") || other.gameObject.CompareTag("Ground"))
-        {
-           
+        {          
             anim.SetBool("isCo", true);
-            
 
         }
     }
