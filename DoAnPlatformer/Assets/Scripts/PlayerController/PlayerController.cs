@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour
     public float speed = 10f;
     bool isFacingRight;
     float horizontal;
-    [SerializeField] private int jumpCount;
+    [SerializeField] internal int jumpCount;
     int jumpBuff = 0;
 
     bool playSound;

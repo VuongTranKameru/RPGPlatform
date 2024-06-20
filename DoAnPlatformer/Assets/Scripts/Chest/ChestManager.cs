@@ -6,15 +6,15 @@ public class ChestManager : MonoBehaviour
 {
     private bool isPlayerInRange;
     public ItemData[] dropGift;
-    public int dropCount = 1;
-    Animator anim;
-    BoxCollider2D box;
+    private int dropCount = 1;
     public Transform dropPosition;
+
+    Animator anim;
+    [SerializeField] AudioClip auOpen;
 
     void Start()
     {
         anim = GetComponent<Animator>();
-        box = GetComponent<BoxCollider2D>();
     }
 
     void Update()
@@ -24,6 +24,7 @@ public class ChestManager : MonoBehaviour
             if(Input.GetKeyDown(KeyCode.E) )
             {
                 anim.SetBool("isOpenning", true);
+                AudioSource.PlayClipAtPoint(auOpen, Camera.main.transform.position);
                 
                 if(dropCount > 0)
                 {

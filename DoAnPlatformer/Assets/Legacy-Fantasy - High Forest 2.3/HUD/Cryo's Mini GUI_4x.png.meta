@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a9da46440aaf78042be05d3f89a6a499
+guid: e0f94b9b18d12084683a476eb91ac74b
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,160 +123,307 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: demon-attack_0
+      name: Cryo's Mini GUI_4x_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 2
-        width: 240
-        height: 190
+        x: 8
+        y: 232
+        width: 80
+        height: 80
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 24, y: 24, z: 24, w: 24}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 22ab24a2b09119f4c9d1b079846a0e4c
-      internalID: 610300581
+      spriteID: 83243e2ebca7ac44da1c61c0a0309d5e
+      internalID: 1718180632
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: demon-attack_1
+      name: Cryo's Mini GUI_4x_1
       rect:
         serializedVersion: 2
-        x: 240
-        y: 2
-        width: 240
-        height: 190
+        x: 384
+        y: 352
+        width: 96
+        height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 48, y: 48, z: 48, w: 48}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 73d61b6cb4ca54b459a89a3448b6f9c1
-      internalID: -1484075883
+      spriteID: 09f57b34f93e9b645b7017e491d4ed24
+      internalID: -1862577625
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: demon-attack_2
+      name: Cryo's Mini GUI_4x_2
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 356
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 12, y: 12, z: 12, w: 12}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9d904472f2f9c04696189a88d80209d
+      internalID: -596690421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cryo's Mini GUI_4x_3
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 324
+        width: 88
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23ac98126bc69a9479c9f919f4c85a8b
+      internalID: -110099440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cryo's Mini GUI_4x_4
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 324
+        width: 88
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76f38a708d4621c4886081c0f714b707
+      internalID: 1234892092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cryo's Mini GUI Icon_0
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 420
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 831492523d32ab44b8c22247a82b7296
+      internalID: -696330434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cryo's Mini GUI Icon_1
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 384
+        width: 32
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14cbdd5d2cfed5a4490395acc9a932cd
+      internalID: 1595803127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cryo's Mini GUI Icon_2
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93223ccb46b2580419cfbd421d41d0dd
+      internalID: 1374808509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cryo's Mini GUI Icon_3
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 324
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdfa1be92f9799641ad58a8ec03d54df
+      internalID: -1364787952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cryo's Mini GUI Icon_4
       rect:
         serializedVersion: 2
         x: 480
-        y: 2
-        width: 240
-        height: 190
+        y: 416
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9a3fcefabcc6bf147a569840c27e4317
-      internalID: -874075199
+      spriteID: 5227e47b92b5f444782a7ee7e2794fc0
+      internalID: 918740685
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: demon-attack_3
+      name: Cryo's Mini GUI Stats_0
       rect:
         serializedVersion: 2
-        x: 720
-        y: 2
-        width: 240
-        height: 190
+        x: 256
+        y: 160
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e5964e77c6b0ad1468cd63bfb772e12f
-      internalID: -2115783505
+      spriteID: 7a0a3d714c445d547a7c750c77fe701c
+      internalID: 338700403
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: demon-attack_4
+      name: Cryo's Mini GUI Stats_1
       rect:
         serializedVersion: 2
-        x: 960
-        y: 2
-        width: 240
-        height: 190
+        x: 320
+        y: 160
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5b3de409ea820434e9b11a5541953b5c
-      internalID: -1099279427
+      spriteID: d7d02d370752ed044953565cccbe12c8
+      internalID: -984006719
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: demon-attack_5
+      name: Cryo's Mini GUI Stats_2
       rect:
         serializedVersion: 2
-        x: 1200
-        y: 2
-        width: 240
-        height: 190
+        x: 416
+        y: 128
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fcd1793ab1685a64695f9c02b9174734
-      internalID: 103608397
+      spriteID: bab0b168eca6da041ab65cc56ee69a39
+      internalID: -1384140742
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: demon-attack_6
+      name: Cryo's Mini GUI Stats_3
       rect:
         serializedVersion: 2
-        x: 1440
-        y: 2
-        width: 240
-        height: 190
+        x: 288
+        y: 160
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff7a0923016d6d949a00a0c932bd95e3
-      internalID: -349468811
+      spriteID: 0c0bc41866aa6864ab1a7c06e6402da3
+      internalID: -296965718
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: demon-attack_7
+      name: Cryo's Mini GUI Icon_5
       rect:
         serializedVersion: 2
-        x: 1680
-        y: 2
-        width: 240
-        height: 190
+        x: 484
+        y: 384
+        width: 24
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -284,71 +431,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 32b1a8d2c35550b4e83d1da003e096d3
-      internalID: 162667213
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: demon-attack_8
-      rect:
-        serializedVersion: 2
-        x: 1920
-        y: 2
-        width: 240
-        height: 190
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9bd0037a448e06543ad8b165c054b56f
-      internalID: 977106874
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: demon-attack_9
-      rect:
-        serializedVersion: 2
-        x: 2160
-        y: 2
-        width: 240
-        height: 190
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ecba0a6b81c383843898f193b37a661e
-      internalID: -1796669782
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: demon-attack_10
-      rect:
-        serializedVersion: 2
-        x: 2400
-        y: 2
-        width: 240
-        height: 190
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7d3660d852e62bd4f8ae3e99762477bb
-      internalID: 283834818
+      spriteID: cfb23b8e8b0d44943adda4ac8a5e3885
+      internalID: -132544845
       vertices: []
       indices: 
       edges: []
@@ -364,17 +448,21 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      demon-attack_0: 610300581
-      demon-attack_1: -1484075883
-      demon-attack_10: 283834818
-      demon-attack_2: -874075199
-      demon-attack_3: -2115783505
-      demon-attack_4: -1099279427
-      demon-attack_5: 103608397
-      demon-attack_6: -349468811
-      demon-attack_7: 162667213
-      demon-attack_8: 977106874
-      demon-attack_9: -1796669782
+      Cryo's Mini GUI Icon_0: -696330434
+      Cryo's Mini GUI Icon_1: 1595803127
+      Cryo's Mini GUI Icon_2: 1374808509
+      Cryo's Mini GUI Icon_3: -1364787952
+      Cryo's Mini GUI Icon_4: 918740685
+      Cryo's Mini GUI Icon_5: -132544845
+      Cryo's Mini GUI Stats_0: 338700403
+      Cryo's Mini GUI Stats_1: -984006719
+      Cryo's Mini GUI Stats_2: -1384140742
+      Cryo's Mini GUI Stats_3: -296965718
+      Cryo's Mini GUI_4x_0: 1718180632
+      Cryo's Mini GUI_4x_1: 1116090057
+      Cryo's Mini GUI_4x_2: -1862577625
+      Cryo's Mini GUI_4x_3: -596690421
+      Cryo's Mini GUI_4x_4: -110099440
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
