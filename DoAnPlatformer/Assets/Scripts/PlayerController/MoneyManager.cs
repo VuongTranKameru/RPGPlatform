@@ -22,7 +22,7 @@ public class MoneyManager : MonoBehaviour
         //Debug.Log(gold);
         
 
-        UpdateGold();
+        //UpdateGold();
     }
 
     public void UpdateGold()
