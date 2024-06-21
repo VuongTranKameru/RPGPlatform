@@ -3,27 +3,12 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-public class NPC_UI_DialogNarrative : MonoBehaviour
+public class NPC_UI_DialogShop : MonoBehaviour
 {
-    [SerializeField] DiallgueData dialogueScript;
-
     [SerializeField] internal GameObject dialoguePanel;
     [SerializeField] internal TMP_Text dialogueText;
-    internal string[] dialogue;
+    [SerializeField] internal string[] dialogue;
     [SerializeField] internal GameObject continueBtn, exitBtn;
-
-    public string[] Dialogue
-    {
-        get
-        {
-            return dialogueScript.dialogue;
-        }
-
-        set
-        {
-            dialogue = value;
-        }
-    }
 
     private void Start()
     {

@@ -18,7 +18,4 @@ public class DiallgueData : ScriptableObject
     [SerializeField] internal DialogueType type;
     /*[SerializeField] internal GameObject dialoguePanel;
     [SerializeField] internal TMP_Text dialogueText;*/
-
-    /*[Header("Optional")]
-    [SerializeField] internal GameObject continueBtn, exitBtn;*/
 }

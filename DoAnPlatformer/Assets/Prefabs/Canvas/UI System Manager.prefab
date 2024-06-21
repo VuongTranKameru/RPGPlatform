@@ -11879,7 +11879,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb78cac17ab00564eb3c2a36f3cb49f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PauseMenu: {fileID: 8669832427305636969}
+  PauseMenu: {fileID: 6242754034429863769}
   InventoryCanvas: {fileID: 2883537663718373003}
   StatusMenu: {fileID: 8669832427305636969}
   auSrc: {fileID: 4746495509380377699}
@@ -20627,7 +20627,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   statusWindow: {fileID: 180220507129372710}
-  checkRate: 0.05
   hpMax: {fileID: 1415402850965210718}
   hpCur: {fileID: 8378302724203167510}
   damge: {fileID: 671828417282209520}
