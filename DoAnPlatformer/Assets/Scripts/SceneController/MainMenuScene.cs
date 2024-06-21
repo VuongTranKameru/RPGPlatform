@@ -14,7 +14,7 @@ public class MainMenuScene : MonoBehaviour
 
     public void StartGameButton()
     {
-        SceneManager.LoadScene("Scene0-Town");
+        SceneManager.LoadScene("Scene-IntroTown");
         Time.timeScale = 1;
     }
 
