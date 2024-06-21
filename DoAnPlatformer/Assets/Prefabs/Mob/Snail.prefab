@@ -50,7 +50,9 @@ MonoBehaviour:
   enemy: {fileID: 1990252450696041778}
   dropGift:
   - {fileID: 11400000, guid: acbdbdcfafa9ed3498919b5c966e1f3a, type: 2}
-  - {fileID: 11400000, guid: e79ab6efc673b86408b2cfcf9d10d0ec, type: 2}
+  - {fileID: 11400000, guid: c707d7cb1d75a0144a48b40d8d91d31c, type: 2}
+  - {fileID: 11400000, guid: 167597d75d4aed841b7ac2467b898370, type: 2}
+  - {fileID: 11400000, guid: c74c27feb7a8399499e31d766a78b41c, type: 2}
   dropPosition: {fileID: 639644100178888004}
   auFallOut: {fileID: 8300000, guid: 566d2ea6240b489479a6e9fd608c2621, type: 3}
 --- !u!1 &89364409404415470

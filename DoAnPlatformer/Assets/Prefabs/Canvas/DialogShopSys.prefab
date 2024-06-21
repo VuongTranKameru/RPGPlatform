@@ -997,10 +997,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cff76ea7509b36f409768bb1aa82f983, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialogueScript: {fileID: 11400000, guid: a1352ccba7794a342b216e46d98d4ff2, type: 2}
   dialoguePanel: {fileID: 4438089485768668766}
   dialogueText: {fileID: 4226106447607000084}
-  dialogue:
-  - mua ko
   continueBtn: {fileID: 0}
   exitBtn: {fileID: 0}
 --- !u!1 &2909456005626981012
@@ -1558,7 +1557,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &6649324903849837014
 RectTransform:
   m_ObjectHideFlags: 0
