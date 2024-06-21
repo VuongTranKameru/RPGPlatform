@@ -56,7 +56,7 @@ public class PlayerSpawn : MonoBehaviour
         {   //from cave to forest
             playerPosition.transform.position = Scene2Exit();
             player.GetComponent<PlayerController>().enabled = false;
-            Debug.Log("cave");
+            Debug.Log("forest");
         }
     }
 
@@ -67,12 +67,12 @@ public class PlayerSpawn : MonoBehaviour
 
     Vector2 Scene2Entrace()
     {
-        return new Vector2(81f, -2.5f);
+        return new Vector2(81f, -4.8f);
     }
 
     Vector2 Scene2Exit()
     {
-        return new Vector2(-213f, -4.6f);
+        return new Vector2(213f, -4.6f);
     }
 
     Vector2 Scene3Entrace()

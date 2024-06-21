@@ -22,10 +22,10 @@ public class ItemsBuy : MonoBehaviour
 
     public void BuyItem()
     {
-        if(itemCost <= PlayerMoneyManager.instance.gold)
+        if(itemCost <= MoneyManager.instance.gold)
         {
-            PlayerMoneyManager.instance.gold -= itemCost;
-            PlayerMoneyManager.instance.UpdateGold();
+            MoneyManager.instance.gold -= itemCost;
+            MoneyManager.instance.UpdateGold();
             auSrc.Play();
             Inventory.instance.AddItem(itemToBuy);
         }
