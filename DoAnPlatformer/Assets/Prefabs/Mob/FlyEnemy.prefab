@@ -217,7 +217,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77323567da0740245a9243bdbeaec843, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingHealth: 1
+  startingHealth: 45
   currentHealth: 0
 --- !u!1 &1235798344503350898
 GameObject:
@@ -320,6 +320,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8896373416397831052}
+  - component: {fileID: 2381717865341178548}
   m_Layer: 0
   m_Name: FlyEnemy
   m_TagString: Untagged
@@ -343,8 +344,26 @@ Transform:
   - {fileID: 6075135869993265285}
   - {fileID: 1971707403914955580}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2381717865341178548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7204554958300981256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90693276f5451d44f947bd8dfd547ec4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemy: {fileID: 715504381836061410}
+  dropGift:
+  - {fileID: 11400000, guid: ef16c23a5277b9d47afeac12e819a713, type: 2}
+  - {fileID: 11400000, guid: 167597d75d4aed841b7ac2467b898370, type: 2}
+  dropPosition: {fileID: 7687117680506024834}
+  auFallOut: {fileID: 8300000, guid: 566d2ea6240b489479a6e9fd608c2621, type: 3}
 --- !u!1 &7901953108393053883
 GameObject:
   m_ObjectHideFlags: 0

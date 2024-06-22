@@ -38,6 +38,7 @@ public class EnemyDrop : MonoBehaviour
         AudioSource.PlayClipAtPoint(auFallOut, Camera.main.transform.position);
 
         //Debug.Log(dropGift[randoItem].name);
-        Instantiate(dropGift[randoItem].dropPrefab, dropPosition.position, Quaternion.identity);
+        if (dropGift[randoItem].name != "Drop Nothing")
+            Instantiate(dropGift[randoItem].dropPrefab, dropPosition.position, Quaternion.identity);
     }
 }

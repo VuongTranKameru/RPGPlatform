@@ -274,23 +274,25 @@ public class Inventory : MonoBehaviour
     public void RemoveUsedResource(string itemName, int itemQuantity)
     {
         ItemSlot selected = new ItemSlot();
+        int selectIndex = 0;
 
         for (int x = 0; x < slots.Length; x++)
             if (slots[x].item != null)
                 if (slots[x].item.type.ToString() == "Resource" && slots[x].item.name == itemName)
                 {
                     selected = slots[x];
+                    selectIndex = x;
                     break;
                 }
 
-        //Debug.Log(selected.item.name + selected.quantity);
-        selected.quantity -= selected.quantity;
+        //Debug.Log(selected.item.name + selected.quantity + "->" + itemQuantity);
+        selected.quantity = itemQuantity;
 
         if (selected.quantity == 0)
         {
-            if (uInven.uitemSlots[selectedItemIndex].equipped == true)
+            if (uInven.uitemSlots[selectIndex].equipped == true)
             {
-                UnEquip(selectedItemIndex);
+                UnEquip(selectIndex);
             }
 
             selected.item = null;
