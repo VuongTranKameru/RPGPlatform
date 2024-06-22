@@ -5,16 +5,24 @@ using UnityEngine;
 public class EnemyHealth : MonoBehaviour,IDamageable
 {
     public static EnemyHealth instance;
+    [SerializeField] GameObject enemyDamg;
+
     [Header("Health")]
-    [SerializeField] public float startingHealth;
+    public float startingHealth;
     public float currentHealth ;
-    private Animator anim;
+
+    Animator anim;
+    Rigidbody2D rigid;
     
     void Start()
     {
         instance = this;
+
+        anim = gameObject.GetComponent<Animator>();
+        rigid = GetComponent<Rigidbody2D>();
+        enemyDamg = FindAnyObjectByType<GameObject>();
+
         currentHealth = startingHealth;
-        anim = GetComponent<Animator>();
     }
 
     public void TakeDamage(float amount)
@@ -27,17 +35,20 @@ public class EnemyHealth : MonoBehaviour,IDamageable
         // if health reach to zero we call the die function
         if (currentHealth == 0)
         {
-            Die();
+            anim.SetTrigger("die");
+            enemyDamg.SetActive(false);
+            rigid.constraints = RigidbodyConstraints2D.FreezeAll;
+
+            StartCoroutine(Die());
         }
     }
 
-    public void Die()
+    IEnumerator Die()
     {
-        Debug.Log("Enemy is Dead");
-        anim.SetTrigger("die");
-        anim.ResetTrigger("die");
         /*EnemyDrop.instance.DropFromEnemy();
         Destroy(gameObject);*/
+        yield return new WaitForSeconds(0.5f);
+
         gameObject.SetActive(false);
     }
 }

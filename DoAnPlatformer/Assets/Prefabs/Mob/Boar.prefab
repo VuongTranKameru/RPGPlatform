@@ -53,7 +53,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: c707d7cb1d75a0144a48b40d8d91d31c, type: 2}
   - {fileID: 11400000, guid: ef16c23a5277b9d47afeac12e819a713, type: 2}
   - {fileID: 11400000, guid: c74c27feb7a8399499e31d766a78b41c, type: 2}
-  - {fileID: 11400000, guid: 167597d75d4aed841b7ac2467b898370, type: 2}
   dropPosition: {fileID: 5692719791299833141}
   auFallOut: {fileID: 8300000, guid: 566d2ea6240b489479a6e9fd608c2621, type: 3}
 --- !u!1 &2957329703549887405
@@ -66,12 +65,12 @@ GameObject:
   m_Component:
   - component: {fileID: 5692719791299833141}
   - component: {fileID: 1117425226173746041}
-  - component: {fileID: 5890406330506611872}
   - component: {fileID: 4707126040956982034}
   - component: {fileID: 7994272650527511147}
   - component: {fileID: 4336491623667765220}
-  - component: {fileID: 9126918743227619061}
   - component: {fileID: 2666382333389941421}
+  - component: {fileID: 9126918743227619061}
+  - component: {fileID: 5890406330506611872}
   - component: {fileID: 7458341819033384366}
   - component: {fileID: 3147569678340235356}
   m_Layer: 3
@@ -149,20 +148,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5890406330506611872
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2957329703549887405}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77323567da0740245a9243bdbeaec843, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startingHealth: 100
-  currentHealth: 0
 --- !u!61 &4707126040956982034
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -256,21 +241,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &9126918743227619061
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2957329703549887405}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: faa5072547ad51c44bd13cbd32c48286, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pointA: {fileID: 4887995929017854671}
-  pointB: {fileID: 3410180287816579140}
-  speed: 2
 --- !u!70 &2666382333389941421
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -306,6 +276,36 @@ CapsuleCollider2D:
   m_Offset: {x: 0.036415055, y: -0.01869868}
   m_Size: {x: 1.3518109, y: 1.3518109}
   m_Direction: 0
+--- !u!114 &9126918743227619061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2957329703549887405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: faa5072547ad51c44bd13cbd32c48286, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pointA: {fileID: 4887995929017854671}
+  pointB: {fileID: 3410180287816579140}
+  speed: 2
+--- !u!114 &5890406330506611872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2957329703549887405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77323567da0740245a9243bdbeaec843, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyDamg: {fileID: 8252318964456025283}
+  startingHealth: 100
+  currentHealth: 0
 --- !u!114 &7458341819033384366
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -338,6 +338,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77323567da0740245a9243bdbeaec843, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDamg: {fileID: 0}
   startingHealth: 50
   currentHealth: 0
 --- !u!1 &3410180287816579140
@@ -492,4 +493,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8a7297c2570cd443a1ba84c94ae611f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dametoPlayer: 20
+  dameToPlayer: 20

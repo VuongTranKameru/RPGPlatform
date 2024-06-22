@@ -39715,14 +39715,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Snail
       objectReference: {fileID: 0}
-    - target: {fileID: 1403672661149172631, guid: d8b7008e5c19bdf499d57490098179bd, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 6.22
-      objectReference: {fileID: 0}
-    - target: {fileID: 6735921269511379290, guid: d8b7008e5c19bdf499d57490098179bd, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -2.55
-      objectReference: {fileID: 0}
     - target: {fileID: 7503163697233732732, guid: d8b7008e5c19bdf499d57490098179bd, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -39733,7 +39725,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7503163697233732732, guid: d8b7008e5c19bdf499d57490098179bd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.029999971
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 7503163697233732732, guid: d8b7008e5c19bdf499d57490098179bd, type: 3}
       propertyPath: m_LocalPosition.z

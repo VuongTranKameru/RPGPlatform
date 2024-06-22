@@ -53,7 +53,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: c707d7cb1d75a0144a48b40d8d91d31c, type: 2}
   - {fileID: 11400000, guid: ef16c23a5277b9d47afeac12e819a713, type: 2}
   - {fileID: 11400000, guid: 167597d75d4aed841b7ac2467b898370, type: 2}
-  dropPosition: {fileID: 639644100178888004}
+  dropPosition: {fileID: 8847420257284360030}
   auFallOut: {fileID: 8300000, guid: 566d2ea6240b489479a6e9fd608c2621, type: 3}
 --- !u!1 &89364409404415470
 GameObject:
@@ -79,7 +79,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 89364409404415470}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.40000057, y: -0.05000019, z: 0}
+  m_LocalPosition: {x: -2, y: -0.05000019, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -109,15 +109,15 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &639644100178888004
-Transform:
+--- !u!224 &639644100178888004
+RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1990252450696041778}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.53, y: 0.12, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: -1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -125,6 +125,11 @@ Transform:
   m_Father: {fileID: 7503163697233732732}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0.96428573, y: 0.78571427}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &5035876848863919720
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -332,6 +337,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77323567da0740245a9243bdbeaec843, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDamg: {fileID: 4877326025034918761}
+  effect: {fileID: 0}
   startingHealth: 20
   currentHealth: 0
 --- !u!1 &4337330575436257072
@@ -358,7 +365,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4337330575436257072}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.0900002, y: -0.05000019, z: 0}
+  m_LocalPosition: {x: 2, y: -0.05000019, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -455,4 +462,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8a7297c2570cd443a1ba84c94ae611f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dametoPlayer: 5
+  dameToPlayer: 5
