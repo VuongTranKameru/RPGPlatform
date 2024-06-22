@@ -14,7 +14,8 @@ public enum ConsumableType
     Health,
     Magic,
     Damage,
-    Buff,
+    BuffHP,
+    BuffJump,
 }
 
 [CreateAssetMenu(fileName = "Item", menuName = "NewItem")]

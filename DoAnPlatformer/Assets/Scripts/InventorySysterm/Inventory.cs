@@ -171,9 +171,11 @@ public class Inventory : MonoBehaviour
                 switch (selectedItem.item.consumables[x].type){
                     case ConsumableType.Health: HealthManager.instance.Heal(selectedItem.item.consumables[x].value); 
                         break;
-                    case ConsumableType.Buff: HealthManager.instance.IncreaseHealth(selectedItem.item.consumables[x].value);
+                    case ConsumableType.BuffHP: HealthManager.instance.IncreaseHealth(selectedItem.item.consumables[x].value);
                         break;
-                        // case ConsumableType.Magic : MacgicManager.instance.Heal(selectedItem.item.consumables[x].value); break;
+                    case ConsumableType.BuffJump: PlayerController.instance.JumpMore(selectedItem.item.consumables[x].value);
+                        break;
+                    // case ConsumableType.Magic : MacgicManager.instance.Heal(selectedItem.item.consumables[x].value); break;
                 }
             }
         }
