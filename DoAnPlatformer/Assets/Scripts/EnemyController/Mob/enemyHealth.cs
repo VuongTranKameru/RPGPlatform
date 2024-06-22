@@ -10,9 +10,6 @@ public class EnemyHealth : MonoBehaviour,IDamageable
     public float currentHealth ;
     private Animator anim;
     
-    
-
-    
     void Start()
     {
         instance = this;
@@ -23,7 +20,7 @@ public class EnemyHealth : MonoBehaviour,IDamageable
     public void TakeDamage(float amount)
     {
         currentHealth = Mathf.Max(currentHealth - amount, 0.0f);
-       if(currentHealth > 0)
+        if(currentHealth > 0)
         {
             
         }
@@ -33,10 +30,14 @@ public class EnemyHealth : MonoBehaviour,IDamageable
             Die();
         }
     }
+
     public void Die()
     {
         Debug.Log("Enemy is Dead");
         anim.SetTrigger("die");
-        Destroy(gameObject);
+        anim.ResetTrigger("die");
+        /*EnemyDrop.instance.DropFromEnemy();
+        Destroy(gameObject);*/
+        gameObject.SetActive(false);
     }
 }

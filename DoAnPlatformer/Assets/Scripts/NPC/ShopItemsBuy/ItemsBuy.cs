@@ -13,7 +13,6 @@ public class ItemsBuy : MonoBehaviour
     [SerializeField] public TextMeshProUGUI priceText;
     [SerializeField] public AudioSource auSrc;
     
-
     void Start()
     {
         itemIcon.sprite = itemToBuy.icon;

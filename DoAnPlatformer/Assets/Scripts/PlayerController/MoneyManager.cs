@@ -15,15 +15,14 @@ public class MoneyManager : MonoBehaviour
     {
         instance = this;
         moneyShow = FindAnyObjectByType<UIMoney>();
-
     }
 
     void Update()
     {
-        Debug.Log(gold);
+        //Debug.Log(gold);
         
 
-        UpdateGold();
+        //UpdateGold();
     }
 
     public void UpdateGold()

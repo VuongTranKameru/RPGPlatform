@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6550398049520402956}
+  - component: {fileID: 8758353388080596790}
   m_Layer: 3
   m_Name: Boar
   m_TagString: Untagged
@@ -32,8 +33,29 @@ Transform:
   - {fileID: 1583082045661638969}
   - {fileID: 9004673051294854466}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8758353388080596790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2619500483417569596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90693276f5451d44f947bd8dfd547ec4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemy: {fileID: 2957329703549887405}
+  dropGift:
+  - {fileID: 11400000, guid: 98bd90c9a8ff0cf4aa97b1d6677f4c2e, type: 2}
+  - {fileID: 11400000, guid: c707d7cb1d75a0144a48b40d8d91d31c, type: 2}
+  - {fileID: 11400000, guid: ef16c23a5277b9d47afeac12e819a713, type: 2}
+  - {fileID: 11400000, guid: c74c27feb7a8399499e31d766a78b41c, type: 2}
+  - {fileID: 11400000, guid: 167597d75d4aed841b7ac2467b898370, type: 2}
+  dropPosition: {fileID: 5692719791299833141}
+  auFallOut: {fileID: 8300000, guid: 566d2ea6240b489479a6e9fd608c2621, type: 3}
 --- !u!1 &2957329703549887405
 GameObject:
   m_ObjectHideFlags: 0
@@ -316,7 +338,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77323567da0740245a9243bdbeaec843, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingHealth: 1
+  startingHealth: 50
   currentHealth: 0
 --- !u!1 &3410180287816579140
 GameObject:
