@@ -27,7 +27,7 @@ public class PlayerSpawn : MonoBehaviour
             player.GetComponent<PlayerController>().enabled = true;
         }
 
-        Debug.Log(PlayerPrefs.GetString("LastScene"));
+        //Debug.Log(PlayerPrefs.GetString("LastScene"));
     }
 
     void CheckScenario()

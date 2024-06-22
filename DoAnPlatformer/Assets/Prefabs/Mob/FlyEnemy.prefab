@@ -78,7 +78,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 1156681612, guid: e240200f3e39cc5408ccc8bd611ad3e1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -137,7 +137,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!60 &2678260833337026567
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -217,6 +217,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77323567da0740245a9243bdbeaec843, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDamg: {fileID: 7901953108393053883}
   startingHealth: 45
   currentHealth: 0
 --- !u!1 &1235798344503350898
@@ -284,7 +285,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.08598095, y: -0.6096828}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -295,7 +296,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.797782, y: 2.2193646}
+  m_Size: {x: 3, y: 3}
   m_EdgeRadius: 0
 --- !u!114 &4079138156571587221
 MonoBehaviour:
@@ -336,7 +337,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7204554958300981256}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.393374, y: 1.3870958, z: -0.0031771217}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -360,7 +361,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemy: {fileID: 715504381836061410}
   dropGift:
-  - {fileID: 11400000, guid: ef16c23a5277b9d47afeac12e819a713, type: 2}
+  - {fileID: 11400000, guid: c74c27feb7a8399499e31d766a78b41c, type: 2}
   - {fileID: 11400000, guid: 167597d75d4aed841b7ac2467b898370, type: 2}
   dropPosition: {fileID: 7687117680506024834}
   auFallOut: {fileID: 8300000, guid: 566d2ea6240b489479a6e9fd608c2621, type: 3}
@@ -454,7 +455,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8a7297c2570cd443a1ba84c94ae611f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dametoPlayer: 20
+  dameToPlayer: 10
 --- !u!1 &8446397269860292175
 GameObject:
   m_ObjectHideFlags: 0
