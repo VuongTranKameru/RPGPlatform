@@ -7,8 +7,10 @@ using TMPro;
 public class NPCDialogue : MonoBehaviour
 {
     internal static NPCDialogue instance;
-    NPC_UI_DialogNarrative narrative;
     Animator anim;
+
+    NPC_UI_DialogNarrative narrative;
+    [SerializeField] GameObject narrativeScript;
 
     [Header("Dialog")]
     public float wordSpeed;
