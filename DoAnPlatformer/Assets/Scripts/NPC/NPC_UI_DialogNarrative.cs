@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class NPC_UI_DialogNarrative : MonoBehaviour
 {
-    [SerializeField] DiallgueData dialogueScript;
+    [SerializeField] DialogueData dialogueScript;
 
     [SerializeField] internal GameObject dialoguePanel;
     [SerializeField] internal TMP_Text dialogueText;
