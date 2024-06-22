@@ -10,7 +10,7 @@ public enum DialogueType
 }
 
 [CreateAssetMenu(fileName = "Dialog", menuName = "NewDialog")]
-public class DiallgueData : ScriptableObject
+public class DialogueData : ScriptableObject
 {
     [Header("Info")]
     [SerializeField] internal GameObject nameNPC;

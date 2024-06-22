@@ -10,7 +10,6 @@ public class NPCDialogue : MonoBehaviour
     Animator anim;
 
     NPC_UI_DialogNarrative narrative;
-    [SerializeField] GameObject narrativeScript;
 
     [Header("Dialog")]
     public float wordSpeed;

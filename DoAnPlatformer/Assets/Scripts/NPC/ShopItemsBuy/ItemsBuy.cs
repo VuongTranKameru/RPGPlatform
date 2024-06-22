@@ -24,7 +24,7 @@ public class ItemsBuy : MonoBehaviour
         if(itemCost <= MoneyManager.instance.gold)
         {
             MoneyManager.instance.gold -= itemCost;
-            MoneyManager.instance.UpdateGold();
+            UIMoney.instance.UpdateGold();
             auSrc.Play();
             Inventory.instance.AddItem(itemToBuy);
         }
