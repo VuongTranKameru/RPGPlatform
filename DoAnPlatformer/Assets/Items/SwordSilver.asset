@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 716d34ba2b2d0cb48a1013a4a56a5dbb, type: 3}
-  m_Name: "\u0110ao S\u1EAFt"
+  m_Name: SwordSilver
   m_EditorClassIdentifier: 
-  displayName: "Dao S\u1EAFt"
-  description: "Dao t\xE2n th\u1EE7, kh\xF4ng m\u1EA1nh l\u1EAFm"
+  displayName: "Ki\u1EBFm B\u1EA1c"
+  description: "Ki\u1EBFm l\xE0m t\u1EEB b\u1EA1c, c\u1EF1c k\xEC s\u1EAFc b\xE9n"
   type: 1
-  icon: {fileID: 21300000, guid: 55b7795ee396eae4481858956163c8f0, type: 3}
-  dropPrefab: {fileID: 8280614442814543628, guid: 5d1d330bc73e26b49b7ae3b52359e7e7, type: 3}
+  icon: {fileID: 21300000, guid: 5648fc55b2200684fb814e3d9ad01428, type: 3}
+  dropPrefab: {fileID: 8280614442814543628, guid: 7a7644b294f24ad48aaaaed7c0c7954c, type: 3}
   canStack: 0
   maxStackAmount: 0
   consumables:
   - type: 2
-    value: 10
-  equipPrefab: {fileID: 1936101303312775715, guid: 966761da2500ae245b23e526e6554851, type: 3}
+    value: 45
+  equipPrefab: {fileID: 1936101303312775715, guid: c3f14c4c7c19aee4599206dc71ce4a86, type: 3}
