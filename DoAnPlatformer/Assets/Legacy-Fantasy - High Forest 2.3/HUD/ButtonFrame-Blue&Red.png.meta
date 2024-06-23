@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 35d5352d7d22619409584d9617afda9d
+guid: 39f9040756f69234c9e1fd298fecd3ec
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,106 +123,85 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Bubble_0
+      name: ButtonFrame-Blue&Red_0
       rect:
         serializedVersion: 2
-        x: 49
-        y: 177
-        width: 30
-        height: 30
+        x: 1
+        y: 85
+        width: 58
+        height: 26
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e8a792c34aa2f424495dceb1ac11fb7d
-      internalID: -168034004
+      spriteID: c328344424d34e241af2ca207d2533d6
+      internalID: -1187527364
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Table_0
+      name: ButtonFrame-Blue&Red_1
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 57
+        width: 58
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd1d08fabab00a74392ec9b269e4098d
+      internalID: 228848830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButtonFrame-Blue&Red_2
       rect:
         serializedVersion: 2
         x: 0
-        y: 176
-        width: 48
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 6, y: 5, z: 6, w: 6}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9e91f38a8e2f7a248bfceceae86c7878
-      internalID: -369739485
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TextingBubbles_0
-      rect:
-        serializedVersion: 2
-        x: 145
-        y: 225
-        width: 46
-        height: 14
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 2, y: 1, z: 2, w: 1}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: eb7e22f00d9414042897b8daea6dc9f2
-      internalID: -52785694
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TextingBubbles_1
-      rect:
-        serializedVersion: 2
-        x: 81
-        y: 177
-        width: 30
-        height: 30
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 6, y: 1, z: 6, w: 1}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9ac468a883dcff74dbb95a7cf4ef873b
-      internalID: 1743238315
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TextingBubbles_2
-      rect:
-        serializedVersion: 2
-        x: 2
-        y: 226
-        width: 44
-        height: 44
+        y: 29
+        width: 58
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 5, y: 5, z: 5, w: 5}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0eefd4fc2c2874f488653630a9a8b09d
-      internalID: 1010381456
+      spriteID: ade17461b74d72d418252f8a39c1d0dd
+      internalID: -357506345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButtonFrame-Blue&Red_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 58
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fbc18b7d4f7c3f4588cc84077acb3a5
+      internalID: -216900154
       vertices: []
       indices: 
       edges: []
@@ -238,11 +217,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Bubble_0: -168034004
-      Table_0: -369739485
-      TextingBubbles_0: -52785694
-      TextingBubbles_1: 1743238315
-      TextingBubbles_2: 1010381456
+      ButtonFrame-Blue&Red_0: -1187527364
+      ButtonFrame-Blue&Red_1: 228848830
+      ButtonFrame-Blue&Red_2: -357506345
+      ButtonFrame-Blue&Red_3: -216900154
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

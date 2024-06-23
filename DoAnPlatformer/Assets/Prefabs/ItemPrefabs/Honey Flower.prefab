@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4543079231186997093}
   - component: {fileID: 593063492523235461}
   m_Layer: 9
-  m_Name: Boar Horn
+  m_Name: Honey Flower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -75,7 +75,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 5
-  m_Sprite: {fileID: 21300000, guid: e38f3cf2ea7166f4581669a41ad82260, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f57ec88e3f6fea1478720d2d3792086c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -98,7 +98,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4fdbdfda85bbc940a38b386675f597d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 11400000, guid: 98bd90c9a8ff0cf4aa97b1d6677f4c2e, type: 2}
+  item: {fileID: 11400000, guid: 0376b9afb542e3c499e2cd090f03dd25, type: 2}
 --- !u!61 &593063492523235461
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -131,16 +131,16 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.07680607, y: 0.2036221}
+  m_Offset: {x: 0.016951323, y: 0.0006098747}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.44, y: 4.66}
+    oldSize: {x: 5.05, y: 4.34}
     newSize: {x: 4.26, y: 4.96}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4.0088596, y: 5.4033875}
+  m_Size: {x: 5.068129, y: 4.561205}
   m_EdgeRadius: 0

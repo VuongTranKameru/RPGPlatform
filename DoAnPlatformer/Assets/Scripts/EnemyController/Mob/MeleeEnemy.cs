@@ -68,6 +68,6 @@ public class MeleeEnemy : MonoBehaviour
     private void DamagePlayer()
     {
         if (PlayerInSight())
-            playerHealth.TakeDamage(damage);
+            playerHealth.ReceiveDamage(damage);
     }
 }
