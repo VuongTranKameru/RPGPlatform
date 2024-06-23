@@ -1,4 +1,4 @@
- using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -10,4 +10,5 @@ public class EnemyFireballHolder : MonoBehaviour
     {
         transform.localScale = enemy.localScale;
     }
+
 }

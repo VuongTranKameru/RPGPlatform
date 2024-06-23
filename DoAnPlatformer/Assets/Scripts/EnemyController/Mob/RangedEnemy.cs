@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class RangedEnemy : MonoBehaviour
@@ -54,7 +53,7 @@ public class RangedEnemy : MonoBehaviour
     {
         cooldownTimer = 0;
         fireballs[FindFireball()].transform.position = firepoint.position;
-        fireballs[FindFireball()].GetComponent<Projectile>().ActivateProjectile();
+        fireballs[FindFireball()].GetComponent<EnemyProjectile>().ActivateProjectile();
     }
     private int FindFireball()
     {

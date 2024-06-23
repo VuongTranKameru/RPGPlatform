@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Tilemaps;
 using UnityEngine;
 
 public class FlyEnemy : MonoBehaviour
@@ -19,13 +18,13 @@ public class FlyEnemy : MonoBehaviour
     void Update()
     {
         if (player == null) return;
-        if(chase == true) Chase();
+        if (chase == true) Chase();
         else ReturnStartPoint();
         Flip();
     }
     public void Chase()
     {
-        transform.position=Vector2.MoveTowards(transform.position,player.transform.position,speed*Time.deltaTime);
+        transform.position = Vector2.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
         if (Vector2.Distance(transform.position, player.transform.position) <= 0.5f)
         {
             //change speed,shoot,animation
@@ -37,7 +36,7 @@ public class FlyEnemy : MonoBehaviour
     }
     public void ReturnStartPoint()
     {
-        transform.position = Vector2.MoveTowards(transform.position,startingpoint.position,speed*Time.deltaTime);
+        transform.position = Vector2.MoveTowards(transform.position, startingpoint.position, speed * Time.deltaTime);
     }
     public void Flip()
     {
@@ -45,4 +44,5 @@ public class FlyEnemy : MonoBehaviour
             transform.rotation = Quaternion.Euler(0, 0, 0);
         else transform.rotation = Quaternion.Euler(0, 180, 0);
     }
+
 }

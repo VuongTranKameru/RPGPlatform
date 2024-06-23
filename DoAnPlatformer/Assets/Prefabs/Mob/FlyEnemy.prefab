@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 8891132592607010219}
   - component: {fileID: 3181523895804716374}
   - component: {fileID: 2678260833337026567}
-  - component: {fileID: 4502642011042530848}
   - component: {fileID: 1054311926047599224}
+  - component: {fileID: 4684625453532446565}
   m_Layer: 3
   m_Name: SmallBee
   m_TagString: Enemy
@@ -190,21 +190,6 @@ PolygonCollider2D:
       - {x: 0.099999994, y: -0.17999999}
       - {x: 0.099999994, y: 0.19999999}
   m_UseDelaunayMesh: 0
---- !u!114 &4502642011042530848
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 715504381836061410}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 597805279341f014b88e192438bd7161, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 3
-  chase: 0
-  startingpoint: {fileID: 6075135869993265285}
 --- !u!114 &1054311926047599224
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -219,6 +204,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startingHealth: 1
   currentHealth: 0
+--- !u!114 &4684625453532446565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 715504381836061410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 597805279341f014b88e192438bd7161, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 3
+  chase: 0
+  startingpoint: {fileID: 6075135869993265285}
 --- !u!1 &1235798344503350898
 GameObject:
   m_ObjectHideFlags: 0
@@ -229,7 +229,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1971707403914955580}
   - component: {fileID: 1781190665049647481}
-  - component: {fileID: 4079138156571587221}
+  - component: {fileID: 3529386774897828367}
   m_Layer: 0
   m_Name: ChaseTrigger
   m_TagString: Untagged
@@ -297,7 +297,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.797782, y: 2.2193646}
   m_EdgeRadius: 0
---- !u!114 &4079138156571587221
+--- !u!114 &3529386774897828367
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -306,11 +306,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1235798344503350898}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e213a1eb9dd32b4091b8195c0ea899b, type: 3}
+  m_Script: {fileID: 11500000, guid: c2ef2e403f5f4994cb744e3770be7258, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   enemyArray:
-  - {fileID: 4502642011042530848}
+  - {fileID: 4684625453532446565}
 --- !u!1 &7204554958300981256
 GameObject:
   m_ObjectHideFlags: 0
@@ -343,7 +343,7 @@ Transform:
   - {fileID: 6075135869993265285}
   - {fileID: 1971707403914955580}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7901953108393053883
 GameObject:

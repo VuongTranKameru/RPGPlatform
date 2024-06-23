@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Projectile : MonoBehaviour
+public class EnemyProjectile : MonoBehaviour
 {
     [SerializeField] private float speed;
     [SerializeField] private float resetTime;
@@ -51,5 +51,5 @@ public class Projectile : MonoBehaviour
     {
         gameObject.SetActive(false);
     }
-}
 
+}
