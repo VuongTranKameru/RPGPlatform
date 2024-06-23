@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class enemyPatrol : MonoBehaviour
+public class EnemyPatrol : MonoBehaviour
 {
     public GameObject pointA;
     public GameObject pointB;
@@ -10,8 +10,8 @@ public class enemyPatrol : MonoBehaviour
     private Animator anim;
     private Transform currentPoint;
     public float speed;
-    
-    
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,7 +19,7 @@ public class enemyPatrol : MonoBehaviour
         anim = GetComponent<Animator>();
         currentPoint = pointB.transform;
         anim.SetBool("isRunning", true);
-        
+
     }
 
     // Update is called once per frame
@@ -59,5 +59,5 @@ public class enemyPatrol : MonoBehaviour
         Gizmos.DrawWireSphere(pointB.transform.position, 0.5f);
         Gizmos.DrawLine(pointA.transform.position, pointB.transform.position);
     }
-    
+
 }
