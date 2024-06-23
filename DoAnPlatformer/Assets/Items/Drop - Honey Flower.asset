@@ -17,7 +17,7 @@ MonoBehaviour:
     th\u1EE5 ph\u1EA5n."
   type: 0
   icon: {fileID: 21300000, guid: 3d0a145180e515c449abd5f004fe2ae6, type: 3}
-  dropPrefab: {fileID: 1957278248252307241, guid: 18c014545e633d64e89b59fe782231c4, type: 3}
+  dropPrefab: {fileID: 1957278248252307241, guid: 2c548f0b03b0c0747ab50f5b9f9a8c55, type: 3}
   canStack: 1
   maxStackAmount: 10
   consumables: []
