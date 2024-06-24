@@ -7,12 +7,12 @@ public class FreezePlayer : MonoBehaviour
     private void OnEnable()
     {
         PlayerAttack.instance.enabled = false;
-        PlayerController.instance.enabled = false;
+        //PlayerController.instance.enabled = false;
     }
 
     private void OnDisable()
     {
         PlayerAttack.instance.enabled = true;
-        PlayerController.instance.enabled = true;
+        //PlayerController.instance.enabled = true;
     }
 }

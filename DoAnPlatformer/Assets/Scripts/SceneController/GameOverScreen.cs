@@ -13,8 +13,6 @@ public class GameOverScreen : MonoBehaviour
     [SerializeField] TMP_Text tHp, tStr, tMny, tB, score;
     int tHPPoint, tStrPoint, tMnyPoint, scorePoint;
 
-    internal bool checkBossClear;
-
     void Start()
     {
         TakePoint();
@@ -30,10 +28,10 @@ public class GameOverScreen : MonoBehaviour
         tStrPoint = EquipManager.instance.weaponPoint;
         tStr.text = "+" + tStrPoint.ToString();
 
-        tMnyPoint = MoneyManager.instance.gold;
+        tMnyPoint = MoneyManager.instance.coinPoint;
         tMny.text = "+" + tMnyPoint.ToString();
 
-        if (checkBossClear)
+        if (BossKillCount.instance.checkBossClear)
         {
             scorePoint = 1000;
             tB.text = "x" + scorePoint.ToString();
@@ -45,7 +43,7 @@ public class GameOverScreen : MonoBehaviour
     {
         int ingamePoint = tHPPoint + tStrPoint + tMnyPoint;
 
-        if (!checkBossClear)
+        if (!BossKillCount.instance.checkBossClear)
             return ingamePoint;
 
         return ingamePoint * scorePoint;
