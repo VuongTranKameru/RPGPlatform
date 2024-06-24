@@ -10,13 +10,14 @@ public class ItemsBuy : MonoBehaviour
     [SerializeField] public ItemData itemToBuy;
     [SerializeField] public int itemCost;
     public Image itemIcon;
-    [SerializeField] public TextMeshProUGUI priceText;
+    [SerializeField] public TextMeshProUGUI priceText, nameText;
     [SerializeField] public AudioSource auSrc;
     
     void Start()
     {
         itemIcon.sprite = itemToBuy.icon;
-        priceText.text = itemCost.ToString() + "$"; 
+        priceText.text = itemCost.ToString() + "$";
+        nameText.text = itemToBuy.displayName;
     }
 
     public void BuyItem()
