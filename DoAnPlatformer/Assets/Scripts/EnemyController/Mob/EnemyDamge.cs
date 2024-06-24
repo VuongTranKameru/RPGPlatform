@@ -12,4 +12,12 @@ public class EnemyDamge : MonoBehaviour
             HealthManager.instance.TakeDamage(dameToPlayer);
         }
     }
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
+            HealthManager.instance.TakeDamage(dameToPlayer);
+        }
+    }
 }

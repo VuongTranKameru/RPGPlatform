@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 59791868093212848}
   - component: {fileID: 1156237268737961645}
   m_Layer: 9
-  m_Name: "Ki\u1EBFm \u0110\u1ED3ng"
+  m_Name: SwordSilver
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -75,7 +75,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 5
-  m_Sprite: {fileID: 21300000, guid: 4f9532b654d4f4643be62d7de22e4e84, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 31430fae934351548938c36967fab0f6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -98,7 +98,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4fdbdfda85bbc940a38b386675f597d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 11400000, guid: 7e67101b64861b84ab95fbce7239a992, type: 2}
+  item: {fileID: 11400000, guid: 6aad9edfbf3ef534ca494b38ac42838b, type: 2}
 --- !u!61 &1156237268737961645
 BoxCollider2D:
   m_ObjectHideFlags: 0

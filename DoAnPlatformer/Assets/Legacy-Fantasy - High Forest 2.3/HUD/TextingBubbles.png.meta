@@ -153,7 +153,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 6, y: 5, z: 6, w: 6}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -195,13 +195,34 @@ TextureImporter:
         height: 30
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 6, y: 1, z: 6, w: 1}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: 9ac468a883dcff74dbb95a7cf4ef873b
       internalID: 1743238315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TextingBubbles_2
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 226
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 5, y: 5, z: 5, w: 5}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0eefd4fc2c2874f488653630a9a8b09d
+      internalID: 1010381456
       vertices: []
       indices: 
       edges: []
@@ -221,6 +242,7 @@ TextureImporter:
       Table_0: -369739485
       TextingBubbles_0: -52785694
       TextingBubbles_1: 1743238315
+      TextingBubbles_2: 1010381456
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

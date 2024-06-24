@@ -1816,6 +1816,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startingHealth: 1000
   currentHealth: 0
+  auHit: {fileID: 0}
 --- !u!114 &1103088112
 MonoBehaviour:
   m_ObjectHideFlags: 0

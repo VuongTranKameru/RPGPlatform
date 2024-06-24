@@ -10,7 +10,7 @@ public class Crafting : MonoBehaviour
     public Image itemIcon;
     [SerializeField] ItemData itemToCraft;
     [SerializeField] TMP_Text nameText;
-    [SerializeField] AudioSource auSrc;
+    [SerializeField] AudioSource auCraft, auNoEnough;
 
     [Header("Ingredient")]
     [SerializeField] int amount;
@@ -30,6 +30,7 @@ public class Crafting : MonoBehaviour
             //dont add wrong order. check if enough resource
             if (resources[x].value > checkAmount[x].quantityNum)
             {
+                auNoEnough.Play();
                 Debug.Log("not enough" + resources[x].typeOfResource.name + resources[x].value + "/" + checkAmount[x].quantityNum);
                 return; 
             }
@@ -46,7 +47,7 @@ public class Crafting : MonoBehaviour
             Inventory.instance.RemoveUsedResource(resources[x].typeOfResource.name, checkAmount[x].quantityNum);
         }
 
-        auSrc.Play();
+        auCraft.Play();
         Inventory.instance.AddItem(itemToCraft);
     }
 }

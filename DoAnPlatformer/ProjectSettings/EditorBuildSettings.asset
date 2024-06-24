@@ -21,6 +21,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Scene2-MineCave.unity
     guid: 8d84f5a70d11dce498b0e48439db01fa
   - enabled: 1
+    path: Assets/Scenes/Scene-Boss.unity
+    guid: c57beab6f56d6024eab47d4c8887067a
+  - enabled: 1
+    path: Assets/Scenes/GameOverScene.unity
+    guid: bc9972fd470328e44b7e6aca0548a2bf
+  - enabled: 1
     path: Assets/Scenes/BossScene.unity
     guid: 2f8ecd3026c523a49bec30fd864c95c1
   m_configObjects: {}

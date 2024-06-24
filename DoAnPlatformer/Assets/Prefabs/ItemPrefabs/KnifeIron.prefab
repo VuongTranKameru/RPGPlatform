@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 59791868093212848}
   - component: {fileID: 1156237268737961645}
   m_Layer: 9
-  m_Name: "Dao S\u1EAFt"
+  m_Name: KnifeIron
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -98,7 +98,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4fdbdfda85bbc940a38b386675f597d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 11400000, guid: 0f9f69130b724cb49b29f8582b1d9f35, type: 2}
+  item: {fileID: 11400000, guid: bacb2b274bd82fe4f8bb3436ce758a82, type: 2}
 --- !u!61 &1156237268737961645
 BoxCollider2D:
   m_ObjectHideFlags: 0

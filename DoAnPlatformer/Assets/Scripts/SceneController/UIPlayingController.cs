@@ -4,13 +4,20 @@ using UnityEngine;
 
 public class UIPlayingController : MonoBehaviour
 {
+    internal static UIPlayingController instance;
+
     [Header("UI")]
     [SerializeField] GameObject PauseMenu;
-    [SerializeField] GameObject InventoryCanvas, StatusMenu;
+    [SerializeField] internal GameObject InventoryCanvas, StatusMenu;
 
     [Header("Audio")]
     [SerializeField] AudioSource auSrc;
     [SerializeField] AudioClip auOpenInvenButton, auPause, auUnpause, auStatus;
+
+    private void Awake()
+    {
+        instance = this;
+    }
 
     void Start()
     {
