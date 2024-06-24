@@ -19,13 +19,12 @@ public class MeleeEnemy : MonoBehaviour
 
     //References
     private Animator anim;
-    private EnemyHealth playerHealth;
-    private EnemyPatrol1 enemyPatrol;
+    private enemyPatrol enemyPatrol;
 
     private void Awake()
     {
         anim = GetComponent<Animator>();
-        enemyPatrol = GetComponentInParent<EnemyPatrol1>();
+        enemyPatrol = GetComponentInParent<enemyPatrol>();
     }
 
     private void Update()
@@ -53,9 +52,6 @@ public class MeleeEnemy : MonoBehaviour
             new Vector3(boxCollider.bounds.size.x * range, boxCollider.bounds.size.y, boxCollider.bounds.size.z),
             0, Vector2.left, 0, playerLayer);
 
-        if (hit.collider != null)
-            playerHealth = hit.transform.GetComponent<EnemyHealth>();
-
         return hit.collider != null;
     }
     private void OnDrawGizmos()
@@ -63,11 +59,5 @@ public class MeleeEnemy : MonoBehaviour
         Gizmos.color = Color.red;
         Gizmos.DrawWireCube(boxCollider.bounds.center + transform.right * range * transform.localScale.x * colliderDistance,
             new Vector3(boxCollider.bounds.size.x * range, boxCollider.bounds.size.y, boxCollider.bounds.size.z));
-    }
-
-    private void DamagePlayer()
-    {
-        if (PlayerInSight())
-            playerHealth.ReceiveDamage(damage);
     }
 }
