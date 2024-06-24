@@ -6,7 +6,7 @@ public class BossKillCount : MonoBehaviour
 {
     internal static BossKillCount instance;
 
-    [SerializeField] GameObject boss;
+    [SerializeField] GameObject boss, setEnding;
     internal bool checkBossClear = false;
 
     void Start()
@@ -18,10 +18,10 @@ public class BossKillCount : MonoBehaviour
 
     void Update()
     {
-        if (boss != null)
+        if (boss != null && setEnding != null)
             if (!boss.activeInHierarchy)
             {
-                Debug.Log("ye");
+                setEnding.SetActive(true);
                 checkBossClear = true;
             }
     }
