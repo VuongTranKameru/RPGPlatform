@@ -8,7 +8,6 @@ public class BulletController : MonoBehaviour
     public float speed;
     [SerializeField] Rigidbody2D rb;
     [SerializeField] Animator anim;
-    
 
     void Start()
     {
@@ -31,7 +30,7 @@ public class BulletController : MonoBehaviour
         if(other.gameObject.CompareTag("Player") || other.gameObject.CompareTag("Ground"))
         {          
             anim.SetBool("isCo", true);
-
+            HealthManager.instance.Heal(-20);
         }
     }
 
