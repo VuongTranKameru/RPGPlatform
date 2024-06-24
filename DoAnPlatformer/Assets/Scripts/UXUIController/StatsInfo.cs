@@ -22,7 +22,7 @@ public class StatsInfo : MonoBehaviour
             hpMax.text = HealthManager.instance.maxHealth.ToString("0");
             hpCur.text = HealthManager.instance.currentHealth.ToString("0") + "/";
             CheckDamage();
-            jump.text = "x" + (PlayerController.instance.jumpCount + 1).ToString("0");
+            jump.text = PlayerController.instance.jumpCount.ToString("0");
             money.text = moneyInfo.gold.ToString("0") + "$";
         }
     }

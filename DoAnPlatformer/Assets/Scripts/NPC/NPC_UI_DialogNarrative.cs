@@ -5,25 +5,10 @@ using UnityEngine;
 
 public class NPC_UI_DialogNarrative : MonoBehaviour
 {
-    [SerializeField] DialogueData dialogueScript;
-
     [SerializeField] internal GameObject dialoguePanel;
     [SerializeField] internal TMP_Text dialogueText;
-    internal string[] dialogue;
+    [SerializeField] internal string[] dialogue;
     [SerializeField] internal GameObject continueBtn, exitBtn;
-
-    public string[] Dialogue
-    {
-        get
-        {
-            return dialogueScript.dialogue;
-        }
-
-        set
-        {
-            dialogue = value;
-        }
-    }
 
     private void Start()
     {

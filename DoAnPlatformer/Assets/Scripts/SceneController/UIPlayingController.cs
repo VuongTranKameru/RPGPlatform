@@ -34,10 +34,8 @@ public class UIPlayingController : MonoBehaviour
 
     void PlayGame()
     {
-        if (!PauseMenu.activeInHierarchy && !InventoryCanvas.activeInHierarchy && !StatusMenu.activeInHierarchy)
-        {
+        if(!PauseMenu.activeInHierarchy && !InventoryCanvas.activeInHierarchy && !StatusMenu.activeInHierarchy)
             Time.timeScale = 1f;
-        }
         auSrc.PlayOneShot(auUnpause);
     }
 

@@ -7,9 +7,8 @@ using TMPro;
 public class NPCDialogue : MonoBehaviour
 {
     internal static NPCDialogue instance;
-    Animator anim;
-
     NPC_UI_DialogNarrative narrative;
+    Animator anim;
 
     [Header("Dialog")]
     public float wordSpeed;
@@ -78,7 +77,7 @@ public class NPCDialogue : MonoBehaviour
     IEnumerator Typing(int countLine)
     {
         //word by word in a dialogue
-        foreach (char letter in narrative.Dialogue[countLine].ToCharArray())
+        foreach (char letter in narrative.dialogue[countLine].ToCharArray())
         {
             narrative.dialogueText.text += letter;
             yield return new WaitForSeconds(wordSpeed);
@@ -89,12 +88,12 @@ public class NPCDialogue : MonoBehaviour
 
     void NextLine()
     {
-        if (endLine < narrative.Dialogue.Length - 1 && doneText)
+        if (endLine < narrative.dialogue.Length - 1 && doneText)
         {
             endLine++;
             narrative.dialogueText.text = "";
             StartCoroutine(Typing(endLine));
-            if(endLine == narrative.Dialogue.Length - 1)
+            if(endLine == narrative.dialogue.Length - 1)
             {
                 narrative.continueBtn.SetActive(false);
                 narrative.exitBtn.SetActive(true);

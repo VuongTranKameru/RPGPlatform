@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Globalization;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -14,7 +16,6 @@ public class PlayerController : MonoBehaviour
 
     bool playSound;
     Rigidbody2D myRB;
-    BoxCollider2D myBox;
     SpriteRenderer sRender;
     Animator anim;
 
@@ -34,8 +35,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         myRB = GetComponent<Rigidbody2D>();
-        myBox = GetComponent<BoxCollider2D>();
-        anim = gameObject.GetComponent<Animator>();
+        anim = GetComponent<Animator>();
     }
  
     void Update()
@@ -52,9 +52,6 @@ public class PlayerController : MonoBehaviour
         {
             myRB.velocity = Vector2.zero;
         }
-
-        if (HealthManager.instance.currentHealth == 0)
-            StartCoroutine(DeadAnim());
     }
     
     public void PlayerMovement()
@@ -119,14 +116,5 @@ public class PlayerController : MonoBehaviour
     {
         jumpBuff = ((int)buffIn);
         return jumpBuff;
-    }
-
-    internal IEnumerator DeadAnim()
-    {
-        myBox.enabled = false;
-        myRB.constraints = RigidbodyConstraints2D.FreezeAll;
-        anim.SetTrigger("Dead");
-        yield return new WaitForSeconds(2f);
-        HealthManager.instance.Die();
     }
 }

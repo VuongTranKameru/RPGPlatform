@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 7927447071010266677}
   m_Layer: 8
   m_Name: HitBox
-  m_TagString: PlayerAttack
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -168,7 +168,7 @@ Transform:
   - {fileID: 7290692017290979580}
   - {fileID: 5241125075788307658}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2903307939434037958
 MonoBehaviour:
@@ -183,7 +183,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentEquip: {fileID: 0}
-  weapondHolder: {fileID: 5241125075788307658}
+  weapondHolder: {fileID: 7560646023109957936}
 --- !u!114 &1137260727272142426
 MonoBehaviour:
   m_ObjectHideFlags: 0

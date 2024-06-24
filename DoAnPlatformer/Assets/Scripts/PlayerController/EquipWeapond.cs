@@ -5,18 +5,21 @@ using UnityEngine;
 public class EquipWeapond : Equip
 {
     public static EquipWeapond instance;
-
-    EquipWeapond weapond;
+    public EquipWeapond weapond;
     public int dameToEnemy;
     public int damgeStats;
-
     private void Awake()
     {
         instance = this;
     }
-
     void Start()
     {
         damgeStats = dameToEnemy;
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
     }
 }
