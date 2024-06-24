@@ -10,7 +10,7 @@ public enum DialogueType
 }
 
 [CreateAssetMenu(fileName = "Dialog", menuName = "NewDialog")]
-public class DiallgueData : ScriptableObject
+public class DialogueData : ScriptableObject
 {
     [Header("Info")]
     [SerializeField] internal GameObject nameNPC;
@@ -18,7 +18,4 @@ public class DiallgueData : ScriptableObject
     [SerializeField] internal DialogueType type;
     /*[SerializeField] internal GameObject dialoguePanel;
     [SerializeField] internal TMP_Text dialogueText;*/
-
-    /*[Header("Optional")]
-    [SerializeField] internal GameObject continueBtn, exitBtn;*/
 }

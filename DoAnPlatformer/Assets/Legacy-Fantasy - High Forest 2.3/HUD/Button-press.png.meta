@@ -206,6 +206,48 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Button-press_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 17
+        width: 57
+        height: 3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d292a9db5159a84ca687e2de6f71d12
+      internalID: -1762496639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Button-press_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 58
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a9070c1c69b6f047b7b280af9329d7b
+      internalID: -1296649959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -221,6 +263,8 @@ TextureImporter:
       Button-press_1: 51505916
       Button-press_2: -1422850110
       Button-press_3: 787229848
+      Button-press_4: -1762496639
+      Button-press_5: -1296649959
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
