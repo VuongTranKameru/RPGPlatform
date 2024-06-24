@@ -13,6 +13,7 @@ TagManager:
   - Coin
   - PointA
   - PointB
+  - PlayerAttack
   layers:
   - Default
   - TransparentFX

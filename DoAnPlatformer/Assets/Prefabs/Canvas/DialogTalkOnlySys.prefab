@@ -45,11 +45,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cff76ea7509b36f409768bb1aa82f983, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialogueScript: {fileID: 0}
   dialoguePanel: {fileID: 4438089485768668766}
   dialogueText: {fileID: 4226106447607000084}
-  dialogue:
-  - hay
-  - tiep
   continueBtn: {fileID: 4860305950423536928}
   exitBtn: {fileID: 4718177789106170298}
 --- !u!1001 &6596384352624675505

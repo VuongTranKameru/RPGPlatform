@@ -55,7 +55,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3187488504157574bbf304a5df2b7b5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemToBuy: {fileID: 11400000, guid: e79ab6efc673b86408b2cfcf9d10d0ec, type: 2}
+  itemToBuy: {fileID: 11400000, guid: d736ede752bdb3340b37e0a4e0216394, type: 2}
   itemCost: 200
   itemIcon: {fileID: 3633562523997383103}
   priceText: {fileID: 1934560514541934819}

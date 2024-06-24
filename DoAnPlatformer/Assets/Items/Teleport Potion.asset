@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 716d34ba2b2d0cb48a1013a4a56a5dbb, type: 3}
+  m_Name: Teleport Potion
+  m_EditorClassIdentifier: 
+  displayName: "B\xECnh D\u01B0\u1EE3c D\u1ECBch Chuy\u1EC3n"
+  description: "Nhanh ch\xF3ng tr\u1EDF v\u1EC1 l\xE0ng"
+  type: 2
+  icon: {fileID: 21300000, guid: a5885d0aedf4ebb41be2d450810fcbc6, type: 3}
+  dropPrefab: {fileID: 1957278248252307241, guid: a38b0d7cb96391d41a885e9a5f007c11, type: 3}
+  canStack: 1
+  maxStackAmount: 5
+  consumables:
+  - type: 1
+    value: 0
+  equipPrefab: {fileID: 0}

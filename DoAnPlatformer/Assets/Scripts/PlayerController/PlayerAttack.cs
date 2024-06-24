@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerAttack : MonoBehaviour
 {
+    internal static PlayerAttack instance;
     
     private Animator animator;
     private BoxCollider2D hitbox;
@@ -12,6 +13,8 @@ public class PlayerAttack : MonoBehaviour
 
     private void Start()
     {
+        instance = this;
+
         animator = GetComponent<Animator>();
         hitbox = transform.Find("HitBox").GetComponent<BoxCollider2D>();
     }

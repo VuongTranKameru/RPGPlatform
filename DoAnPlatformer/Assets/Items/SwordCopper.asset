@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 716d34ba2b2d0cb48a1013a4a56a5dbb, type: 3}
-  m_Name: "Ki\u1EBFm \u0110\u1ED3ng"
+  m_Name: SwordCopper
   m_EditorClassIdentifier: 
   displayName: "Ki\u1EBFm \u0110\u1ED3ng"
   description: "Ki\u1EBFm l\xE0m t\u1EEB \u0111\u1ED3ng, \u0111\xE1nh t\u1ED1t h\u01A1n
