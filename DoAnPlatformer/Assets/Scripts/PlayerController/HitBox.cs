@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class HitBox : MonoBehaviour
 {
-    private void OnTriggerEnter2D(Collider2D enemy)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if (enemy.CompareTag("Enemy"))
+        if (other.tag == "Enemy")
         {
-            //other.GetComponent<IDamageable>().TakeDamage(FindObjectOfType<EquipWeapond>().dameToEnemy);
+            other.GetComponent<IDamageable>().TakeDamage(FindObjectOfType<EquipWeapond>().dameToEnemy);
         }
     }
 }

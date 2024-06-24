@@ -11,9 +11,7 @@ TagManager:
   - Event
   - StopElevate
   - Coin
-  - PointA
-  - PointB
-  - PlayerAttack
+  - Item
   layers:
   - Default
   - TransparentFX

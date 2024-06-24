@@ -12,7 +12,6 @@ public class Inventory : MonoBehaviour
     public Transform dropPosition;
     //public ItemSlotUI[] uiSlots;
     public ItemSlot[] slots;
-    internal ItemSlot[] resourceSlots;
 
     [Header("Selecting Items")]
     private ItemSlot selectedItem;
@@ -35,10 +34,9 @@ public class Inventory : MonoBehaviour
     {
         // get access to itemSlots list because we dont attached any script to them
         slots = new ItemSlot[uInven.uitemSlots.Length];
-        resourceSlots = new ItemSlot[uInven.uitemSlots.Length];
 
         // initialize the slots (loop through all slots and set them up)
-        for (int x = 0; x < slots.Length; x++)
+        for(int x = 0; x < slots.Length; x++)
         {
             slots[x] = new ItemSlot();//Set our Slots
             uInven.uitemSlots[x].index = x;//index of our slots is x
@@ -47,11 +45,6 @@ public class Inventory : MonoBehaviour
         }
 
         ClearSelectedItemWindow();
-    }
-
-    private void Update()
-    {
-        
     }
 
     public void AddItem(ItemData item)
@@ -102,8 +95,6 @@ public class Inventory : MonoBehaviour
                 uInven.uitemSlots[x].Clear();
             }
         }
-
-        CountResourceItem();
     }
 
     ItemSlot GetItemStack(ItemData item)
@@ -129,25 +120,6 @@ public class Inventory : MonoBehaviour
         }
 
         return null;
-    }
-
-    public void CountResourceItem()
-    {
-        // counting every item exist in slot
-        /*for (int x = 0; x < slots.Length; x++)
-            if (slots[x].item != null)
-                Debug.Log(slots[x].item.name);*/
-
-        int y = 0;
-
-        for (int x = 0; x < slots.Length; x++)
-            if (slots[x].item != null)
-                if (slots[x].item.type.ToString() == "Resource")
-                {
-                    resourceSlots[y] = slots[x]; 
-                    //Debug.Log(resourceSlots[y].item.name + resourceSlots[y].quantity);
-                    y++; 
-                }
     }
 
     public void SelectItem(int index)
@@ -265,37 +237,6 @@ public class Inventory : MonoBehaviour
             }
 
             selectedItem.item = null;
-            ClearSelectedItemWindow();
-        }
-
-        UpdateUI();
-    }
-
-    public void RemoveUsedResource(string itemName, int itemQuantity)
-    {
-        ItemSlot selected = new ItemSlot();
-        int selectIndex = 0;
-
-        for (int x = 0; x < slots.Length; x++)
-            if (slots[x].item != null)
-                if (slots[x].item.type.ToString() == "Resource" && slots[x].item.name == itemName)
-                {
-                    selected = slots[x];
-                    selectIndex = x;
-                    break;
-                }
-
-        //Debug.Log(selected.item.name + selected.quantity + "->" + itemQuantity);
-        selected.quantity = itemQuantity;
-
-        if (selected.quantity == 0)
-        {
-            if (uInven.uitemSlots[selectIndex].equipped == true)
-            {
-                UnEquip(selectIndex);
-            }
-
-            selected.item = null;
             ClearSelectedItemWindow();
         }
 
