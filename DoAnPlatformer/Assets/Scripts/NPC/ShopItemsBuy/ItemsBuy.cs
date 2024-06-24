@@ -13,7 +13,6 @@ public class ItemsBuy : MonoBehaviour
     [SerializeField] public TextMeshProUGUI priceText;
     [SerializeField] public AudioSource auSrc;
     
-
     void Start()
     {
         itemIcon.sprite = itemToBuy.icon;
@@ -25,7 +24,7 @@ public class ItemsBuy : MonoBehaviour
         if(itemCost <= MoneyManager.instance.gold)
         {
             MoneyManager.instance.gold -= itemCost;
-            MoneyManager.instance.UpdateGold();
+            UIMoney.instance.UpdateGold();
             auSrc.Play();
             Inventory.instance.AddItem(itemToBuy);
         }

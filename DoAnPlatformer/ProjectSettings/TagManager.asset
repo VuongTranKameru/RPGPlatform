@@ -11,6 +11,8 @@ TagManager:
   - Event
   - StopElevate
   - Coin
+  - PointA
+  - PointB
   layers:
   - Default
   - TransparentFX

@@ -133,8 +133,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dropGift:
   - {fileID: 11400000, guid: e79ab6efc673b86408b2cfcf9d10d0ec, type: 2}
-  dropCount: 1
   dropPosition: {fileID: 7570004483691956142}
+  auOpen: {fileID: 8300000, guid: 9fb9b8caea9fb6d42a182bc5b595c272, type: 3}
 --- !u!61 &5423632423217230735
 BoxCollider2D:
   m_ObjectHideFlags: 0

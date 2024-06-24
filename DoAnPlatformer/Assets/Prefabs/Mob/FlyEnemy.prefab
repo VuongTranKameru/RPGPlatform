@@ -78,7 +78,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 1156681612, guid: e240200f3e39cc5408ccc8bd611ad3e1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -137,7 +137,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!60 &2678260833337026567
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -202,7 +202,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77323567da0740245a9243bdbeaec843, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingHealth: 1
+  enemyDamg: {fileID: 7901953108393053883}
+  startingHealth: 45
   currentHealth: 0
 --- !u!114 &4684625453532446565
 MonoBehaviour:
@@ -284,7 +285,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.08598095, y: -0.6096828}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -295,7 +296,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.797782, y: 2.2193646}
+  m_Size: {x: 3, y: 3}
   m_EdgeRadius: 0
 --- !u!114 &3529386774897828367
 MonoBehaviour:
@@ -320,6 +321,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8896373416397831052}
+  - component: {fileID: 2381717865341178548}
   m_Layer: 0
   m_Name: FlyEnemy
   m_TagString: Untagged
@@ -335,7 +337,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7204554958300981256}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.393374, y: 1.3870958, z: -0.0031771217}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -345,6 +347,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2381717865341178548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7204554958300981256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90693276f5451d44f947bd8dfd547ec4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemy: {fileID: 715504381836061410}
+  dropGift:
+  - {fileID: 11400000, guid: c74c27feb7a8399499e31d766a78b41c, type: 2}
+  - {fileID: 11400000, guid: 167597d75d4aed841b7ac2467b898370, type: 2}
+  dropPosition: {fileID: 7687117680506024834}
+  auFallOut: {fileID: 8300000, guid: 566d2ea6240b489479a6e9fd608c2621, type: 3}
 --- !u!1 &7901953108393053883
 GameObject:
   m_ObjectHideFlags: 0
@@ -435,7 +455,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8a7297c2570cd443a1ba84c94ae611f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dametoPlayer: 20
+  dameToPlayer: 10
 --- !u!1 &8446397269860292175
 GameObject:
   m_ObjectHideFlags: 0
