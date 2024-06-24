@@ -213,7 +213,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startingHealth: 45
   currentHealth: 0
-  auHit: {fileID: 2701917083298626751}
+  iFramesDuration: 0
+  numberOfFlashes: 0
 --- !u!82 &2701917083298626751
 AudioSource:
   m_ObjectHideFlags: 0
@@ -320,7 +321,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1971707403914955580}
   - component: {fileID: 1781190665049647481}
-  - component: {fileID: 4079138156571587221}
+  - component: {fileID: 6049736284263099064}
   m_Layer: 0
   m_Name: ChaseTrigger
   m_TagString: Untagged
@@ -388,7 +389,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3, y: 3}
   m_EdgeRadius: 0
---- !u!114 &4079138156571587221
+--- !u!114 &6049736284263099064
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

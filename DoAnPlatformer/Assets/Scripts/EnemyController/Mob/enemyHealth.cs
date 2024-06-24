@@ -2,62 +2,54 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyHealth : MonoBehaviour
-{
+public class EnemyHealth : MonoBehaviour,IDamageable
+{ 
     public static EnemyHealth instance;
-
     [Header("Health")]
-    public float startingHealth;
+    [SerializeField] public float startingHealth;
     public float currentHealth ;
+    private Animator anim;
 
-    Animator anim;
-    Rigidbody2D rigid;
-    BoxCollider2D hitbox;
-    [SerializeField] AudioSource auHit;
+    [Header("iFrames")]
+    [SerializeField] private float iFramesDuration;
+    [SerializeField] private int numberOfFlashes;
+    private SpriteRenderer spriteRend;
 
     void Start()
     {
-        instance = this;
-
-        anim = gameObject.GetComponent<Animator>();
-        rigid = GetComponent<Rigidbody2D>();
-        hitbox = GetComponent<BoxCollider2D>();
-
         currentHealth = startingHealth;
+        anim = GetComponent<Animator>();
+        spriteRend = GetComponent<SpriteRenderer>();
+
     }
 
-    private void OnTriggerEnter2D(Collider2D hit)
-    {
-        if (hit.CompareTag("PlayerAttack"))
-            ReceiveDamage(EquipWeapond.instance.damgeStats);
-    }
-
-    public void ReceiveDamage(float amount)
+    public void TakeDamage(float amount)
     {
         currentHealth = Mathf.Max(currentHealth - amount, 0.0f);
-
-        if (currentHealth > 0)
+       if(currentHealth > 0)
         {
-            auHit.Play();
-            Debug.Log("wgy");
+            StartCoroutine(Hurt());
+
         }
         // if health reach to zero we call the die function
         if (currentHealth == 0)
         {
-            anim.SetTrigger("die");
-            hitbox.enabled = false;
-            rigid.constraints = RigidbodyConstraints2D.FreezeAll;
-
-            StartCoroutine(Die());
+            Die();
+        }
+    }
+    public void Die()
+    {
+        Debug.Log("Enemy is Dead");
+        anim.SetTrigger("die");
+        Destroy(gameObject);
+    }
+    private IEnumerator Hurt()
+    {
+        for (int i = 0; i < numberOfFlashes; i++)
+        {
+            spriteRend.color = new Color(1, 0, 0, 0.5f);
+            yield return new WaitForSeconds(iFramesDuration / (numberOfFlashes * 2));
         }
     }
 
-    IEnumerator Die()
-    {
-        /*EnemyDrop.instance.DropFromEnemy();
-        Destroy(gameObject);*/
-        yield return new WaitForSeconds(0.5f);
-
-        gameObject.SetActive(false);
-    }
 }
