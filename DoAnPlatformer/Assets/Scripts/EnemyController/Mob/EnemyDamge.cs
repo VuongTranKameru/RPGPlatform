@@ -4,12 +4,20 @@ using UnityEngine;
 
 public class EnemyDamge : MonoBehaviour
 {
-    public float dametoPlayer;
+    public float dameToPlayer;
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag ==  "Player")
         {
-            HealthManager.instance.TakeDamage(dametoPlayer);
+            HealthManager.instance.TakeDamage(dameToPlayer);
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
+            HealthManager.instance.TakeDamage(dameToPlayer);
         }
     }
 }

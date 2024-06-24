@@ -2,42 +2,62 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyHealth : MonoBehaviour,IDamageable
+public class EnemyHealth : MonoBehaviour
 {
     public static EnemyHealth instance;
+
     [Header("Health")]
-    [SerializeField] public float startingHealth;
+    public float startingHealth;
     public float currentHealth ;
-    private Animator anim;
-    
+
+    Animator anim;
+    Rigidbody2D rigid;
+    BoxCollider2D hitbox;
+    [SerializeField] AudioSource auHit;
+
     void Start()
     {
         instance = this;
+
+        anim = gameObject.GetComponent<Animator>();
+        rigid = GetComponent<Rigidbody2D>();
+        hitbox = GetComponent<BoxCollider2D>();
+
         currentHealth = startingHealth;
-        anim = GetComponent<Animator>();
     }
 
-    public void TakeDamage(float amount)
+    private void OnTriggerEnter2D(Collider2D hit)
+    {
+        if (hit.CompareTag("PlayerAttack"))
+            ReceiveDamage(EquipWeapond.instance.damgeStats);
+    }
+
+    public void ReceiveDamage(float amount)
     {
         currentHealth = Mathf.Max(currentHealth - amount, 0.0f);
-        if(currentHealth > 0)
+
+        if (currentHealth > 0)
         {
-            
+            auHit.Play();
+            Debug.Log("wgy");
         }
         // if health reach to zero we call the die function
         if (currentHealth == 0)
         {
-            Die();
+            anim.SetTrigger("die");
+            hitbox.enabled = false;
+            rigid.constraints = RigidbodyConstraints2D.FreezeAll;
+
+            StartCoroutine(Die());
         }
     }
 
-    public void Die()
+    IEnumerator Die()
     {
-        Debug.Log("Enemy is Dead");
-        anim.SetTrigger("die");
-        anim.ResetTrigger("die");
         /*EnemyDrop.instance.DropFromEnemy();
         Destroy(gameObject);*/
+        yield return new WaitForSeconds(0.5f);
+
         gameObject.SetActive(false);
     }
 }

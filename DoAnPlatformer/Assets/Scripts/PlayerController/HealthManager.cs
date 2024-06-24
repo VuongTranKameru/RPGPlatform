@@ -1,8 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
-using UnityEditor;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class HealthManager : MonoBehaviour,IDamageable
@@ -59,7 +59,7 @@ public class HealthManager : MonoBehaviour,IDamageable
         // if health reach to zero we call the die function
         if (currentHealth == 0)
         {
-            Die();
+            //Die();
         }
     }
 
@@ -77,6 +77,7 @@ public class HealthManager : MonoBehaviour,IDamageable
     public void Die()
     {
         Debug.Log("Player is Dead");
+        SceneManager.LoadScene("GameOverScene");
     }
 
     private IEnumerator Invunerability()
