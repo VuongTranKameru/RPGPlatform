@@ -39857,17 +39857,21 @@ PrefabInstance:
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 755511167504743620, guid: 7734217f7cc3afd46b243128d7b6c842, type: 3}
+      propertyPath: dropGift.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: bacb2b274bd82fe4f8bb3436ce758a82, type: 2}
+    - target: {fileID: 755511167504743620, guid: 7734217f7cc3afd46b243128d7b6c842, type: 3}
       propertyPath: dropGift.Array.data[1]
       value: 
-      objectReference: {fileID: 11400000, guid: e79ab6efc673b86408b2cfcf9d10d0ec, type: 2}
+      objectReference: {fileID: 11400000, guid: d736ede752bdb3340b37e0a4e0216394, type: 2}
     - target: {fileID: 755511167504743620, guid: 7734217f7cc3afd46b243128d7b6c842, type: 3}
       propertyPath: dropGift.Array.data[2]
       value: 
-      objectReference: {fileID: 11400000, guid: e79ab6efc673b86408b2cfcf9d10d0ec, type: 2}
+      objectReference: {fileID: 11400000, guid: d736ede752bdb3340b37e0a4e0216394, type: 2}
     - target: {fileID: 755511167504743620, guid: 7734217f7cc3afd46b243128d7b6c842, type: 3}
       propertyPath: dropGift.Array.data[3]
       value: 
-      objectReference: {fileID: 11400000, guid: 0f9f69130b724cb49b29f8582b1d9f35, type: 2}
+      objectReference: {fileID: 11400000, guid: d736ede752bdb3340b37e0a4e0216394, type: 2}
     - target: {fileID: 4694657448004990306, guid: 7734217f7cc3afd46b243128d7b6c842, type: 3}
       propertyPath: m_RootOrder
       value: 4

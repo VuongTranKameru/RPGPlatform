@@ -193,6 +193,8 @@ public class Inventory : MonoBehaviour
 
     public void OnUseButton()
     {
+        bool checkTele = false;
+
         if(selectedItem.item.type == ItemType.Consumable){
             for(int x = 0; x < selectedItem.item.consumables.Length; x++)
             {
@@ -203,13 +205,22 @@ public class Inventory : MonoBehaviour
                         break;
                     case ConsumableType.BuffJump: PlayerController.instance.JumpMore(selectedItem.item.consumables[x].value);
                         break;
-                    // case ConsumableType.Magic : MacgicManager.instance.Heal(selectedItem.item.consumables[x].value); break;
+                    case ConsumableType.Magic:
+                        {
+                            Teleport.instance.TeleportPotionActive();
+                            checkTele = true;
+                            break;
+                        }
+                        // case ConsumableType.Magic : MacgicManager.instance.Heal(selectedItem.item.consumables[x].value); break;
                 }
             }
         }
         auSrc.PlayOneShot(auUseButton);
 
         RemoveSelectedItem();
+
+        if(checkTele)
+            UIPlayingController.instance.CloseInventoryButton();
     }
 
     public void OnEquipButton()

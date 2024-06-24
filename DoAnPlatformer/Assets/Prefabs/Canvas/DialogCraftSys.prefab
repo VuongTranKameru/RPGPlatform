@@ -1919,7 +1919,7 @@ PrefabInstance:
     - target: {fileID: 822567015889626993, guid: abfc1be01bdfce040a017145e91836db, type: 3}
       propertyPath: itemToCraft
       value: 
-      objectReference: {fileID: 11400000, guid: 85c379e4b1e17c54a9624036e9045450, type: 2}
+      objectReference: {fileID: 11400000, guid: 6aad9edfbf3ef534ca494b38ac42838b, type: 2}
     - target: {fileID: 822567015889626993, guid: abfc1be01bdfce040a017145e91836db, type: 3}
       propertyPath: resources.Array.data[0].value
       value: 5
@@ -2084,6 +2084,10 @@ PrefabInstance:
       propertyPath: auNoEnough
       value: 
       objectReference: {fileID: 8854093799283673840}
+    - target: {fileID: 822567015889626993, guid: abfc1be01bdfce040a017145e91836db, type: 3}
+      propertyPath: itemToCraft
+      value: 
+      objectReference: {fileID: 11400000, guid: 3e2572bc32d0c7544a4ade7825b5c0ee, type: 2}
     - target: {fileID: 2342134819936888917, guid: abfc1be01bdfce040a017145e91836db, type: 3}
       propertyPath: itemCraft
       value: 

@@ -141,8 +141,8 @@ GameObject:
   - component: {fileID: 4101704786308304460}
   - component: {fileID: 1399467642462870754}
   - component: {fileID: 31485561873757728}
-  - component: {fileID: 1595968383454282710}
   - component: {fileID: 9042065340769176651}
+  - component: {fileID: 9177832511502179062}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -197,7 +197,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dropPosition: {fileID: 7290692017290979580}
-  auSrc: {fileID: 1595968383454282710}
+  auSrc: {fileID: 9042065340769176651}
   auUseButton: {fileID: 8300000, guid: ba39bf8baf6d13046889b2d64822381a, type: 3}
   auEquipButton: {fileID: 8300000, guid: 78ad99fd0a0a5144280b07bbdba84815, type: 3}
   auUnequipButton: {fileID: 8300000, guid: 78ad99fd0a0a5144280b07bbdba84815, type: 3}
@@ -244,7 +244,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 038ef861dac4e2f4a987cf309ff578cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  auSrc: {fileID: 1595968383454282710}
+  auSrc: {fileID: 9042065340769176651}
   auAttack: {fileID: 8300000, guid: 323e15cfe809e114ab92c9f4b25e8bc2, type: 3}
 --- !u!114 &8292511152227985268
 MonoBehaviour:
@@ -264,7 +264,7 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
-  auSrc: {fileID: 1595968383454282710}
+  auSrc: {fileID: 9042065340769176651}
   runsSound: {fileID: 9042065340769176651}
   jumpSound: {fileID: 8300000, guid: 9f7c9880b67223d45ab34c8a10846cc4, type: 3}
   standStillWhileTalk: 0
@@ -425,7 +425,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!82 &1595968383454282710
+--- !u!82 &9042065340769176651
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -435,8 +435,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 8300000, guid: af63ef848c98f024cac14630766a2319, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -521,7 +521,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!82 &9042065340769176651
+--- !u!82 &9177832511502179062
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -531,7 +531,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: af63ef848c98f024cac14630766a2319, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -658,6 +658,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7996959566227325487}
   - component: {fileID: 652573517031415223}
+  - component: {fileID: 1048008600326668623}
   m_Layer: 8
   m_Name: DetectPosition
   m_TagString: Untagged
@@ -690,6 +691,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ea1d31ca8a34f1c49a76f2d1541a95db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerPosition: {fileID: 7996959566227325487}
+  player: {fileID: 3367023815717862297}
+--- !u!114 &1048008600326668623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7508658498409928616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 039e3ce8ba6deae4da42d140e9edde20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   playerPosition: {fileID: 7996959566227325487}

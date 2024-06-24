@@ -59,13 +59,13 @@ public class PlayerSpawn : MonoBehaviour
             player.GetComponent<PlayerController>().enabled = false;
             Debug.Log("forest");
         }
-        else if (SceneManager.GetActiveScene().name == "BossScene" && lastScene == "Scene2-MineCave")
+        else if (SceneManager.GetActiveScene().name == "Scene-Boss" && lastScene == "Scene2-MineCave")
         {   //from cave to forest
             playerPosition.transform.position = Scene3Exit();
             player.GetComponent<PlayerController>().enabled = false;
             Debug.Log("forest");
         }
-        else if (SceneManager.GetActiveScene().name == "Scene2-MineCave" && lastScene == "BossScene")
+        else if (SceneManager.GetActiveScene().name == "Scene2-MineCave" && lastScene == "Scene-Boss")
         {   //from cave to forest
             playerPosition.transform.position = Scene3Entrace();
             player.GetComponent<PlayerController>().enabled = false;
@@ -90,7 +90,7 @@ public class PlayerSpawn : MonoBehaviour
 
     Vector2 Scene3Entrace()
     {
-        return new Vector2(1.8f, -2f);
+        return new Vector2(2f, -2f);
     }
 
     Vector2 Scene3Exit()
