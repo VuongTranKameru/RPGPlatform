@@ -23,12 +23,12 @@ public class RangedEnemy : MonoBehaviour
 
     //References
     private Animator anim;
-    private EnemyPatrol1 enemyPatrol;
+    private EnemyPatrol enemyPatrol;
 
     private void Awake()
     {
         anim = GetComponent<Animator>();
-        enemyPatrol = GetComponentInParent<EnemyPatrol1>();
+        enemyPatrol = GetComponentInParent<EnemyPatrol>();
     }
 
     private void Update()
