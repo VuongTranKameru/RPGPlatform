@@ -25,7 +25,6 @@ public class HealthManager : MonoBehaviour,IDamageable
         instance = this;
         uiHP = FindAnyObjectByType<UIHpManager>();
         spriteRend = GetComponent<SpriteRenderer>();
-        takeDmg = FindAnyObjectByType<GameObject>();
     }
 
     void Start()
@@ -56,7 +55,6 @@ public class HealthManager : MonoBehaviour,IDamageable
         currentHealth = Mathf.Max(currentHealth - amount, 0.0f);
         if (currentHealth > 0)
         {
-            Debug.Log("hit");
             StartCoroutine(HitEffect());
             StartCoroutine(Invunerability());
         }
@@ -87,8 +85,9 @@ public class HealthManager : MonoBehaviour,IDamageable
     
     IEnumerator HitEffect()
     {
+        Debug.Log("hit");
         takeDmg.SetActive(true);
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.2f);
         takeDmg.SetActive(false);
     }
 
