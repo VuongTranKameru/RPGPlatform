@@ -13,6 +13,7 @@ public class BossHP : MonoBehaviour
     Rigidbody2D rigid;
     BoxCollider2D hitbox;
     Animator anim;
+    [SerializeField] GameObject takeDmg;
     [SerializeField] AudioSource auHit, auScream;
 
     SpriteRenderer sprite;
@@ -40,24 +41,36 @@ public class BossHP : MonoBehaviour
         currentHealth = Mathf.Max(currentHealth - amount, 0.0f);
 
         if (currentHealth > 0)
+        {
             auHit.Play();
+            StartCoroutine(HitEffect());
+        }
         // if health reach to zero we call the die function
         if (currentHealth == 0)
         {
             hitbox.enabled = false;
             rigid.constraints = RigidbodyConstraints2D.FreezeAll;
 
-            anim.SetTrigger("die");
+            anim.SetTrigger("die"); 
+            takeDmg.SetActive(true);
             auScream.Play();
 
             StartCoroutine(Die());
         }
     }
 
+    IEnumerator HitEffect()
+    {
+        takeDmg.SetActive(true);
+        yield return new WaitForSeconds(.35f);
+        takeDmg.SetActive(false);
+    }
+
     IEnumerator Die()
     {
         yield return new WaitForSeconds(2f);
-        
+
+        takeDmg.SetActive(false);
         StartCoroutine(FadeAway(sprite));
         yield return new WaitForSeconds(1f);
 
@@ -72,8 +85,6 @@ public class BossHP : MonoBehaviour
         {
             transparent.a -= Time.deltaTime / 1f;
             spr.color = transparent;
-
-            Debug.Log(transparent.a);
 
             if (transparent.a <= 0f)
                 transparent.a = 0f;

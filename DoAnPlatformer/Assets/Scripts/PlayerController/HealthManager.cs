@@ -14,7 +14,8 @@ public class HealthManager : MonoBehaviour,IDamageable
     [SerializeField] internal float currentHealth, maxHealth, healthRegen;
     //[SerializeField] TMP_Text perhealthBar;
 
-    [Header("iFrames")]
+    [Header("iFrames For Take Damage")]
+    [SerializeField] GameObject takeDmg;
     [SerializeField] private float iFramesDuration;
     [SerializeField] private int numberOfFlashes;
     private SpriteRenderer spriteRend;
@@ -24,6 +25,7 @@ public class HealthManager : MonoBehaviour,IDamageable
         instance = this;
         uiHP = FindAnyObjectByType<UIHpManager>();
         spriteRend = GetComponent<SpriteRenderer>();
+        takeDmg = FindAnyObjectByType<GameObject>();
     }
 
     void Start()
@@ -54,6 +56,8 @@ public class HealthManager : MonoBehaviour,IDamageable
         currentHealth = Mathf.Max(currentHealth - amount, 0.0f);
         if (currentHealth > 0)
         {
+            Debug.Log("hit");
+            StartCoroutine(HitEffect());
             StartCoroutine(Invunerability());
         }
         // if health reach to zero we call the die function
@@ -76,8 +80,16 @@ public class HealthManager : MonoBehaviour,IDamageable
 
     public void Die()
     {
+        //player controller handle it
         Debug.Log("Player is Dead");
         SceneManager.LoadScene("GameOverScene");
+    }
+    
+    IEnumerator HitEffect()
+    {
+        takeDmg.SetActive(true);
+        yield return new WaitForSeconds(1f);
+        takeDmg.SetActive(false);
     }
 
     private IEnumerator Invunerability()

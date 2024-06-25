@@ -19,8 +19,14 @@ public class Inventory : MonoBehaviour
     private int selectedItemIndex;
     //public TMP_Text selectedItemName, selectedItemDescription, selectedItemStatName, selectedItemStatValue;
     //public GameObject useButton, equipButton, UnEquipButton, dropButton;
+
+    [Header("Audio")]
     [SerializeField] AudioSource auSrc;
-    [SerializeField] AudioClip auUseButton, auEquipButton, auUnequipButton, auDropButton;
+    [SerializeField] AudioClip auEquipButton, auUnequipButton, auDropButton;
+    [Header("Using Item Audio")]
+    [SerializeField] AudioClip auHeal;
+    [SerializeField] AudioClip auBuff, auJump, auTele;
+
 
     private int currentequipIndex;
     
@@ -47,11 +53,6 @@ public class Inventory : MonoBehaviour
         }
 
         ClearSelectedItemWindow();
-    }
-
-    private void Update()
-    {
-        
     }
 
     public void AddItem(ItemData item)
@@ -199,23 +200,39 @@ public class Inventory : MonoBehaviour
             for(int x = 0; x < selectedItem.item.consumables.Length; x++)
             {
                 switch (selectedItem.item.consumables[x].type){
-                    case ConsumableType.Health: HealthManager.instance.Heal(selectedItem.item.consumables[x].value); 
-                        break;
-                    case ConsumableType.BuffHP: HealthManager.instance.IncreaseHealth(selectedItem.item.consumables[x].value);
-                        break;
-                    case ConsumableType.BuffJump: PlayerController.instance.JumpMore(selectedItem.item.consumables[x].value);
-                        break;
+                    case ConsumableType.Health:
+                        {
+                            HealthManager.instance.Heal(selectedItem.item.consumables[x].value);
+
+                            AudioSource.PlayClipAtPoint(auHeal, Camera.main.transform.position);
+                            break;
+                        }
+                    case ConsumableType.BuffHP:
+                        {
+                            HealthManager.instance.IncreaseHealth(selectedItem.item.consumables[x].value);
+
+                            AudioSource.PlayClipAtPoint(auBuff, Camera.main.transform.position);
+                            break;
+                        }
+                    case ConsumableType.BuffJump:
+                        {
+                            PlayerController.instance.JumpMore(selectedItem.item.consumables[x].value);
+
+                            AudioSource.PlayClipAtPoint(auJump, Camera.main.transform.position);
+                            break;
+                        }
                     case ConsumableType.Magic:
                         {
                             Teleport.instance.TeleportPotionActive();
                             checkTele = true;
+
+                            auSrc.PlayOneShot(auTele);
                             break;
                         }
                         // case ConsumableType.Magic : MacgicManager.instance.Heal(selectedItem.item.consumables[x].value); break;
                 }
             }
         }
-        auSrc.PlayOneShot(auUseButton);
 
         RemoveSelectedItem();
 
