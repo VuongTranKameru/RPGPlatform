@@ -1,63 +1,85 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
-using static TMPro.SpriteAssetUtilities.TexturePacker_JsonArray;
-using UnityEngine.TextCore.Text;
 
 public class BossSkill : MonoBehaviour
 {
+    BossHP hp;
+
     //Shotting Skills
     public Transform bulletPos;
     public GameObject bulletPrefab;
     public float timer;
 
     //TeleSkill
-    public Transform telePos;
-    private float healthBossCanTele;
-    public int teleCount = 1 ;
+    public Transform telePos, teleRestartPos;
+    private int healthBossCanTele;
+    public int teleCount;
 
+    Animator anim;
+    SpriteRenderer sprite;
 
-    void Update()
-    {  
-        ShootSkill();
-        TeleSkill();   
+    private void Awake()
+    {
+        hp = FindAnyObjectByType<BossHP>();
+
+        anim = gameObject.GetComponent<Animator>();
+        sprite = GetComponent<SpriteRenderer>();
     }
 
+    void Update()
+    {
+        if (hp.currentHealth > 0)
+        {
+            ShootSkill();
+            TeleSkill();
+        }
+    }
 
     public void ShootSkill()
     {
-        
         timer += Time.deltaTime;
 
         if (timer > 2)
         {
+            anim.SetTrigger("Fire");
             timer = 0;
-            Shoot();
+            Invoke(nameof(Shoot), .63f);
         }
     }
+
     public void TeleSkill()
     {
-        healthBossCanTele = Mathf.Round(EnemyHealth.instance.startingHealth / 2);
-        if (EnemyHealth.instance.currentHealth <= healthBossCanTele)
+        healthBossCanTele = (int)hp.currentHealth;
+        if (healthBossCanTele % 100 == 0 && healthBossCanTele > 0)
         {
-            if (teleCount >= 1)
+            teleCount = healthBossCanTele / 100;
+
+            if (teleCount % 2 == 1)
+            {
+                transform.position = TeleRestartPos().position;
+                sprite.flipX = false;
+            }
+            else if (teleCount % 2 == 0)
             {
                 transform.position = TelePosSkill().position;
-                teleCount--;
+                sprite.flipX = true;
             }
-
         }
     }
 
     public void Shoot()
     {
-         Instantiate(bulletPrefab, bulletPos.position, Quaternion.identity);
+        Instantiate(bulletPrefab, bulletPos.position, Quaternion.identity);
     }
 
-    public Transform TelePosSkill()
+    Transform TelePosSkill()
     {
-        
         return telePos;
+    }
+
+    Transform TeleRestartPos()
+    {
+        return teleRestartPos;
     }
 }

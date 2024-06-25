@@ -213,8 +213,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startingHealth: 45
   currentHealth: 0
-  iFramesDuration: 0
-  numberOfFlashes: 0
+  auHit: {fileID: 2701917083298626751}
 --- !u!82 &2701917083298626751
 AudioSource:
   m_ObjectHideFlags: 0

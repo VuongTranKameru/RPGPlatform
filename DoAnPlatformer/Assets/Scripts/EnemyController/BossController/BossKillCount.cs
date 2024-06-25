@@ -21,8 +21,13 @@ public class BossKillCount : MonoBehaviour
         if (boss != null && setEnding != null)
             if (!boss.activeInHierarchy)
             {
-                setEnding.SetActive(true);
+                Invoke(nameof(OpenExit), 1f);
                 checkBossClear = true;
             }
+    }
+
+    void OpenExit()
+    {
+        setEnding.SetActive(true);
     }
 }
