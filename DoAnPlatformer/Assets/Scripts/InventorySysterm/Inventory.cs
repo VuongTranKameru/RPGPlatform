@@ -21,11 +21,9 @@ public class Inventory : MonoBehaviour
     //public GameObject useButton, equipButton, UnEquipButton, dropButton;
 
     [Header("Audio")]
-    [SerializeField] AudioSource auSrc;
-    [SerializeField] AudioClip auEquipButton, auUnequipButton, auDropButton;
-    [Header("Using Item Audio")]
-    [SerializeField] AudioClip auHeal;
-    [SerializeField] AudioClip auBuff, auJump, auTele;
+    [SerializeField] AudioClip auEquipButton;
+    [SerializeField] AudioClip auUnequipButton, auDropButton;
+    [SerializeField] AudioClip auHeal, auBuff, auJump, auTele;
 
 
     private int currentequipIndex;
@@ -226,7 +224,7 @@ public class Inventory : MonoBehaviour
                             Teleport.instance.TeleportPotionActive();
                             checkTele = true;
 
-                            auSrc.PlayOneShot(auTele);
+                            AudioSource.PlayClipAtPoint(auTele, Camera.main.transform.position);
                             break;
                         }
                         // case ConsumableType.Magic : MacgicManager.instance.Heal(selectedItem.item.consumables[x].value); break;
@@ -250,7 +248,7 @@ public class Inventory : MonoBehaviour
         uInven.uitemSlots[selectedItemIndex].equipped = true;
         currentequipIndex = selectedItemIndex;
         EquipManager.instance.EquipNew(selectedItem.item);
-        auSrc.PlayOneShot(auEquipButton);
+        AudioSource.PlayClipAtPoint(auEquipButton, Camera.main.transform.position);
 
         UpdateUI();
         SelectItem(selectedItemIndex);
@@ -261,9 +259,9 @@ public class Inventory : MonoBehaviour
         uInven.uitemSlots[index].equipped = false;
         EquipManager.instance.Unequip();
         UpdateUI();
-        auSrc.PlayOneShot(auUnequipButton);
+        AudioSource.PlayClipAtPoint(auUnequipButton, Camera.main.transform.position);
 
-        if(selectedItemIndex == index)
+        if (selectedItemIndex == index)
         {
             SelectItem(index);
         }
@@ -276,7 +274,7 @@ public class Inventory : MonoBehaviour
 
     public void OnDropButton()
     {
-        auSrc.PlayOneShot(auDropButton);
+        AudioSource.PlayClipAtPoint(auDropButton, Camera.main.transform.position);
         ThrowItem(selectedItem.item);
         RemoveSelectedItem();
     }

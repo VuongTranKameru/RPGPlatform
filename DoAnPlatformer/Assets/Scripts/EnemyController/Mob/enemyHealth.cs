@@ -13,6 +13,7 @@ public class EnemyHealth : MonoBehaviour
     Animator anim;
     Rigidbody2D rigid;
     BoxCollider2D hitbox;
+    [SerializeField] GameObject takeDmg;
     [SerializeField] AudioSource auHit;
 
     void Start()
@@ -39,6 +40,7 @@ public class EnemyHealth : MonoBehaviour
         if (currentHealth > 0)
         {
             auHit.Play();
+            StartCoroutine(HitEffect());
             Debug.Log("wgy");
         }
         // if health reach to zero we call the die function
@@ -50,6 +52,14 @@ public class EnemyHealth : MonoBehaviour
 
             StartCoroutine(Die());
         }
+    }
+
+    IEnumerator HitEffect()
+    {
+        Debug.Log("hit");
+        takeDmg.SetActive(true);
+        yield return new WaitForSeconds(0.2f);
+        takeDmg.SetActive(false);
     }
 
     IEnumerator Die()
