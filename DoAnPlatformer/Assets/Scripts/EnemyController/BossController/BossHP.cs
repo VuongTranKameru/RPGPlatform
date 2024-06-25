@@ -62,7 +62,7 @@ public class BossHP : MonoBehaviour
     IEnumerator HitEffect()
     {
         takeDmg.SetActive(true);
-        yield return new WaitForSeconds(.35f);
+        yield return new WaitForSeconds(.3f);
         takeDmg.SetActive(false);
     }
 
