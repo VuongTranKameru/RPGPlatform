@@ -8,7 +8,6 @@ public class BulletController : MonoBehaviour
     public float speed;
     [SerializeField] Rigidbody2D rb;
     [SerializeField] Animator anim;
-    
 
     void Start()
     {
