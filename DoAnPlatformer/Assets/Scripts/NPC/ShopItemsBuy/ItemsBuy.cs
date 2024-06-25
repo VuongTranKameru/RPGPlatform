@@ -11,7 +11,7 @@ public class ItemsBuy : MonoBehaviour
     [SerializeField] public int itemCost;
     public Image itemIcon;
     [SerializeField] public TextMeshProUGUI priceText, nameText;
-    [SerializeField] public AudioSource auSrc;
+    [SerializeField] public AudioSource auBuy, auNotEnough;
     
     void Start()
     {
@@ -26,11 +26,12 @@ public class ItemsBuy : MonoBehaviour
         {
             MoneyManager.instance.gold -= itemCost;
             UIMoney.instance.UpdateGold();
-            auSrc.Play();
+            auBuy.Play();
             Inventory.instance.AddItem(itemToBuy);
         }
         else
         {
+            auNotEnough.Play();
             Debug.Log("Player not enough Money to Buy");
         }
     }

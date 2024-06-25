@@ -21,7 +21,7 @@ public class PlayerController : MonoBehaviour
     private float JumpSpeed = 15f;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
-    [SerializeField] AudioSource auSrc,runsSound;
+    [SerializeField] AudioSource runsSound;
     [SerializeField] AudioClip jumpSound;
 
     public bool standStillWhileTalk = false;
@@ -96,7 +96,7 @@ public class PlayerController : MonoBehaviour
             jumpCount -= 1;
             anim.SetBool("isJump", true);
             myRB.velocity = new Vector2(myRB.velocity.x, JumpSpeed);
-            auSrc.PlayOneShot(jumpSound);
+            AudioSource.PlayClipAtPoint(jumpSound, Camera.main.transform.position);
         }
     }
 
