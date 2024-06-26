@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: SwordSilver
   m_EditorClassIdentifier: 
   displayName: "Ki\u1EBFm B\u1EA1c"
-  description: "Ki\u1EBFm l\xE0m t\u1EEB b\u1EA1c, c\u1EF1c k\xEC s\u1EAFc b\xE9n"
+  description: "Ki\u1EBFm l\xE0m t\u1EEB b\u1EA1c, c\u1EF1c k\xEC s\u1EAFc b\xE9n."
   type: 1
   icon: {fileID: 21300000, guid: 5648fc55b2200684fb814e3d9ad01428, type: 3}
   dropPrefab: {fileID: 8280614442814543628, guid: 7a7644b294f24ad48aaaaed7c0c7954c, type: 3}

@@ -415,7 +415,7 @@ GameObject:
   - component: {fileID: 8896373416397831052}
   - component: {fileID: 2381717865341178548}
   m_Layer: 0
-  m_Name: FlyEnemy
+  m_Name: Fly
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -453,6 +453,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemy: {fileID: 715504381836061410}
   dropGift:
+  - {fileID: 11400000, guid: 0376b9afb542e3c499e2cd090f03dd25, type: 2}
   - {fileID: 11400000, guid: c74c27feb7a8399499e31d766a78b41c, type: 2}
   - {fileID: 11400000, guid: 167597d75d4aed841b7ac2467b898370, type: 2}
   dropPosition: {fileID: 7687117680506024834}

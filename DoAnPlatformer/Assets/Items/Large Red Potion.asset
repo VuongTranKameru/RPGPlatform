@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Large Red Potion
   m_EditorClassIdentifier: 
   displayName: "B\xECnh M\xE1u B\u1EF1"
-  description: "H\u1ED3i to\xE0n b\u1ED9 m\xE1u"
+  description: "H\u1ED3i to\xE0n b\u1ED9 m\xE1u."
   type: 2
   icon: {fileID: 21300000, guid: 023b637d0243ccf4389a150a37663138, type: 3}
   dropPrefab: {fileID: 1957278248252307241, guid: aa48a6170965d1f4bb024e7e49de7a5b, type: 3}

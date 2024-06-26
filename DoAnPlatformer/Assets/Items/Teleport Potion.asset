@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Teleport Potion
   m_EditorClassIdentifier: 
   displayName: "B\xECnh D\u01B0\u1EE3c D\u1ECBch Chuy\u1EC3n"
-  description: "Nhanh ch\xF3ng tr\u1EDF v\u1EC1 l\xE0ng"
+  description: "Nhanh ch\xF3ng tr\u1EDF v\u1EC1 l\xE0ng."
   type: 2
   icon: {fileID: 21300000, guid: a5885d0aedf4ebb41be2d450810fcbc6, type: 3}
   dropPrefab: {fileID: 1957278248252307241, guid: a38b0d7cb96391d41a885e9a5f007c11, type: 3}
