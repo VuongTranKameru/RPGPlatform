@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Drop - Snail Steel
   m_EditorClassIdentifier: 
   displayName: "V\u1ECF \u1ED0c"
-  description: "B\u1EB1ng c\xE1ch n\xE0o \u0111\xF3 ch\xFAng c\u1EE9ng nh\u01B0 s\u1EAFt"
+  description: "B\u1EB1ng c\xE1ch n\xE0o \u0111\xF3 ch\xFAng c\u1EE9ng nh\u01B0 s\u1EAFt."
   type: 0
   icon: {fileID: 21300000, guid: f0e480ca8fad1e941a669b313634b7dd, type: 3}
   dropPrefab: {fileID: 1957278248252307241, guid: 18c014545e633d64e89b59fe782231c4, type: 3}

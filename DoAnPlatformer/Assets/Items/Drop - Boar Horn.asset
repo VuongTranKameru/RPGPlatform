@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   displayName: "R\u0103ng L\u1EE3n R\u1EEBng"
   description: "V\u0169 kh\xED c\u1EE7a lo\xE0i l\u1EE3n r\u1EEBng, gi\xFAp b\u1ECDn
-    ch\xFAng h\xFAt k\u1EBB \u0111\u1ECBch"
+    ch\xFAng h\xFAt k\u1EBB \u0111\u1ECBch."
   type: 0
   icon: {fileID: 21300000, guid: 6abb0f54cb0c8724e867ff6ca3bae6d2, type: 3}
   dropPrefab: {fileID: 1957278248252307241, guid: c42b9f2c128956748b4c417fef7501f1, type: 3}

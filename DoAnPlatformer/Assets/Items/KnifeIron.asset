@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: KnifeIron
   m_EditorClassIdentifier: 
   displayName: "Dao S\u1EAFt"
-  description: "Dao t\xE2n th\u1EE7, kh\xF4ng m\u1EA1nh l\u1EAFm"
+  description: "Dao t\xE2n th\u1EE7, kh\xF4ng m\u1EA1nh l\u1EAFm."
   type: 1
   icon: {fileID: 21300000, guid: 55b7795ee396eae4481858956163c8f0, type: 3}
   dropPrefab: {fileID: 8280614442814543628, guid: 5d1d330bc73e26b49b7ae3b52359e7e7, type: 3}

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Increasing Jump Potion
   m_EditorClassIdentifier: 
   displayName: "T\u0103ng \u0110\u1ED9 Nh\u1EA3y"
-  description: "Nh\u1EA3y \u0111\u01B0\u1EE3c nhi\u1EC1u l\u1EA7n h\u01A1n"
+  description: "Nh\u1EA3y \u0111\u01B0\u1EE3c nhi\u1EC1u l\u1EA7n h\u01A1n."
   type: 2
   icon: {fileID: 21300000, guid: b34a0f5aefa1ee242be33c0c953bde3f, type: 3}
   dropPrefab: {fileID: 1957278248252307241, guid: 23e35083d50986d40a331521bd4a9492, type: 3}

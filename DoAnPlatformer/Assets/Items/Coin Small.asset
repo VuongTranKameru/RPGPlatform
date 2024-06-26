@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 716d34ba2b2d0cb48a1013a4a56a5dbb, type: 3}
   m_Name: Coin Small
   m_EditorClassIdentifier: 
-  displayName: 
-  description: 
+  displayName: "Ti\u1EC1n xu nh\u1ECF"
+  description: "M\u1EC7nh gi\xE1 20 xu."
   type: 0
-  icon: {fileID: 0}
+  icon: {fileID: -72888612, guid: fb755e59f7bbe494cbb223b510a49114, type: 3}
   dropPrefab: {fileID: 1957278248252307241, guid: 984c4523c82f1ef41845e17a334c8036, type: 3}
   canStack: 0
   maxStackAmount: 0
