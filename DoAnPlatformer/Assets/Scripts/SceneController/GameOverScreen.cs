@@ -31,6 +31,13 @@ public class GameOverScreen : MonoBehaviour
         tMnyPoint = MoneyManager.instance.coinPoint;
         tMny.text = "+" + tMnyPoint.ToString();
 
+        if (BossKillCount.instance == null || !BossKillCount.instance.checkBossClear)
+        {
+            scorePoint = 0;
+            tB.text = "0";
+            return;
+        }
+
         if (BossKillCount.instance.checkBossClear)
         {
             scorePoint = 1000;
@@ -43,7 +50,7 @@ public class GameOverScreen : MonoBehaviour
     {
         int ingamePoint = tHPPoint + tStrPoint + tMnyPoint;
 
-        if (!BossKillCount.instance.checkBossClear)
+        if (BossKillCount.instance == null || !BossKillCount.instance.checkBossClear)
             return ingamePoint;
 
         return ingamePoint * scorePoint;
