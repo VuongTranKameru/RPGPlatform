@@ -11,5 +11,6 @@ A game project made when we learned at school. There is not much, still have man
 - Collecting: can be able to use items for healing and buffing.
 - Crafting system: do the craft, you will have stronger weapons to fight the enemies.
 
-<h2>LINK TO DOWNLOAD: HERE</h2>
-👉https://github.com/VuongTranKameru/RPGPlatform/blob/vtat/RescueQuest.zip👈
+<h2>LINK TO DOWNLOAD: 👉[HERE](https://github.com/VuongTranKameru/RPGPlatform/raw/refs/heads/vtat/RescueQuest.zip)👈</h2>
+- After downloading it, unzip the file, click on RescueQuest folder and choose RescueQuest.exe to play.
+
